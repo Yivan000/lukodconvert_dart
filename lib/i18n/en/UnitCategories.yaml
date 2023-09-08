@@ -1,0 +1,10 @@
+#############################################
+# This file is auto-generated. Please do not edit nor contribute here.
+#############################################
+
+metricSi:
+  name: Metric (SI)
+  desc: Metric system units from the International System of Units (SI).
+metricNon:
+  name: Metric (Non-SI)
+  desc: Metric system units not from the International System of Units (SI).
