@@ -4,8 +4,10 @@ import 'dart:io';
 import 'package:csv/csv.dart';
 import 'package:yaml/yaml.dart';
 
+/// the language used for the documentation of the generated code
 const lang = 'en';
-const dontEditMessage = "This file is auto-generated. Please do not edit nor contribute here.";
+const dontEditMessage =
+    "This file is auto-generated. Please do not edit nor contribute here.";
 
 /// Generates the library files from the main Sabangan project folder
 ///
@@ -23,6 +25,35 @@ void main(List<String> args) async {
   var output = Directory(args[1]);
 
   List<String> parts = [];
+
+  // Copying i18n yaml files
+  await output.open('i18n').create();
+  await for (final i in input.open('i18n').list(recursive: true)) {
+    String relative =
+        i.path.substring(input.open('i18n').path.length).replaceAll("\\", "/");
+    if (i is Directory) {
+      await output.open('i18n$relative').create();
+    } else if (i is File) {
+      final file = await i.copy('${output.path}/i18n$relative');
+
+
+      //convert to maps, as recognized by slang
+      var yaml = loadYaml(await file.readAsString()) as YamlMap;
+      var yaml_processed = yaml.map((key, value) => MapEntry(
+            key,
+            //value
+            Map.from(value)..["name"]=  value["name"].join(",,,|,,,"),  // so that it would just be a comma-separated list, to be `.split()`ed later
+          ));
+
+      final contents =
+          "#############################################\n# $dontEditMessage\n#############################################\n\n${jsonEncode(yaml_processed)}";
+
+
+      
+
+      await file.writeAsString(contents);
+    }
+  }
 
   await for (final FileSystemEntity i in input.open('data').list()) {
     final name = i.uri.pathSegments.last.split(".")[0];
@@ -49,15 +80,16 @@ void main(List<String> args) async {
     parts.add("$name.dart");
 
     // Generate each unit files
-    print('Generating $name.dart');
+    print('\nGenerating $name.dart');
     await output
         .openFile("src/$name.dart")
         .create(recursive: true)
         .then((file) async => file.writeAsString(
               await generateDartUnit(
                 inputData: i as File,
-                inputI18n: loadYaml(
-                    await input.openFile("i18n/$lang/$name.yaml").readAsString()),
+                inputI18n: loadYaml(await input
+                    .openFile("i18n/$lang/$name.yaml")
+                    .readAsString()),
                 name: name,
               ),
             ))
@@ -75,20 +107,6 @@ void main(List<String> args) async {
           ))
       .then((file) => formatFile(file.uri));
   print('Generated sabangan.dart');
-
-  // Copying i18n yaml files
-  await output.open('i18n').create();
-  await for (final i in input.open('i18n').list(recursive: true)) {
-    String relative =
-        i.path.substring(input.open('i18n').path.length).replaceAll("\\", "/");
-    if (i is Directory) {
-      await output.open('i18n$relative').create();
-    } else if (i is File) {
-      final file = await i.copy('${output.path}/i18n$relative');
-      final contents = "#############################################\n# $dontEditMessage\n#############################################\n\n${await file.readAsString()}";
-      await file.writeAsString(contents);
-    }
-  }
 
   // Run slang
   print('Running slang');
@@ -120,15 +138,17 @@ enum $name with Unit {
   var prevCat = "";
   var units = [
     ...inputI18n.entries.map((e) => (e.value["name"] as YamlList).toList()),
-    ...inputI18n.entries.map(
-        (e) => (e.value["name"] as YamlList).map((s) => (s as String).toLowerCase()).toList())
+    ...inputI18n.entries.map((e) => (e.value["name"] as YamlList)
+        .map((s) => (s as String).toLowerCase())
+        .toList())
   ];
 
   for (final i in fields) {
     // if first (headers) then skip
     if (fields.first == i) continue;
     // log
-    print("Creating ${fields.indexOf(i)-1} of ${fields.length-2} : $name.${i[0]} ");
+    print(
+        "Creating ${fields.indexOf(i) - 1} of ${fields.length - 2} : $name.${i[0]} ");
     // if the category changes, add category section comment
     if (i[5] != prevCat) {
       output += """
@@ -143,6 +163,7 @@ enum $name with Unit {
     var desc =
         inputI18n[i[0]]?["desc"].toString() ?? '_No description provided_';
 
+    /*
     String findIdFromName(String name, [String Function(dynamic)? action]) {
       return inputI18n.entries
           .firstWhere(
@@ -153,13 +174,16 @@ enum $name with Unit {
           .key;
     }
 
+    // in description, find exact id name matches, add brackets between them to create a link
+    
     for (final unitMain in units) {
       for (String unit in unitMain) {
         desc = desc
-            .replaceAll(RegExp(" ${unit}( |.)"),
-                " [${findIdFromName(unit.toLowerCase(), (a) => a.toLowerCase())}] ");
+            .replaceAllMapped(RegExp(" ${unit}( |\\.|\\,)"), (Match m)=>
+                " [${findIdFromName(unit.toLowerCase(), (a) => a.toLowerCase())}]${m[1]}");
       }
     }
+    */
 
     output += """
   /// **${inputI18n[i[0]]?["name"]?.join(" / ") ?? i[0]}** (${inputI18n[i[0]]?["symbol"] ?? '_No symbol_'})
@@ -170,7 +194,7 @@ enum $name with Unit {
     m2: "${i[2]}", 
     b1: "${i[3]}", 
     b2: "${i[4]}", 
-    category: UnitCategory.${i[5]}
+    category: UnitCategory.${i[5]},
   ),
 """;
   }
@@ -195,6 +219,8 @@ enum $name with Unit {
   final String b2;
   @override
   final UnitCategory category;
+  @override
+  String get descLocalized => super._getDescLocalized(values);
 }
 """;
   return output;
@@ -223,7 +249,8 @@ enum UnitCategory {
 """;
   for (final i in fields) {
     // log
-    print("Creating ${fields.indexOf(i)} of ${fields.length-1} : $name.${i[0]} ");
+    print(
+        "Creating ${fields.indexOf(i)} of ${fields.length - 1} : $name.${i[0]} ");
 
     output += """
   /// **${inputI18n[i[0]]?["name"] ?? i[0]}**
@@ -288,7 +315,7 @@ mixin Unit on Enum {
   ///
   /// Example:
   /// ```dart
-  /// Rational a = UnitLength.inch.convertFromBase("0.0254".toRational());
+  /// Rational a = UnitLength.inchImperial.convertFromBase("0.0254".toRational());
   /// print(a);
   /// // "0.0254" is in the base unit (meter)
   /// // outputs 1 as there is 1 inch in 0.0254 meter
@@ -300,7 +327,7 @@ mixin Unit on Enum {
   ///
   /// Example:
   /// ```dart
-  /// Rational a = UnitLength.inch.convertToBase("1".toRational());
+  /// Rational a = UnitLength.inchImperial.convertToBase("1".toRational());
   /// print(a);
   /// // "1" is in inches
   /// // outputs 0.0254 as there is 0.0254 meters in 1 inch
@@ -318,10 +345,10 @@ mixin Unit on Enum {
   /// Rational a = Unit.convert(
   ///   inputUnit: UnitLength.meter,
   ///   inputRational: "0.0254".toRational(),
-  ///   outputUnit: UnitLength.inch,
+  ///   outputUnit: UnitLength.inchImperial,
   /// );
   /// print(a);
-  /// // "1" is in meters
+  /// // "0.0254" is in meters
   /// // outputs 1 as there is 1 inch in 0.0254 meters
   /// ```
   // Converts input into base, then converts it into desired unit
@@ -345,16 +372,16 @@ mixin Unit on Enum {
   ///   inputUnit: UnitLength.meter,
   ///   inputRational: "1.6".toRational(),
   ///   outputUnits: {
-  ///     UnitLength.foot,
-  ///     UnitLength.inch,
+  ///     UnitLength.footImperial,
+  ///     UnitLength.inchImperial,
   ///   },
   /// );
   /// print(a);
   /// // "1.6" is in meters
   /// // outputs the map (string values are as [Rational]):
   /// {
-  ///   UnitLength.foot: '5',
-  ///   UnitLength.inch: '380/127'
+  ///   UnitLength.footImperial: '5',
+  ///   UnitLength.inchImperial: '380/127'
   /// }
   /// ```
   ///
@@ -394,18 +421,27 @@ mixin Unit on Enum {
   }
 
   /// The localized name of the unit.
-  String get name => strings['\${toString()}.name'];
+  List<String> get nameLocalized => strings['\${toString()}.name'].split(",,,|,,,");
+
+  // Implementation of descLocalized
+  String _getDescLocalized<T extends Enum>(List<T> values) => (strings['\${toString()}.desc'] as String).replaceAllMapped(RegExp(r" \\[(.+?)\\]( |\\.|\\,)"), (match){
+    return " \${(values.byName(match[1]!) as Unit).nameLocalized[0]}\${match[2]!}";  
+  });
+  
+  /// The localized description of the unit.
+  /// The names of the referred units are also replaced with their localized strings.
+  // Implemented on each enum using:
+  // ```
+  // @override
+  // String get descLocalized=>super._getDescLocalized(values);
+  // ```
+  String get descLocalized;
+
+  /// The localized raw description of the unit.
+  String get desc => strings['\${toString()}.desc'];
 
   /// The localized symbol of the unit.
-  String get symbol => strings['\${toString()}.name'];
-
-  /// The localized description of the unit.
-  String get desc => strings['\${toString()}.name'];
-
-  @override
-  String toString() {
-    return "\$name \$symbol=(\$m)x+\$b";
-  }
+  String get symbol => strings['\${toString()}.symbol'];
 
   bool isSameType(Unit other) => runtimeType == other.runtimeType;
 
@@ -441,8 +477,8 @@ extension IterableUnitExtensions on Iterable<Unit> {
   /// ```dart
   /// var units = {
   ///   UnitLength.meter,
-  ///   UnitLength.inch,
-  ///   UnitLength.foot,
+  ///   UnitLength.inchImperial,
+  ///   UnitLength.footImperial,
   ///   UnitLength.millimeter,
   /// };
   /// var map = units.toUnitCategoryMap();

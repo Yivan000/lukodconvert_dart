@@ -11,6 +11,7 @@ import 'strings.dart';
 
 part 'src/UnitCategories.dart';
 part 'src/UnitLength.dart';
+part 'src/UnitPaper.dart';
 
 mixin Unit on Enum {
   /// Slope of the line, the 'm' in 'y=mx+b', aka the conversion factor. [m1] is the numerator, [m2] is the denominator.
@@ -46,7 +47,7 @@ mixin Unit on Enum {
   ///
   /// Example:
   /// ```dart
-  /// Rational a = UnitLength.inch.convertFromBase("0.0254".toRational());
+  /// Rational a = UnitLength.inchImperial.convertFromBase("0.0254".toRational());
   /// print(a);
   /// // "0.0254" is in the base unit (meter)
   /// // outputs 1 as there is 1 inch in 0.0254 meter
@@ -58,7 +59,7 @@ mixin Unit on Enum {
   ///
   /// Example:
   /// ```dart
-  /// Rational a = UnitLength.inch.convertToBase("1".toRational());
+  /// Rational a = UnitLength.inchImperial.convertToBase("1".toRational());
   /// print(a);
   /// // "1" is in inches
   /// // outputs 0.0254 as there is 0.0254 meters in 1 inch
@@ -76,10 +77,10 @@ mixin Unit on Enum {
   /// Rational a = Unit.convert(
   ///   inputUnit: UnitLength.meter,
   ///   inputRational: "0.0254".toRational(),
-  ///   outputUnit: UnitLength.inch,
+  ///   outputUnit: UnitLength.inchImperial,
   /// );
   /// print(a);
-  /// // "1" is in meters
+  /// // "0.0254" is in meters
   /// // outputs 1 as there is 1 inch in 0.0254 meters
   /// ```
   // Converts input into base, then converts it into desired unit
@@ -103,16 +104,16 @@ mixin Unit on Enum {
   ///   inputUnit: UnitLength.meter,
   ///   inputRational: "1.6".toRational(),
   ///   outputUnits: {
-  ///     UnitLength.foot,
-  ///     UnitLength.inch,
+  ///     UnitLength.footImperial,
+  ///     UnitLength.inchImperial,
   ///   },
   /// );
   /// print(a);
   /// // "1.6" is in meters
   /// // outputs the map (string values are as [Rational]):
   /// {
-  ///   UnitLength.foot: '5',
-  ///   UnitLength.inch: '380/127'
+  ///   UnitLength.footImperial: '5',
+  ///   UnitLength.inchImperial: '380/127'
   /// }
   /// ```
   ///
@@ -152,18 +153,30 @@ mixin Unit on Enum {
   }
 
   /// The localized name of the unit.
-  String get name => strings['${toString()}.name'];
+  List<String> get nameLocalized =>
+      strings['${toString()}.name'].split(",,,|,,,");
 
-  /// The localized symbol of the unit.
-  String get symbol => strings['${toString()}.name'];
+  // Implementation of descLocalized
+  String _getDescLocalized<T extends Enum>(List<T> values) =>
+      (strings['${toString()}.desc'] as String)
+          .replaceAllMapped(RegExp(r" \[(.+?)\]( |\.|\,)"), (match) {
+        return " ${(values.byName(match[1]!) as Unit).nameLocalized[0]}${match[2]!}";
+      });
 
   /// The localized description of the unit.
-  String get desc => strings['${toString()}.name'];
+  /// The names of the referred units are also replaced with their localized strings.
+  // Implemented on each enum using:
+  // ```
+  // @override
+  // String get descLocalized=>super._getDescLocalized(values);
+  // ```
+  String get descLocalized;
 
-  @override
-  String toString() {
-    return "$name $symbol=($m)x+$b";
-  }
+  /// The localized raw description of the unit.
+  String get desc => strings['${toString()}.desc'];
+
+  /// The localized symbol of the unit.
+  String get symbol => strings['${toString()}.symbol'];
 
   bool isSameType(Unit other) => runtimeType == other.runtimeType;
 
@@ -199,8 +212,8 @@ extension IterableUnitExtensions on Iterable<Unit> {
   /// ```dart
   /// var units = {
   ///   UnitLength.meter,
-  ///   UnitLength.inch,
-  ///   UnitLength.foot,
+  ///   UnitLength.inchImperial,
+  ///   UnitLength.footImperial,
   ///   UnitLength.millimeter,
   /// };
   /// var map = units.toUnitCategoryMap();

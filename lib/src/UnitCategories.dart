@@ -6,20 +6,20 @@ part of "../sabangan.dart";
 
 /// Enum containing all unit categories.
 enum UnitCategory {
-  /// **Metric (SI)**
+  /// **[Metric (SI)]**
   ///
   /// Metric system units from the International System of Units (SI).
   metricSi,
 
-  /// **Metric (Non-SI)**
+  /// **[Metric (Non-SI)]**
   ///
   /// Metric system units not from the International System of Units (SI).
-  metricNon,
+  metricNonSi,
 
-  /// **imperial**
+  /// **english**
   ///
   /// _No description provided_
-  imperial,
+  english,
 
   /// **constants**
   ///

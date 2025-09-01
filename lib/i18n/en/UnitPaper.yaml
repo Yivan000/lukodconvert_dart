@@ -1,0 +1,5 @@
+#############################################
+# This file is auto-generated. Please do not edit nor contribute here.
+#############################################
+
+{"bale":{"name":"bale","symbol":"bale","desc":"Equal to 5 [bundle] or 5000 [sheet]."},"bundle":{"name":"bundle","symbol":"bundle","desc":"Equal to 10 [ream] or 1000 [sheet]."},"ream":{"name":"ream,,,|,,,long ream","symbol":"ream","desc":"Equal to 20 [quires] or 500 [sheet]."},"quire":{"name":"quire","symbol":"quire","desc":"Equal to 25 [sheet]."},"sheet":{"name":"sheet","symbol":"sheet","desc":"A single sheet of paper."},"baleOld":{"name":"bale (old)","symbol":"bale","desc":"Equal to 5 [bundleOld] or 4800 [sheet]."},"bundleOld":{"name":"bundle (old)","symbol":"bundle","desc":"Equal to 10 [reamOld] or 960 [sheet]."},"reamOld":{"name":"ream (old),,,|,,,short ream","symbol":"ream","desc":"Equal to 20 [quiresOld] or 480 [sheet]."},"quireOld":{"name":"quire (old)","symbol":"quire","desc":"Equal to 24 [sheet]."},"reamPerfect":{"name":"perfect ream","symbol":"perfect ream","desc":"Equal to 516 [sheet]."}}
