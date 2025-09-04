@@ -2,7 +2,7 @@
 
 // ignore_for_file: file_names
 
-part of "../sabangan.dart";
+part of "../lukodconvert.dart";
 
 enum UnitPaper with Unit {
   // --------------------------------------------

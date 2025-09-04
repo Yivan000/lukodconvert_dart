@@ -2,7 +2,7 @@
 
 // ignore_for_file: file_names
 
-library sabangan;
+library lukodconvert;
 
 import 'package:decimal/decimal.dart';
 import 'package:rational/rational.dart';

@@ -1,5 +1,5 @@
 import 'package:rational/rational.dart';
-import 'package:sabangan/sabangan.dart';
+import 'package:lukodconvert/lukodconvert.dart';
 import 'package:decimal/decimal.dart';
 
 void main(List<String> args) {

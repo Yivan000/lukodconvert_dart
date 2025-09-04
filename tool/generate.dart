@@ -9,16 +9,16 @@ const lang = 'en';
 const dontEditMessage =
     "This file is auto-generated. Please do not edit nor contribute here.";
 
-/// Generates the library files from the main Sabangan project folder
+/// Generates the library files from the main LukodConvert project folder
 ///
 /// USAGE:
 /// ```
-/// dart run tool/generate.dart [SABANGAN DIRECTORY] [DART LIB DIRECTORY]
+/// dart run tool/generate.dart [LUKODCONVERT DIRECTORY] [DART LIB DIRECTORY]
 /// ```
 void main(List<String> args) async {
   if (args.isEmpty || args.length != 2) {
     throw ArgumentError(
-        "dart run tool/generate.dart [SABANGAN DIRECTORY] [DART LIB DIRECTORY]");
+        "dart run tool/generate.dart [LUKODCONVERT DIRECTORY] [DART LIB DIRECTORY]");
   }
 
   var input = Directory(args[0]);
@@ -98,15 +98,15 @@ void main(List<String> args) async {
   }
 
   // Generate main library file
-  print('Generating sabangan.dart');
+  print('Generating lukodconvert.dart');
   await output
-      .openFile('sabangan.dart')
+      .openFile('lukodconvert.dart')
       .create()
       .then((file) => file.writeAsString(
             generateDartMain(parts: parts),
           ))
       .then((file) => formatFile(file.uri));
-  print('Generated sabangan.dart');
+  print('Generated lukodconvert.dart');
 
   // Run slang
   print('Running slang');
@@ -130,7 +130,7 @@ Future<String> generateDartUnit({
 
 // ignore_for_file: file_names
 
-part of "../sabangan.dart";
+part of "../lukodconvert.dart";
 
 enum $name with Unit {
 """;
@@ -242,7 +242,7 @@ Future<String> generateDartCategories({
 
 // ignore_for_file: file_names
 
-part of "../sabangan.dart";
+part of "../lukodconvert.dart";
 
 /// Enum containing all unit categories.
 enum UnitCategory {
@@ -271,7 +271,7 @@ String generateDartMain({required List<String> parts}) {
 
 // ignore_for_file: file_names
 
-library sabangan;
+library lukodconvert;
 
 import 'package:decimal/decimal.dart';
 import 'package:rational/rational.dart';
