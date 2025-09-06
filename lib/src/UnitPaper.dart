@@ -1,4 +1,6 @@
+// #############################################
 // This file is auto-generated. Please do not edit nor contribute here.
+// #############################################
 
 // ignore_for_file: file_names
 
@@ -8,6 +10,17 @@ enum UnitPaper with Unit {
   // --------------------------------------------
   // ENGLISH
   // --------------------------------------------
+
+  /// **sheet** (sheet)
+  ///
+  /// A single sheet of paper.
+  sheet(
+    m1: "1",
+    m2: "1",
+    b1: "0",
+    b2: "1",
+    category: UnitCategory.english,
+  ),
 
   /// **bale** (bale)
   ///
@@ -47,17 +60,6 @@ enum UnitPaper with Unit {
   /// Equal to 25 [sheet].
   quire(
     m1: "25",
-    m2: "1",
-    b1: "0",
-    b2: "1",
-    category: UnitCategory.english,
-  ),
-
-  /// **sheet** (sheet)
-  ///
-  /// A single sheet of paper.
-  sheet(
-    m1: "1",
     m2: "1",
     b1: "0",
     b2: "1",
@@ -139,4 +141,12 @@ enum UnitPaper with Unit {
   final UnitCategory category;
   @override
   String get descLocalized => super._getDescLocalized(values);
+
+  /// Information about this quantity
+  static const info = QuantityInfo(
+    id: "paper",
+    derivedQuantities: [],
+    baseUnit: sheet,
+    units: values,
+  );
 }

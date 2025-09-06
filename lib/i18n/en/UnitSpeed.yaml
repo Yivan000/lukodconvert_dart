@@ -1,0 +1,5 @@
+#############################################
+# This file is auto-generated. Please do not edit nor contribute here.
+#############################################
+
+{"meterPerSecond":{"name":"meter per second,,,|,,,metre per second","symbol":"m/s","desc":"SI base metric unit."},"footPerSecond":{"name":"foot per second","symbol":"fps","desc":"FPS unit. Equal to 0.3048 [meterPerSecond]."}}

@@ -1,4 +1,6 @@
+// #############################################
 // This file is auto-generated. Please do not edit nor contribute here.
+// #############################################
 
 // ignore_for_file: file_names
 
@@ -10,8 +12,13 @@ import 'dart:collection';
 import 'strings.dart';
 
 part 'src/UnitCategories.dart';
+part 'src/UnitAcceleration.dart';
+part 'src/UnitForce.dart';
 part 'src/UnitLength.dart';
+part 'src/UnitMass.dart';
 part 'src/UnitPaper.dart';
+part 'src/UnitSpeed.dart';
+part 'src/UnitTime.dart';
 
 mixin Unit on Enum {
   /// Slope of the line, the 'm' in 'y=mx+b', aka the conversion factor. [m1] is the numerator, [m2] is the denominator.
@@ -189,6 +196,51 @@ mixin Unit on Enum {
     if (b.every((i) => a.isSameType(i))) return;
     throw TypeError();
   }
+
+  static QuantityInfo getQuantityInfoFromId(String id) => switch (id) {
+        "acceleration" => UnitAcceleration.info,
+        "force" => UnitForce.info,
+        "length" => UnitLength.info,
+        "mass" => UnitMass.info,
+        "paper" => UnitPaper.info,
+        "speed" => UnitSpeed.info,
+        "time" => UnitTime.info,
+        _ => throw ArgumentError("\"$id\" is not a valid id"),
+      };
+}
+
+class QuantityInfo {
+  /// ID of this quantity
+  final String id;
+
+  /// Quantities that make up this quantity
+  final List<DerivedQuantity> derivedQuantities;
+
+  /// The base unit for this quantity
+  final Unit baseUnit;
+
+  /// The list of units for this quantity (i.e. the values of this quantity's enum)
+  final List<Unit> units;
+
+  const QuantityInfo({
+    required this.id,
+    required this.derivedQuantities,
+    required this.baseUnit,
+    required this.units,
+  });
+}
+
+class DerivedQuantity {
+  final String id;
+  final String exponent;
+
+  const DerivedQuantity({
+    required this.id,
+    required this.exponent,
+  });
+
+  List<DerivedQuantity> getDerivedQuantities() =>
+      Unit.getQuantityInfoFromId(id).derivedQuantities;
 }
 
 extension StringExtensions on String? {

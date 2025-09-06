@@ -1,4 +1,6 @@
+// #############################################
 // This file is auto-generated. Please do not edit nor contribute here.
+// #############################################
 
 // ignore_for_file: file_names
 
@@ -25,6 +27,16 @@ enum UnitCategory {
   ///
   /// _No description provided_
   constants,
+
+  /// **conventional**
+  ///
+  /// _No description provided_
+  conventional,
+
+  /// **astronomical**
+  ///
+  /// _No description provided_
+  astronomical,
 
   /// **byzantine**
   ///

@@ -1,4 +1,6 @@
+// #############################################
 // This file is auto-generated. Please do not edit nor contribute here.
+// #############################################
 
 // ignore_for_file: file_names
 
@@ -9,139 +11,7 @@ enum UnitLength with Unit {
   // METRICSI
   // --------------------------------------------
 
-  /// **quettameter** (Qm)
-  ///
-  /// SI metric unit. Equal to 1000 [ronnameter] or 1ᴇ30 [meter]. Adopted 2022.
-  quettameter(
-    m1: "1000000000000000000000000000000",
-    m2: "1",
-    b1: "0",
-    b2: "1",
-    category: UnitCategory.metricSi,
-  ),
-
-  /// **ronnameter** (Rm)
-  ///
-  /// SI metric unit. Equal to 1000 [yottameter] or 1ᴇ27 [meter]. Adopted 2022.
-  ronnameter(
-    m1: "1000000000000000000000000000",
-    m2: "1",
-    b1: "0",
-    b2: "1",
-    category: UnitCategory.metricSi,
-  ),
-
-  /// **yottameter** (Ym)
-  ///
-  /// SI metric unit. Equal to 1000 [zettameter] or 1ᴇ24 meter. Adopted 1991.
-  yottameter(
-    m1: "1000000000000000000000000",
-    m2: "1",
-    b1: "0",
-    b2: "1",
-    category: UnitCategory.metricSi,
-  ),
-
-  /// **zettameter** (Zm)
-  ///
-  /// SI metric unit. Equal to 1000 [exameter] or 1ᴇ21 [meter]. Adopted 1991.
-  zettameter(
-    m1: "1000000000000000000000",
-    m2: "1",
-    b1: "0",
-    b2: "1",
-    category: UnitCategory.metricSi,
-  ),
-
-  /// **exameter** (Em)
-  ///
-  /// SI metric unit. Equal to 1000 [petameter] or 1ᴇ18 [meter]. Adopted 1975.
-  exameter(
-    m1: "1000000000000000000",
-    m2: "1",
-    b1: "0",
-    b2: "1",
-    category: UnitCategory.metricSi,
-  ),
-
-  /// **petameter** (Pm)
-  ///
-  /// SI metric unit. Equal to 1000 [terameter] or 1ᴇ15 [meter]. Adopted 1975.
-  petameter(
-    m1: "1000000000000000",
-    m2: "1",
-    b1: "0",
-    b2: "1",
-    category: UnitCategory.metricSi,
-  ),
-
-  /// **terameter** (Tm)
-  ///
-  /// SI metric unit. Equal to 1000 [gigameter] or 1ᴇ12 [meter]. Adopted 1960.
-  terameter(
-    m1: "1000000000000",
-    m2: "1",
-    b1: "0",
-    b2: "1",
-    category: UnitCategory.metricSi,
-  ),
-
-  /// **gigameter** (Gm)
-  ///
-  /// SI metric unit. Equal to 1000 [megameter] or 1ᴇ9 [meter]. Adopted 1960.
-  gigameter(
-    m1: "1000000000",
-    m2: "1",
-    b1: "0",
-    b2: "1",
-    category: UnitCategory.metricSi,
-  ),
-
-  /// **megameter** (Mm)
-  ///
-  /// SI metric unit. Equal to 1000 [kilometer] or 1ᴇ6 [meter]. Adopted 1873.
-  megameter(
-    m1: "1000000",
-    m2: "1",
-    b1: "0",
-    b2: "1",
-    category: UnitCategory.metricSi,
-  ),
-
-  /// **kilometer / klick** (km)
-  ///
-  /// SI metric unit. Equal to 10 [hectometer] or 1000 [meter]. Adopted 1795.
-  kilometer(
-    m1: "1000",
-    m2: "1",
-    b1: "0",
-    b2: "1",
-    category: UnitCategory.metricSi,
-  ),
-
-  /// **hectometer** (hm)
-  ///
-  /// SI metric unit. Equal to 10 [decameter] or 100 [meter]. Adopted 1795.
-  hectometer(
-    m1: "100",
-    m2: "1",
-    b1: "0",
-    b2: "1",
-    category: UnitCategory.metricSi,
-  ),
-
-  /// **decameter** (dam)
-  ///
-  /// SI metric unit. Equal to 10 [meter]. Adopted 1795.
-  decameter(
-    m1: "10",
-    m2: "1",
-    b1: "0",
-    b2: "1",
-    category: UnitCategory.metricSi,
-  ),
-
-  /// **meter** (m)
+  /// **meter / metre** (m)
   ///
   /// Base SI metric unit.
   meter(
@@ -152,9 +22,141 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **decimeter** (dm)
+  /// **quettameter / quettametre** (Qm)
   ///
-  /// SI metric unit. Equal to 10 centimeter or 0.1 meter. Adopted 1795.
+  /// SI metric unit. Equal to 1000 [ronnameter] or 1ᴇ30 [meter]. Adopted 2022.
+  quettameter(
+    m1: "1000000000000000000000000000000",
+    m2: "1",
+    b1: "0",
+    b2: "1",
+    category: UnitCategory.metricSi,
+  ),
+
+  /// **ronnameter / ronnametre** (Rm)
+  ///
+  /// SI metric unit. Equal to 1000 [yottameter] or 1ᴇ27 [meter]. Adopted 2022.
+  ronnameter(
+    m1: "1000000000000000000000000000",
+    m2: "1",
+    b1: "0",
+    b2: "1",
+    category: UnitCategory.metricSi,
+  ),
+
+  /// **yottameter / yottametre** (Ym)
+  ///
+  /// SI metric unit. Equal to 1000 [zettameter] or 1ᴇ24 meter. Adopted 1991.
+  yottameter(
+    m1: "1000000000000000000000000",
+    m2: "1",
+    b1: "0",
+    b2: "1",
+    category: UnitCategory.metricSi,
+  ),
+
+  /// **zettameter / zettametre** (Zm)
+  ///
+  /// SI metric unit. Equal to 1000 [exameter] or 1ᴇ21 [meter]. Adopted 1991.
+  zettameter(
+    m1: "1000000000000000000000",
+    m2: "1",
+    b1: "0",
+    b2: "1",
+    category: UnitCategory.metricSi,
+  ),
+
+  /// **exameter / exametre** (Em)
+  ///
+  /// SI metric unit. Equal to 1000 [petameter] or 1ᴇ18 [meter]. Adopted 1975.
+  exameter(
+    m1: "1000000000000000000",
+    m2: "1",
+    b1: "0",
+    b2: "1",
+    category: UnitCategory.metricSi,
+  ),
+
+  /// **petameter / petametre** (Pm)
+  ///
+  /// SI metric unit. Equal to 1000 [terameter] or 1ᴇ15 [meter]. Adopted 1975.
+  petameter(
+    m1: "1000000000000000",
+    m2: "1",
+    b1: "0",
+    b2: "1",
+    category: UnitCategory.metricSi,
+  ),
+
+  /// **terameter / terametre** (Tm)
+  ///
+  /// SI metric unit. Equal to 1000 [gigameter] or 1ᴇ12 [meter]. Adopted 1960.
+  terameter(
+    m1: "1000000000000",
+    m2: "1",
+    b1: "0",
+    b2: "1",
+    category: UnitCategory.metricSi,
+  ),
+
+  /// **gigameter / gigametre** (Gm)
+  ///
+  /// SI metric unit. Equal to 1000 [megameter] or 1ᴇ9 [meter]. Adopted 1960.
+  gigameter(
+    m1: "1000000000",
+    m2: "1",
+    b1: "0",
+    b2: "1",
+    category: UnitCategory.metricSi,
+  ),
+
+  /// **megameter / megametre** (Mm)
+  ///
+  /// SI metric unit. Equal to 1000 [kilometer] or 1ᴇ6 [meter]. Adopted 1873.
+  megameter(
+    m1: "1000000",
+    m2: "1",
+    b1: "0",
+    b2: "1",
+    category: UnitCategory.metricSi,
+  ),
+
+  /// **kilometer / kilometre / klick** (km)
+  ///
+  /// SI metric unit. Equal to 10 [hectometer] or 1000 [meter]. Adopted 1795.
+  kilometer(
+    m1: "1000",
+    m2: "1",
+    b1: "0",
+    b2: "1",
+    category: UnitCategory.metricSi,
+  ),
+
+  /// **hectometer / hectometre** (hm)
+  ///
+  /// SI metric unit. Equal to 10 [decameter] or 100 [meter]. Adopted 1795.
+  hectometer(
+    m1: "100",
+    m2: "1",
+    b1: "0",
+    b2: "1",
+    category: UnitCategory.metricSi,
+  ),
+
+  /// **decameter / decametre** (dam)
+  ///
+  /// SI metric unit. Equal to 10 [meter]. Adopted 1795.
+  decameter(
+    m1: "10",
+    m2: "1",
+    b1: "0",
+    b2: "1",
+    category: UnitCategory.metricSi,
+  ),
+
+  /// **decimeter / decimetre** (dm)
+  ///
+  /// SI metric unit. Equal to 10 [centimeter] or 0.1 [meter]. Adopted 1795.
   decimeter(
     m1: "1",
     m2: "10",
@@ -163,7 +165,7 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **centimeter** (cm)
+  /// **centimeter / centimetre** (cm)
   ///
   /// SI metric unit. Equal to 10 [millimeter] or 0.01 [meter]. Adopted 1795.
   centimeter(
@@ -174,7 +176,7 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **millimeter** (mm)
+  /// **millimeter / millimetre** (mm)
   ///
   /// SI metric unit. Equal to 1000 [micrometer] or 0.001 [meter]. Adopted 1795.
   millimeter(
@@ -185,7 +187,7 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **micrometer / micron** (μm)
+  /// **micrometer / micrometre / micron** (μm)
   ///
   /// SI metric unit. Equal to 1000 [nanometer] or 1ᴇ-6 [meter]. Adopted 1873.
   micrometer(
@@ -196,7 +198,7 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **nanometer** (nm)
+  /// **nanometer / nanometre** (nm)
   ///
   /// SI metric unit. Equal to 1000 [picometer] or 1ᴇ-9 [meter]. Adopted 1960.
   nanometer(
@@ -207,7 +209,7 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **picometer** (pm)
+  /// **picometer / picometre** (pm)
   ///
   /// SI metric unit. Equal to 1000 [femtometer] or 1ᴇ-12 [meter]. Adopted 1960.
   picometer(
@@ -218,7 +220,7 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **femtometer / fermi** (fm)
+  /// **femtometer / femtometre / fermi** (fm)
   ///
   /// SI metric unit. Equal to 1000 [attometer] or 1ᴇ-15 [meter]. Adopted 1964.
   femtometer(
@@ -229,7 +231,7 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **attometer** (am)
+  /// **attometer / attometre** (am)
   ///
   /// SI metric unit. Equal to 1000 [zeptometer] or 1ᴇ-18 [meter]. Adopted 1964.
   attometer(
@@ -240,7 +242,7 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **zeptometer** (zm)
+  /// **zeptometer / zeptometre** (zm)
   ///
   /// SI metric unit. Equal to 1000 [yoctometer] or 1ᴇ-21 [meter]. Adopted 1991.
   zeptometer(
@@ -251,7 +253,7 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **yoctometer** (ym)
+  /// **yoctometer / yoctometre** (ym)
   ///
   /// SI metric unit. Equal to 1000 [rontometer] or 1ᴇ-24 [meter]. Adopted 1991.
   yoctometer(
@@ -262,7 +264,7 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **rontometer** (rm)
+  /// **rontometer / rontometre** (rm)
   ///
   /// SI metric unit. Equal to 1000 [quectometer] or 1ᴇ-27 [meter]. Adopted 2022.
   rontometer(
@@ -273,7 +275,7 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **quectometer** (qm)
+  /// **quectometer / quectometre** (qm)
   ///
   /// SI metric unit. Equal to 1ᴇ-30 [meter]. Adopted 2022.
   quectometer(
@@ -1418,4 +1420,12 @@ enum UnitLength with Unit {
   final UnitCategory category;
   @override
   String get descLocalized => super._getDescLocalized(values);
+
+  /// Information about this quantity
+  static const info = QuantityInfo(
+    id: "length",
+    derivedQuantities: [],
+    baseUnit: meter,
+    units: values,
+  );
 }

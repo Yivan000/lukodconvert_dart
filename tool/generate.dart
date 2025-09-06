@@ -36,20 +36,18 @@ void main(List<String> args) async {
     } else if (i is File) {
       final file = await i.copy('${output.path}/i18n$relative');
 
-
       //convert to maps, as recognized by slang
       var yaml = loadYaml(await file.readAsString()) as YamlMap;
       var yaml_processed = yaml.map((key, value) => MapEntry(
             key,
             //value
-            Map.from(value)..["name"]=  value["name"].join(",,,|,,,"),  // so that it would just be a comma-separated list, to be `.split()`ed later
+            Map.from(value)
+              ..["name"] = value["name"].join(
+                  ",,,|,,,"), // so that it would just be a comma-separated list, to be `.split()`ed later
           ));
 
       final contents =
           "#############################################\n# $dontEditMessage\n#############################################\n\n${jsonEncode(yaml_processed)}";
-
-
-      
 
       await file.writeAsString(contents);
     }
@@ -77,24 +75,29 @@ void main(List<String> args) async {
       continue;
     }
 
-    parts.add("$name.dart");
+    // add file for each csv file
+    else if (i.uri.pathSegments.last.contains(".csv")) {
+      parts.add("$name.dart");
 
-    // Generate each unit files
-    print('\nGenerating $name.dart');
-    await output
-        .openFile("src/$name.dart")
-        .create(recursive: true)
-        .then((file) async => file.writeAsString(
-              await generateDartUnit(
-                inputData: i as File,
-                inputI18n: loadYaml(await input
-                    .openFile("i18n/$lang/$name.yaml")
-                    .readAsString()),
-                name: name,
-              ),
-            ))
-        .then((file) => formatFile(file.uri));
-    print('Generated $name.dart');
+      // Generate each unit files
+      print('\nGenerating $name.dart');
+      await output
+          .openFile("src/$name.dart")
+          .create(recursive: true)
+          .then((file) async => file.writeAsString(
+                await generateDartUnit(
+                  inputData: i as File,
+                  inputI18n: loadYaml(await input
+                      .openFile("i18n/$lang/$name.yaml")
+                      .readAsString()),
+                  inputJson: jsonDecode(
+                      await input.openFile("data/$name.json").readAsString()),
+                  name: name,
+                ),
+              ))
+          .then((file) => formatFile(file.uri));
+      print('Generated $name.dart');
+    }
   }
 
   // Generate main library file
@@ -117,6 +120,7 @@ void main(List<String> args) async {
 Future<String> generateDartUnit({
   required File inputData,
   required YamlMap inputI18n,
+  required dynamic inputJson,
   required String name,
 }) async {
   final fields = await inputData
@@ -126,7 +130,9 @@ Future<String> generateDartUnit({
       .toList();
 
   var output = """
+// #############################################
 // $dontEditMessage
+// #############################################
 
 // ignore_for_file: file_names
 
@@ -198,6 +204,18 @@ enum $name with Unit {
   ),
 """;
   }
+  print(inputJson);
+  var derivedId = "";
+  if (inputJson["derivedId"] != null) {
+    for (final i in inputJson["derivedId"]) {
+      derivedId += """
+    DerivedQuantity(
+      id: "${i["id"]}",
+      exponent: "${i["exponent"]}", 
+    ),
+""";
+    }
+  }
 
   output += """
   ;
@@ -221,8 +239,19 @@ enum $name with Unit {
   final UnitCategory category;
   @override
   String get descLocalized => super._getDescLocalized(values);
+
+  /// Information about this quantity
+  static const info = QuantityInfo(
+    id: "${inputJson["id"]}",
+    derivedQuantities: [
+      $derivedId
+    ],
+    baseUnit: ${inputJson["baseUnit"]},
+    units: values,
+  );
 }
 """;
+
   return output;
 }
 
@@ -238,7 +267,9 @@ Future<String> generateDartCategories({
       .toList();
 
   var output = """
+// #############################################
 // $dontEditMessage
+// #############################################
 
 // ignore_for_file: file_names
 
@@ -267,7 +298,9 @@ enum UnitCategory {
 /// Generates the main Dart file
 String generateDartMain({required List<String> parts}) {
   return """
+// #############################################
 // $dontEditMessage
+// #############################################
 
 // ignore_for_file: file_names
 
@@ -454,7 +487,55 @@ mixin Unit on Enum {
     if (b.every((i) => a.isSameType(i))) return;
     throw TypeError();
   }
+
+  static QuantityInfo getQuantityInfoFromId(String id) => switch(id){
+    ${parts.fold("", (prev, element) {
+    var arg = element.replaceAllMapped(
+        RegExp(r"Unit(.+)\.dart"), (match) => match[1]!).toLowerCase();
+    var value =
+        element.replaceAllMapped(RegExp(r"(.+)\.dart"), (match) => match[1]!);
+
+    return "$prev\n\"$arg\" => $value.info,";
+  })}
+    _=>throw ArgumentError("\\"\$id\\" is not a valid id"),
+  };
+
 }
+
+class QuantityInfo{
+
+  /// ID of this quantity
+  final String id;
+  
+  /// Quantities that make up this quantity
+  final List<DerivedQuantity> derivedQuantities;
+
+  /// The base unit for this quantity
+  final Unit baseUnit;
+
+  /// The list of units for this quantity (i.e. the values of this quantity's enum)
+  final List<Unit> units;
+
+  const QuantityInfo({
+    required this.id,
+    required this.derivedQuantities,
+    required this.baseUnit,
+    required this.units,
+  });
+}
+
+class DerivedQuantity{
+  final String id;
+  final String exponent;
+
+  const DerivedQuantity({
+    required this.id,
+    required this.exponent,
+  });
+
+  List<DerivedQuantity> getDerivedQuantities() => Unit.getQuantityInfoFromId(id).derivedQuantities;
+}
+
 
 extension StringExtensions on String? {
   Rational toRational() => Rational.parse(this!);

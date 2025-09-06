@@ -5,23 +5,27 @@ import 'package:decimal/decimal.dart';
 void main(List<String> args) {
 
   var out = Unit.convert(
-    inputUnit: UnitLength.xunitCopper,
+    inputUnit: UnitMass.kilogram,
     inputRational: '1'.toRational(),
-    outputUnit: UnitLength.meter,
+    outputUnit: UnitMass.gram,
   );
-  print(out);
+  print(out.toString().replaceAll("/",","));
   print(out.toDecimal(scaleOnInfinitePrecision: 100));
 
-  print(UnitLength.latroBohemian.descLocalized);
+  print(UnitForce.newton.descLocalized);
 
 //  print(UnitLength.shaftmentImperial.convertToBase('1'.toRational()).toDecimal(scaleOnInfinitePrecision: 100));
   print('\n');
+  //var r = Rational()
   //var r = Rational.fromInt(127, 1250) / Rational.fromInt(2);
-  var r = Rational.fromInt(12573, 625) * Rational.fromInt(1,100);
-  print(r);
+  var r = Rational.fromInt(1, 60*60*24*366);
+  print(r.toString().replaceAll("/",","));
   print(r.toDecimal(scaleOnInfinitePrecision: 100));
 
-  
+  for (var i in UnitAcceleration.info.derivedQuantities){
+    print(i.id);
+    print(i.getDerivedQuantities().map((e)=>e.id));
+  }
 
   //UnitLength.values.getUnitsFromCategory(UnitCategory.imperial).forEach(print);
 }

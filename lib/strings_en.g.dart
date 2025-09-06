@@ -33,9 +33,25 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	Translations $copyWith({TranslationMetadata<AppLocale, Translations>? meta}) => Translations(meta: meta ?? this.$meta);
 
 	// Translations
+	late final TranslationsUnitAccelerationEn UnitAcceleration = TranslationsUnitAccelerationEn.internal(_root);
 	late final TranslationsUnitCategoriesEn UnitCategories = TranslationsUnitCategoriesEn.internal(_root);
+	late final TranslationsUnitForceEn UnitForce = TranslationsUnitForceEn.internal(_root);
 	late final TranslationsUnitLengthEn UnitLength = TranslationsUnitLengthEn.internal(_root);
+	late final TranslationsUnitMassEn UnitMass = TranslationsUnitMassEn.internal(_root);
 	late final TranslationsUnitPaperEn UnitPaper = TranslationsUnitPaperEn.internal(_root);
+	late final TranslationsUnitSpeedEn UnitSpeed = TranslationsUnitSpeedEn.internal(_root);
+	late final TranslationsUnitTimeEn UnitTime = TranslationsUnitTimeEn.internal(_root);
+}
+
+// Path: UnitAcceleration
+class TranslationsUnitAccelerationEn {
+	TranslationsUnitAccelerationEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+	late final TranslationsUnitAccelerationMeterPerSecondSquaredEn meterPerSecondSquared = TranslationsUnitAccelerationMeterPerSecondSquaredEn.internal(_root);
+	late final TranslationsUnitAccelerationFootPerSecondSquaredEn footPerSecondSquared = TranslationsUnitAccelerationFootPerSecondSquaredEn.internal(_root);
 }
 
 // Path: UnitCategories
@@ -47,6 +63,42 @@ class TranslationsUnitCategoriesEn {
 	// Translations
 	late final TranslationsUnitCategoriesMetricSiEn metricSi = TranslationsUnitCategoriesMetricSiEn.internal(_root);
 	late final TranslationsUnitCategoriesMetricNonSiEn metricNonSi = TranslationsUnitCategoriesMetricNonSiEn.internal(_root);
+}
+
+// Path: UnitForce
+class TranslationsUnitForceEn {
+	TranslationsUnitForceEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+	late final TranslationsUnitForceQuettanewtonEn quettanewton = TranslationsUnitForceQuettanewtonEn.internal(_root);
+	late final TranslationsUnitForceRonnanewtonEn ronnanewton = TranslationsUnitForceRonnanewtonEn.internal(_root);
+	late final TranslationsUnitForceYottanewtonEn yottanewton = TranslationsUnitForceYottanewtonEn.internal(_root);
+	late final TranslationsUnitForceZettanewtonEn zettanewton = TranslationsUnitForceZettanewtonEn.internal(_root);
+	late final TranslationsUnitForceExanewtonEn exanewton = TranslationsUnitForceExanewtonEn.internal(_root);
+	late final TranslationsUnitForcePetanewtonEn petanewton = TranslationsUnitForcePetanewtonEn.internal(_root);
+	late final TranslationsUnitForceTeranewtonEn teranewton = TranslationsUnitForceTeranewtonEn.internal(_root);
+	late final TranslationsUnitForceGiganewtonEn giganewton = TranslationsUnitForceGiganewtonEn.internal(_root);
+	late final TranslationsUnitForceMeganewtonEn meganewton = TranslationsUnitForceMeganewtonEn.internal(_root);
+	late final TranslationsUnitForceKilonewtonEn kilonewton = TranslationsUnitForceKilonewtonEn.internal(_root);
+	late final TranslationsUnitForceHectonewtonEn hectonewton = TranslationsUnitForceHectonewtonEn.internal(_root);
+	late final TranslationsUnitForceDecanewtonEn decanewton = TranslationsUnitForceDecanewtonEn.internal(_root);
+	late final TranslationsUnitForceNewtonEn newton = TranslationsUnitForceNewtonEn.internal(_root);
+	late final TranslationsUnitForceDecinewtonEn decinewton = TranslationsUnitForceDecinewtonEn.internal(_root);
+	late final TranslationsUnitForceCentinewtonEn centinewton = TranslationsUnitForceCentinewtonEn.internal(_root);
+	late final TranslationsUnitForceMillinewtonEn millinewton = TranslationsUnitForceMillinewtonEn.internal(_root);
+	late final TranslationsUnitForceMicronewtonEn micronewton = TranslationsUnitForceMicronewtonEn.internal(_root);
+	late final TranslationsUnitForceNanonewtonEn nanonewton = TranslationsUnitForceNanonewtonEn.internal(_root);
+	late final TranslationsUnitForcePiconewtonEn piconewton = TranslationsUnitForcePiconewtonEn.internal(_root);
+	late final TranslationsUnitForceFemtonewtonEn femtonewton = TranslationsUnitForceFemtonewtonEn.internal(_root);
+	late final TranslationsUnitForceAttonewtonEn attonewton = TranslationsUnitForceAttonewtonEn.internal(_root);
+	late final TranslationsUnitForceZeptonewtonEn zeptonewton = TranslationsUnitForceZeptonewtonEn.internal(_root);
+	late final TranslationsUnitForceYoctonewtonEn yoctonewton = TranslationsUnitForceYoctonewtonEn.internal(_root);
+	late final TranslationsUnitForceRontonewtonEn rontonewton = TranslationsUnitForceRontonewtonEn.internal(_root);
+	late final TranslationsUnitForceQuectonewtonEn quectonewton = TranslationsUnitForceQuectonewtonEn.internal(_root);
+	late final TranslationsUnitForcePoundForceEn poundForce = TranslationsUnitForcePoundForceEn.internal(_root);
+	late final TranslationsUnitForceKipEn kip = TranslationsUnitForceKipEn.internal(_root);
 }
 
 // Path: UnitLength
@@ -181,6 +233,40 @@ class TranslationsUnitLengthEn {
 	late final TranslationsUnitLengthLyneEn lyne = TranslationsUnitLengthLyneEn.internal(_root);
 }
 
+// Path: UnitMass
+class TranslationsUnitMassEn {
+	TranslationsUnitMassEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+	late final TranslationsUnitMassQuettagramEn quettagram = TranslationsUnitMassQuettagramEn.internal(_root);
+	late final TranslationsUnitMassRonnagramEn ronnagram = TranslationsUnitMassRonnagramEn.internal(_root);
+	late final TranslationsUnitMassYottagramEn yottagram = TranslationsUnitMassYottagramEn.internal(_root);
+	late final TranslationsUnitMassZettagramEn zettagram = TranslationsUnitMassZettagramEn.internal(_root);
+	late final TranslationsUnitMassExagramEn exagram = TranslationsUnitMassExagramEn.internal(_root);
+	late final TranslationsUnitMassPetagramEn petagram = TranslationsUnitMassPetagramEn.internal(_root);
+	late final TranslationsUnitMassTeragramEn teragram = TranslationsUnitMassTeragramEn.internal(_root);
+	late final TranslationsUnitMassGigagramEn gigagram = TranslationsUnitMassGigagramEn.internal(_root);
+	late final TranslationsUnitMassMegagramEn megagram = TranslationsUnitMassMegagramEn.internal(_root);
+	late final TranslationsUnitMassKilogramEn kilogram = TranslationsUnitMassKilogramEn.internal(_root);
+	late final TranslationsUnitMassHectogramEn hectogram = TranslationsUnitMassHectogramEn.internal(_root);
+	late final TranslationsUnitMassDecagramEn decagram = TranslationsUnitMassDecagramEn.internal(_root);
+	late final TranslationsUnitMassGramEn gram = TranslationsUnitMassGramEn.internal(_root);
+	late final TranslationsUnitMassDecigramEn decigram = TranslationsUnitMassDecigramEn.internal(_root);
+	late final TranslationsUnitMassCentigramEn centigram = TranslationsUnitMassCentigramEn.internal(_root);
+	late final TranslationsUnitMassMilligramEn milligram = TranslationsUnitMassMilligramEn.internal(_root);
+	late final TranslationsUnitMassMicrogramEn microgram = TranslationsUnitMassMicrogramEn.internal(_root);
+	late final TranslationsUnitMassNanogramEn nanogram = TranslationsUnitMassNanogramEn.internal(_root);
+	late final TranslationsUnitMassPicogramEn picogram = TranslationsUnitMassPicogramEn.internal(_root);
+	late final TranslationsUnitMassFemtogramEn femtogram = TranslationsUnitMassFemtogramEn.internal(_root);
+	late final TranslationsUnitMassAttogramEn attogram = TranslationsUnitMassAttogramEn.internal(_root);
+	late final TranslationsUnitMassZeptogramEn zeptogram = TranslationsUnitMassZeptogramEn.internal(_root);
+	late final TranslationsUnitMassYoctogramEn yoctogram = TranslationsUnitMassYoctogramEn.internal(_root);
+	late final TranslationsUnitMassRontogramEn rontogram = TranslationsUnitMassRontogramEn.internal(_root);
+	late final TranslationsUnitMassQuectogramEn quectogram = TranslationsUnitMassQuectogramEn.internal(_root);
+}
+
 // Path: UnitPaper
 class TranslationsUnitPaperEn {
 	TranslationsUnitPaperEn.internal(this._root);
@@ -198,6 +284,93 @@ class TranslationsUnitPaperEn {
 	late final TranslationsUnitPaperReamOldEn reamOld = TranslationsUnitPaperReamOldEn.internal(_root);
 	late final TranslationsUnitPaperQuireOldEn quireOld = TranslationsUnitPaperQuireOldEn.internal(_root);
 	late final TranslationsUnitPaperReamPerfectEn reamPerfect = TranslationsUnitPaperReamPerfectEn.internal(_root);
+}
+
+// Path: UnitSpeed
+class TranslationsUnitSpeedEn {
+	TranslationsUnitSpeedEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+	late final TranslationsUnitSpeedMeterPerSecondEn meterPerSecond = TranslationsUnitSpeedMeterPerSecondEn.internal(_root);
+	late final TranslationsUnitSpeedFootPerSecondEn footPerSecond = TranslationsUnitSpeedFootPerSecondEn.internal(_root);
+}
+
+// Path: UnitTime
+class TranslationsUnitTimeEn {
+	TranslationsUnitTimeEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+	late final TranslationsUnitTimeQuettasecondEn quettasecond = TranslationsUnitTimeQuettasecondEn.internal(_root);
+	late final TranslationsUnitTimeRonnasecondEn ronnasecond = TranslationsUnitTimeRonnasecondEn.internal(_root);
+	late final TranslationsUnitTimeYottasecondEn yottasecond = TranslationsUnitTimeYottasecondEn.internal(_root);
+	late final TranslationsUnitTimeZettasecondEn zettasecond = TranslationsUnitTimeZettasecondEn.internal(_root);
+	late final TranslationsUnitTimeExasecondEn exasecond = TranslationsUnitTimeExasecondEn.internal(_root);
+	late final TranslationsUnitTimePetasecondEn petasecond = TranslationsUnitTimePetasecondEn.internal(_root);
+	late final TranslationsUnitTimeTerasecondEn terasecond = TranslationsUnitTimeTerasecondEn.internal(_root);
+	late final TranslationsUnitTimeGigasecondEn gigasecond = TranslationsUnitTimeGigasecondEn.internal(_root);
+	late final TranslationsUnitTimeMegasecondEn megasecond = TranslationsUnitTimeMegasecondEn.internal(_root);
+	late final TranslationsUnitTimeKilosecondEn kilosecond = TranslationsUnitTimeKilosecondEn.internal(_root);
+	late final TranslationsUnitTimeHectosecondEn hectosecond = TranslationsUnitTimeHectosecondEn.internal(_root);
+	late final TranslationsUnitTimeDecasecondEn decasecond = TranslationsUnitTimeDecasecondEn.internal(_root);
+	late final TranslationsUnitTimeSecondEn second = TranslationsUnitTimeSecondEn.internal(_root);
+	late final TranslationsUnitTimeDecisecondEn decisecond = TranslationsUnitTimeDecisecondEn.internal(_root);
+	late final TranslationsUnitTimeCentisecondEn centisecond = TranslationsUnitTimeCentisecondEn.internal(_root);
+	late final TranslationsUnitTimeMillisecondEn millisecond = TranslationsUnitTimeMillisecondEn.internal(_root);
+	late final TranslationsUnitTimeMicrosecondEn microsecond = TranslationsUnitTimeMicrosecondEn.internal(_root);
+	late final TranslationsUnitTimeNanosecondEn nanosecond = TranslationsUnitTimeNanosecondEn.internal(_root);
+	late final TranslationsUnitTimePicosecondEn picosecond = TranslationsUnitTimePicosecondEn.internal(_root);
+	late final TranslationsUnitTimeFemtosecondEn femtosecond = TranslationsUnitTimeFemtosecondEn.internal(_root);
+	late final TranslationsUnitTimeAttosecondEn attosecond = TranslationsUnitTimeAttosecondEn.internal(_root);
+	late final TranslationsUnitTimeZeptosecondEn zeptosecond = TranslationsUnitTimeZeptosecondEn.internal(_root);
+	late final TranslationsUnitTimeYoctosecondEn yoctosecond = TranslationsUnitTimeYoctosecondEn.internal(_root);
+	late final TranslationsUnitTimeRontosecondEn rontosecond = TranslationsUnitTimeRontosecondEn.internal(_root);
+	late final TranslationsUnitTimeQuectosecondEn quectosecond = TranslationsUnitTimeQuectosecondEn.internal(_root);
+	late final TranslationsUnitTimeMinuteEn minute = TranslationsUnitTimeMinuteEn.internal(_root);
+	late final TranslationsUnitTimeHourEn hour = TranslationsUnitTimeHourEn.internal(_root);
+	late final TranslationsUnitTimeDayCalendarEn dayCalendar = TranslationsUnitTimeDayCalendarEn.internal(_root);
+	late final TranslationsUnitTimeWeekEn week = TranslationsUnitTimeWeekEn.internal(_root);
+	late final TranslationsUnitTimeYearCommonEn yearCommon = TranslationsUnitTimeYearCommonEn.internal(_root);
+	late final TranslationsUnitTimeYearLeapEn yearLeap = TranslationsUnitTimeYearLeapEn.internal(_root);
+}
+
+// Path: UnitAcceleration.meterPerSecondSquared
+class TranslationsUnitAccelerationMeterPerSecondSquaredEn {
+	TranslationsUnitAccelerationMeterPerSecondSquaredEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'meter per second squared,,,|,,,metre per second squared,,,|,,,meter per square second,,,|,,,metre per square second'
+	String get name => 'meter per second squared,,,|,,,metre per second squared,,,|,,,meter per square second,,,|,,,metre per square second';
+
+	/// en: 'm/s²'
+	String get symbol => 'm/s²';
+
+	/// en: 'SI base metric unit.'
+	String get desc => 'SI base metric unit.';
+}
+
+// Path: UnitAcceleration.footPerSecondSquared
+class TranslationsUnitAccelerationFootPerSecondSquaredEn {
+	TranslationsUnitAccelerationFootPerSecondSquaredEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'foot per second squared,,,|,,,foot per square second'
+	String get name => 'foot per second squared,,,|,,,foot per square second';
+
+	/// en: 'ft/s²'
+	String get symbol => 'ft/s²';
+
+	/// en: 'FPS unit. Equal to 0.3048 [meterPerSecondSquared].'
+	String get desc => 'FPS unit. Equal to 0.3048 [meterPerSecondSquared].';
 }
 
 // Path: UnitCategories.metricSi
@@ -230,6 +403,492 @@ class TranslationsUnitCategoriesMetricNonSiEn {
 	String get desc => 'Metric system units not from the International System of Units (SI).';
 }
 
+// Path: UnitForce.quettanewton
+class TranslationsUnitForceQuettanewtonEn {
+	TranslationsUnitForceQuettanewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'quettanewton'
+	String get name => 'quettanewton';
+
+	/// en: 'QN'
+	String get symbol => 'QN';
+
+	/// en: 'SI metric unit. Equal to 1000 [ronnanewton] or 1ᴇ30 [newton]. Adopted 2022.'
+	String get desc => 'SI metric unit. Equal to 1000 [ronnanewton] or 1ᴇ30 [newton]. Adopted 2022.';
+}
+
+// Path: UnitForce.ronnanewton
+class TranslationsUnitForceRonnanewtonEn {
+	TranslationsUnitForceRonnanewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'ronnanewton'
+	String get name => 'ronnanewton';
+
+	/// en: 'RN'
+	String get symbol => 'RN';
+
+	/// en: 'SI metric unit. Equal to 1000 [yottanewton] or 1ᴇ27 [newton]. Adopted 2022.'
+	String get desc => 'SI metric unit. Equal to 1000 [yottanewton] or 1ᴇ27 [newton]. Adopted 2022.';
+}
+
+// Path: UnitForce.yottanewton
+class TranslationsUnitForceYottanewtonEn {
+	TranslationsUnitForceYottanewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'yottanewton'
+	String get name => 'yottanewton';
+
+	/// en: 'YN'
+	String get symbol => 'YN';
+
+	/// en: 'SI metric unit. Equal to 1000 [zettanewton] or 1ᴇ24 newton. Adopted 1991.'
+	String get desc => 'SI metric unit. Equal to 1000 [zettanewton] or 1ᴇ24 newton. Adopted 1991.';
+}
+
+// Path: UnitForce.zettanewton
+class TranslationsUnitForceZettanewtonEn {
+	TranslationsUnitForceZettanewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'zettanewton'
+	String get name => 'zettanewton';
+
+	/// en: 'ZN'
+	String get symbol => 'ZN';
+
+	/// en: 'SI metric unit. Equal to 1000 [exanewton] or 1ᴇ21 [newton]. Adopted 1991.'
+	String get desc => 'SI metric unit. Equal to 1000 [exanewton] or 1ᴇ21 [newton]. Adopted 1991.';
+}
+
+// Path: UnitForce.exanewton
+class TranslationsUnitForceExanewtonEn {
+	TranslationsUnitForceExanewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'exanewton'
+	String get name => 'exanewton';
+
+	/// en: 'EN'
+	String get symbol => 'EN';
+
+	/// en: 'SI metric unit. Equal to 1000 [petanewton] or 1ᴇ18 [newton]. Adopted 1975.'
+	String get desc => 'SI metric unit. Equal to 1000 [petanewton] or 1ᴇ18 [newton]. Adopted 1975.';
+}
+
+// Path: UnitForce.petanewton
+class TranslationsUnitForcePetanewtonEn {
+	TranslationsUnitForcePetanewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'petanewton'
+	String get name => 'petanewton';
+
+	/// en: 'PN'
+	String get symbol => 'PN';
+
+	/// en: 'SI metric unit. Equal to 1000 [teranewton] or 1ᴇ15 [newton]. Adopted 1975.'
+	String get desc => 'SI metric unit. Equal to 1000 [teranewton] or 1ᴇ15 [newton]. Adopted 1975.';
+}
+
+// Path: UnitForce.teranewton
+class TranslationsUnitForceTeranewtonEn {
+	TranslationsUnitForceTeranewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'teranewton'
+	String get name => 'teranewton';
+
+	/// en: 'TN'
+	String get symbol => 'TN';
+
+	/// en: 'SI metric unit. Equal to 1000 [giganewton] or 1ᴇ12 [newton]. Adopted 1960.'
+	String get desc => 'SI metric unit. Equal to 1000 [giganewton] or 1ᴇ12 [newton]. Adopted 1960.';
+}
+
+// Path: UnitForce.giganewton
+class TranslationsUnitForceGiganewtonEn {
+	TranslationsUnitForceGiganewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'giganewton'
+	String get name => 'giganewton';
+
+	/// en: 'GN'
+	String get symbol => 'GN';
+
+	/// en: 'SI metric unit. Equal to 1000 [meganewton] or 1ᴇ9 [newton]. Adopted 1960.'
+	String get desc => 'SI metric unit. Equal to 1000 [meganewton] or 1ᴇ9 [newton]. Adopted 1960.';
+}
+
+// Path: UnitForce.meganewton
+class TranslationsUnitForceMeganewtonEn {
+	TranslationsUnitForceMeganewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'meganewton'
+	String get name => 'meganewton';
+
+	/// en: 'MN'
+	String get symbol => 'MN';
+
+	/// en: 'SI metric unit. Equal to 1000 [kilonewton] or 1ᴇ6 [newton]. Adopted 1873.'
+	String get desc => 'SI metric unit. Equal to 1000 [kilonewton] or 1ᴇ6 [newton]. Adopted 1873.';
+}
+
+// Path: UnitForce.kilonewton
+class TranslationsUnitForceKilonewtonEn {
+	TranslationsUnitForceKilonewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'kilonewton'
+	String get name => 'kilonewton';
+
+	/// en: 'kN'
+	String get symbol => 'kN';
+
+	/// en: 'SI metric unit. Equal to 10 [hectonewton] or 1000 [newton]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [hectonewton] or 1000 [newton]. Adopted 1795.';
+}
+
+// Path: UnitForce.hectonewton
+class TranslationsUnitForceHectonewtonEn {
+	TranslationsUnitForceHectonewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'hectonewton'
+	String get name => 'hectonewton';
+
+	/// en: 'hN'
+	String get symbol => 'hN';
+
+	/// en: 'SI metric unit. Equal to 10 [decanewton] or 100 [newton]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [decanewton] or 100 [newton]. Adopted 1795.';
+}
+
+// Path: UnitForce.decanewton
+class TranslationsUnitForceDecanewtonEn {
+	TranslationsUnitForceDecanewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'decanewton'
+	String get name => 'decanewton';
+
+	/// en: 'daN'
+	String get symbol => 'daN';
+
+	/// en: 'SI metric unit. Equal to 10 [newton]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [newton]. Adopted 1795.';
+}
+
+// Path: UnitForce.newton
+class TranslationsUnitForceNewtonEn {
+	TranslationsUnitForceNewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'newton'
+	String get name => 'newton';
+
+	/// en: '\N'
+	String get symbol => '\N';
+
+	/// en: 'Base SI metric unit.'
+	String get desc => 'Base SI metric unit.';
+}
+
+// Path: UnitForce.decinewton
+class TranslationsUnitForceDecinewtonEn {
+	TranslationsUnitForceDecinewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'decinewton'
+	String get name => 'decinewton';
+
+	/// en: 'dN'
+	String get symbol => 'dN';
+
+	/// en: 'SI metric unit. Equal to 10 [centinewton] or 0.1 [newton]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [centinewton] or 0.1 [newton]. Adopted 1795.';
+}
+
+// Path: UnitForce.centinewton
+class TranslationsUnitForceCentinewtonEn {
+	TranslationsUnitForceCentinewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'centinewton'
+	String get name => 'centinewton';
+
+	/// en: 'cN'
+	String get symbol => 'cN';
+
+	/// en: 'SI metric unit. Equal to 10 [millinewton] or 0.01 [newton]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [millinewton] or 0.01 [newton]. Adopted 1795.';
+}
+
+// Path: UnitForce.millinewton
+class TranslationsUnitForceMillinewtonEn {
+	TranslationsUnitForceMillinewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'millinewton'
+	String get name => 'millinewton';
+
+	/// en: 'mN'
+	String get symbol => 'mN';
+
+	/// en: 'SI metric unit. Equal to 1000 [micronewton] or 0.001 [newton]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 1000 [micronewton] or 0.001 [newton]. Adopted 1795.';
+}
+
+// Path: UnitForce.micronewton
+class TranslationsUnitForceMicronewtonEn {
+	TranslationsUnitForceMicronewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'micronewton'
+	String get name => 'micronewton';
+
+	/// en: 'μs'
+	String get symbol => 'μs';
+
+	/// en: 'SI metric unit. Equal to 1000 [nanonewton] or 1ᴇ-6 [newton]. Adopted 1873.'
+	String get desc => 'SI metric unit. Equal to 1000 [nanonewton] or 1ᴇ-6 [newton]. Adopted 1873.';
+}
+
+// Path: UnitForce.nanonewton
+class TranslationsUnitForceNanonewtonEn {
+	TranslationsUnitForceNanonewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'nanonewton'
+	String get name => 'nanonewton';
+
+	/// en: 'nN'
+	String get symbol => 'nN';
+
+	/// en: 'SI metric unit. Equal to 1000 [piconewton] or 1ᴇ-9 [newton]. Adopted 1960.'
+	String get desc => 'SI metric unit. Equal to 1000 [piconewton] or 1ᴇ-9 [newton]. Adopted 1960.';
+}
+
+// Path: UnitForce.piconewton
+class TranslationsUnitForcePiconewtonEn {
+	TranslationsUnitForcePiconewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'piconewton'
+	String get name => 'piconewton';
+
+	/// en: 'pN'
+	String get symbol => 'pN';
+
+	/// en: 'SI metric unit. Equal to 1000 [femtonewton] or 1ᴇ-12 [newton]. Adopted 1960.'
+	String get desc => 'SI metric unit. Equal to 1000 [femtonewton] or 1ᴇ-12 [newton]. Adopted 1960.';
+}
+
+// Path: UnitForce.femtonewton
+class TranslationsUnitForceFemtonewtonEn {
+	TranslationsUnitForceFemtonewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'femtonewton'
+	String get name => 'femtonewton';
+
+	/// en: 'fN'
+	String get symbol => 'fN';
+
+	/// en: 'SI metric unit. Equal to 1000 [attonewton] or 1ᴇ-15 [newton]. Adopted 1964.'
+	String get desc => 'SI metric unit. Equal to 1000 [attonewton] or 1ᴇ-15 [newton]. Adopted 1964.';
+}
+
+// Path: UnitForce.attonewton
+class TranslationsUnitForceAttonewtonEn {
+	TranslationsUnitForceAttonewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'attonewton'
+	String get name => 'attonewton';
+
+	/// en: 'aN'
+	String get symbol => 'aN';
+
+	/// en: 'SI metric unit. Equal to 1000 [zeptonewton] or 1ᴇ-18 [newton]. Adopted 1964.'
+	String get desc => 'SI metric unit. Equal to 1000 [zeptonewton] or 1ᴇ-18 [newton]. Adopted 1964.';
+}
+
+// Path: UnitForce.zeptonewton
+class TranslationsUnitForceZeptonewtonEn {
+	TranslationsUnitForceZeptonewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'zeptonewton'
+	String get name => 'zeptonewton';
+
+	/// en: 'zN'
+	String get symbol => 'zN';
+
+	/// en: 'SI metric unit. Equal to 1000 [yoctonewton] or 1ᴇ-21 [newton]. Adopted 1991.'
+	String get desc => 'SI metric unit. Equal to 1000 [yoctonewton] or 1ᴇ-21 [newton]. Adopted 1991.';
+}
+
+// Path: UnitForce.yoctonewton
+class TranslationsUnitForceYoctonewtonEn {
+	TranslationsUnitForceYoctonewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'yoctonewton'
+	String get name => 'yoctonewton';
+
+	/// en: 'yN'
+	String get symbol => 'yN';
+
+	/// en: 'SI metric unit. Equal to 1000 [rontonewton] or 1ᴇ-24 [newton]. Adopted 1991.'
+	String get desc => 'SI metric unit. Equal to 1000 [rontonewton] or 1ᴇ-24 [newton]. Adopted 1991.';
+}
+
+// Path: UnitForce.rontonewton
+class TranslationsUnitForceRontonewtonEn {
+	TranslationsUnitForceRontonewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'rontonewton'
+	String get name => 'rontonewton';
+
+	/// en: 'rN'
+	String get symbol => 'rN';
+
+	/// en: 'SI metric unit. Equal to 1000 [quectonewton] or 1ᴇ-27 [newton]. Adopted 2022.'
+	String get desc => 'SI metric unit. Equal to 1000 [quectonewton] or 1ᴇ-27 [newton]. Adopted 2022.';
+}
+
+// Path: UnitForce.quectonewton
+class TranslationsUnitForceQuectonewtonEn {
+	TranslationsUnitForceQuectonewtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'quectonewton'
+	String get name => 'quectonewton';
+
+	/// en: 'qN'
+	String get symbol => 'qN';
+
+	/// en: 'SI metric unit. Equal to 1ᴇ-30 [newton]. Adopted 2022.'
+	String get desc => 'SI metric unit. Equal to 1ᴇ-30 [newton]. Adopted 2022.';
+}
+
+// Path: UnitForce.poundForce
+class TranslationsUnitForcePoundForceEn {
+	TranslationsUnitForcePoundForceEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'pound-force,,,|,,,pound'
+	String get name => 'pound-force,,,|,,,pound';
+
+	/// en: 'lbf'
+	String get symbol => 'lbf';
+
+	/// en: 'English unit. Equal to 4.4482216152605 [newton].'
+	String get desc => 'English unit. Equal to 4.4482216152605 [newton].';
+}
+
+// Path: UnitForce.kip
+class TranslationsUnitForceKipEn {
+	TranslationsUnitForceKipEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'kip,,,|,,,kilopound,,,|,,,kilopound-force'
+	String get name => 'kip,,,|,,,kilopound,,,|,,,kilopound-force';
+
+	/// en: 'kip'
+	String get symbol => 'kip';
+
+	/// en: 'English unit. Equal to 1000 [poundForce] or 4448.2216152605 [newton].'
+	String get desc => 'English unit. Equal to 1000 [poundForce] or 4448.2216152605 [newton].';
+}
+
 // Path: UnitLength.quettameter
 class TranslationsUnitLengthQuettameterEn {
 	TranslationsUnitLengthQuettameterEn.internal(this._root);
@@ -238,8 +897,8 @@ class TranslationsUnitLengthQuettameterEn {
 
 	// Translations
 
-	/// en: 'quettameter'
-	String get name => 'quettameter';
+	/// en: 'quettameter,,,|,,,quettametre'
+	String get name => 'quettameter,,,|,,,quettametre';
 
 	/// en: 'Qm'
 	String get symbol => 'Qm';
@@ -256,8 +915,8 @@ class TranslationsUnitLengthRonnameterEn {
 
 	// Translations
 
-	/// en: 'ronnameter'
-	String get name => 'ronnameter';
+	/// en: 'ronnameter,,,|,,,ronnametre'
+	String get name => 'ronnameter,,,|,,,ronnametre';
 
 	/// en: 'Rm'
 	String get symbol => 'Rm';
@@ -274,8 +933,8 @@ class TranslationsUnitLengthYottameterEn {
 
 	// Translations
 
-	/// en: 'yottameter'
-	String get name => 'yottameter';
+	/// en: 'yottameter,,,|,,,yottametre'
+	String get name => 'yottameter,,,|,,,yottametre';
 
 	/// en: 'Ym'
 	String get symbol => 'Ym';
@@ -292,8 +951,8 @@ class TranslationsUnitLengthZettameterEn {
 
 	// Translations
 
-	/// en: 'zettameter'
-	String get name => 'zettameter';
+	/// en: 'zettameter,,,|,,,zettametre'
+	String get name => 'zettameter,,,|,,,zettametre';
 
 	/// en: 'Zm'
 	String get symbol => 'Zm';
@@ -310,8 +969,8 @@ class TranslationsUnitLengthExameterEn {
 
 	// Translations
 
-	/// en: 'exameter'
-	String get name => 'exameter';
+	/// en: 'exameter,,,|,,,exametre'
+	String get name => 'exameter,,,|,,,exametre';
 
 	/// en: 'Em'
 	String get symbol => 'Em';
@@ -328,8 +987,8 @@ class TranslationsUnitLengthPetameterEn {
 
 	// Translations
 
-	/// en: 'petameter'
-	String get name => 'petameter';
+	/// en: 'petameter,,,|,,,petametre'
+	String get name => 'petameter,,,|,,,petametre';
 
 	/// en: 'Pm'
 	String get symbol => 'Pm';
@@ -346,8 +1005,8 @@ class TranslationsUnitLengthTerameterEn {
 
 	// Translations
 
-	/// en: 'terameter'
-	String get name => 'terameter';
+	/// en: 'terameter,,,|,,,terametre'
+	String get name => 'terameter,,,|,,,terametre';
 
 	/// en: 'Tm'
 	String get symbol => 'Tm';
@@ -364,8 +1023,8 @@ class TranslationsUnitLengthGigameterEn {
 
 	// Translations
 
-	/// en: 'gigameter'
-	String get name => 'gigameter';
+	/// en: 'gigameter,,,|,,,gigametre'
+	String get name => 'gigameter,,,|,,,gigametre';
 
 	/// en: 'Gm'
 	String get symbol => 'Gm';
@@ -382,8 +1041,8 @@ class TranslationsUnitLengthMegameterEn {
 
 	// Translations
 
-	/// en: 'megameter'
-	String get name => 'megameter';
+	/// en: 'megameter,,,|,,,megametre'
+	String get name => 'megameter,,,|,,,megametre';
 
 	/// en: 'Mm'
 	String get symbol => 'Mm';
@@ -400,8 +1059,8 @@ class TranslationsUnitLengthKilometerEn {
 
 	// Translations
 
-	/// en: 'kilometer,,,|,,,klick'
-	String get name => 'kilometer,,,|,,,klick';
+	/// en: 'kilometer,,,|,,,kilometre,,,|,,,klick'
+	String get name => 'kilometer,,,|,,,kilometre,,,|,,,klick';
 
 	/// en: 'km'
 	String get symbol => 'km';
@@ -418,8 +1077,8 @@ class TranslationsUnitLengthHectometerEn {
 
 	// Translations
 
-	/// en: 'hectometer'
-	String get name => 'hectometer';
+	/// en: 'hectometer,,,|,,,hectometre'
+	String get name => 'hectometer,,,|,,,hectometre';
 
 	/// en: 'hm'
 	String get symbol => 'hm';
@@ -436,8 +1095,8 @@ class TranslationsUnitLengthDecameterEn {
 
 	// Translations
 
-	/// en: 'decameter'
-	String get name => 'decameter';
+	/// en: 'decameter,,,|,,,decametre'
+	String get name => 'decameter,,,|,,,decametre';
 
 	/// en: 'dam'
 	String get symbol => 'dam';
@@ -454,8 +1113,8 @@ class TranslationsUnitLengthMeterEn {
 
 	// Translations
 
-	/// en: 'meter'
-	String get name => 'meter';
+	/// en: 'meter,,,|,,,metre'
+	String get name => 'meter,,,|,,,metre';
 
 	/// en: 'm'
 	String get symbol => 'm';
@@ -472,14 +1131,14 @@ class TranslationsUnitLengthDecimeterEn {
 
 	// Translations
 
-	/// en: 'decimeter'
-	String get name => 'decimeter';
+	/// en: 'decimeter,,,|,,,decimetre'
+	String get name => 'decimeter,,,|,,,decimetre';
 
 	/// en: 'dm'
 	String get symbol => 'dm';
 
-	/// en: 'SI metric unit. Equal to 10 centimeter or 0.1 meter. Adopted 1795.'
-	String get desc => 'SI metric unit. Equal to 10 centimeter or 0.1 meter. Adopted 1795.';
+	/// en: 'SI metric unit. Equal to 10 [centimeter] or 0.1 [meter]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [centimeter] or 0.1 [meter]. Adopted 1795.';
 }
 
 // Path: UnitLength.centimeter
@@ -490,8 +1149,8 @@ class TranslationsUnitLengthCentimeterEn {
 
 	// Translations
 
-	/// en: 'centimeter'
-	String get name => 'centimeter';
+	/// en: 'centimeter,,,|,,,centimetre'
+	String get name => 'centimeter,,,|,,,centimetre';
 
 	/// en: 'cm'
 	String get symbol => 'cm';
@@ -508,8 +1167,8 @@ class TranslationsUnitLengthMillimeterEn {
 
 	// Translations
 
-	/// en: 'millimeter'
-	String get name => 'millimeter';
+	/// en: 'millimeter,,,|,,,millimetre'
+	String get name => 'millimeter,,,|,,,millimetre';
 
 	/// en: 'mm'
 	String get symbol => 'mm';
@@ -526,8 +1185,8 @@ class TranslationsUnitLengthMicrometerEn {
 
 	// Translations
 
-	/// en: 'micrometer,,,|,,,micron'
-	String get name => 'micrometer,,,|,,,micron';
+	/// en: 'micrometer,,,|,,,micrometre,,,|,,,micron'
+	String get name => 'micrometer,,,|,,,micrometre,,,|,,,micron';
 
 	/// en: 'μm'
 	String get symbol => 'μm';
@@ -544,8 +1203,8 @@ class TranslationsUnitLengthNanometerEn {
 
 	// Translations
 
-	/// en: 'nanometer'
-	String get name => 'nanometer';
+	/// en: 'nanometer,,,|,,,nanometre'
+	String get name => 'nanometer,,,|,,,nanometre';
 
 	/// en: 'nm'
 	String get symbol => 'nm';
@@ -562,8 +1221,8 @@ class TranslationsUnitLengthPicometerEn {
 
 	// Translations
 
-	/// en: 'picometer'
-	String get name => 'picometer';
+	/// en: 'picometer,,,|,,,picometre'
+	String get name => 'picometer,,,|,,,picometre';
 
 	/// en: 'pm'
 	String get symbol => 'pm';
@@ -580,8 +1239,8 @@ class TranslationsUnitLengthFemtometerEn {
 
 	// Translations
 
-	/// en: 'femtometer,,,|,,,fermi'
-	String get name => 'femtometer,,,|,,,fermi';
+	/// en: 'femtometer,,,|,,,femtometre,,,|,,,fermi'
+	String get name => 'femtometer,,,|,,,femtometre,,,|,,,fermi';
 
 	/// en: 'fm'
 	String get symbol => 'fm';
@@ -598,8 +1257,8 @@ class TranslationsUnitLengthAttometerEn {
 
 	// Translations
 
-	/// en: 'attometer'
-	String get name => 'attometer';
+	/// en: 'attometer,,,|,,,attometre'
+	String get name => 'attometer,,,|,,,attometre';
 
 	/// en: 'am'
 	String get symbol => 'am';
@@ -616,8 +1275,8 @@ class TranslationsUnitLengthZeptometerEn {
 
 	// Translations
 
-	/// en: 'zeptometer'
-	String get name => 'zeptometer';
+	/// en: 'zeptometer,,,|,,,zeptometre'
+	String get name => 'zeptometer,,,|,,,zeptometre';
 
 	/// en: 'zm'
 	String get symbol => 'zm';
@@ -634,8 +1293,8 @@ class TranslationsUnitLengthYoctometerEn {
 
 	// Translations
 
-	/// en: 'yoctometer'
-	String get name => 'yoctometer';
+	/// en: 'yoctometer,,,|,,,yoctometre'
+	String get name => 'yoctometer,,,|,,,yoctometre';
 
 	/// en: 'ym'
 	String get symbol => 'ym';
@@ -652,8 +1311,8 @@ class TranslationsUnitLengthRontometerEn {
 
 	// Translations
 
-	/// en: 'rontometer'
-	String get name => 'rontometer';
+	/// en: 'rontometer,,,|,,,rontometre'
+	String get name => 'rontometer,,,|,,,rontometre';
 
 	/// en: 'rm'
 	String get symbol => 'rm';
@@ -670,8 +1329,8 @@ class TranslationsUnitLengthQuectometerEn {
 
 	// Translations
 
-	/// en: 'quectometer'
-	String get name => 'quectometer';
+	/// en: 'quectometer,,,|,,,quectometre'
+	String get name => 'quectometer,,,|,,,quectometre';
 
 	/// en: 'qm'
 	String get symbol => 'qm';
@@ -2444,6 +3103,456 @@ class TranslationsUnitLengthLyneEn {
 	String get desc => 'Old Dutch unit. Equal to 1.96569027̅ [millimeter].';
 }
 
+// Path: UnitMass.quettagram
+class TranslationsUnitMassQuettagramEn {
+	TranslationsUnitMassQuettagramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'quettagram'
+	String get name => 'quettagram';
+
+	/// en: 'Qg'
+	String get symbol => 'Qg';
+
+	/// en: 'SI metric unit. Equal to 1000 [ronnagram] or 1ᴇ30 [gram]. Adopted 2022.'
+	String get desc => 'SI metric unit. Equal to 1000 [ronnagram] or 1ᴇ30 [gram]. Adopted 2022.';
+}
+
+// Path: UnitMass.ronnagram
+class TranslationsUnitMassRonnagramEn {
+	TranslationsUnitMassRonnagramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'ronnagram'
+	String get name => 'ronnagram';
+
+	/// en: 'Rg'
+	String get symbol => 'Rg';
+
+	/// en: 'SI metric unit. Equal to 1000 [yottagram] or 1ᴇ27 [gram]. Adopted 2022.'
+	String get desc => 'SI metric unit. Equal to 1000 [yottagram] or 1ᴇ27 [gram]. Adopted 2022.';
+}
+
+// Path: UnitMass.yottagram
+class TranslationsUnitMassYottagramEn {
+	TranslationsUnitMassYottagramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'yottagram'
+	String get name => 'yottagram';
+
+	/// en: 'Yg'
+	String get symbol => 'Yg';
+
+	/// en: 'SI metric unit. Equal to 1000 [zettagram] or 1ᴇ24 gram. Adopted 1991.'
+	String get desc => 'SI metric unit. Equal to 1000 [zettagram] or 1ᴇ24 gram. Adopted 1991.';
+}
+
+// Path: UnitMass.zettagram
+class TranslationsUnitMassZettagramEn {
+	TranslationsUnitMassZettagramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'zettagram'
+	String get name => 'zettagram';
+
+	/// en: 'Zg'
+	String get symbol => 'Zg';
+
+	/// en: 'SI metric unit. Equal to 1000 [exagram] or 1ᴇ21 [gram]. Adopted 1991.'
+	String get desc => 'SI metric unit. Equal to 1000 [exagram] or 1ᴇ21 [gram]. Adopted 1991.';
+}
+
+// Path: UnitMass.exagram
+class TranslationsUnitMassExagramEn {
+	TranslationsUnitMassExagramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'exagram'
+	String get name => 'exagram';
+
+	/// en: 'Eg'
+	String get symbol => 'Eg';
+
+	/// en: 'SI metric unit. Equal to 1000 [petagram] or 1ᴇ18 [gram]. Adopted 1975.'
+	String get desc => 'SI metric unit. Equal to 1000 [petagram] or 1ᴇ18 [gram]. Adopted 1975.';
+}
+
+// Path: UnitMass.petagram
+class TranslationsUnitMassPetagramEn {
+	TranslationsUnitMassPetagramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'petagram'
+	String get name => 'petagram';
+
+	/// en: 'Pg'
+	String get symbol => 'Pg';
+
+	/// en: 'SI metric unit. Equal to 1000 [teragram] or 1ᴇ15 [gram]. Adopted 1975.'
+	String get desc => 'SI metric unit. Equal to 1000 [teragram] or 1ᴇ15 [gram]. Adopted 1975.';
+}
+
+// Path: UnitMass.teragram
+class TranslationsUnitMassTeragramEn {
+	TranslationsUnitMassTeragramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'teragram'
+	String get name => 'teragram';
+
+	/// en: 'Tg'
+	String get symbol => 'Tg';
+
+	/// en: 'SI metric unit. Equal to 1000 [gigagram] or 1ᴇ12 [gram]. Adopted 1960.'
+	String get desc => 'SI metric unit. Equal to 1000 [gigagram] or 1ᴇ12 [gram]. Adopted 1960.';
+}
+
+// Path: UnitMass.gigagram
+class TranslationsUnitMassGigagramEn {
+	TranslationsUnitMassGigagramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'gigagram'
+	String get name => 'gigagram';
+
+	/// en: 'Gg'
+	String get symbol => 'Gg';
+
+	/// en: 'SI metric unit. Equal to 1000 [megagram] or 1ᴇ9 [gram]. Adopted 1960.'
+	String get desc => 'SI metric unit. Equal to 1000 [megagram] or 1ᴇ9 [gram]. Adopted 1960.';
+}
+
+// Path: UnitMass.megagram
+class TranslationsUnitMassMegagramEn {
+	TranslationsUnitMassMegagramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'megagram'
+	String get name => 'megagram';
+
+	/// en: 'Mg'
+	String get symbol => 'Mg';
+
+	/// en: 'SI metric unit. Equal to 1000 [kilogram] or 1ᴇ6 [gram]. Adopted 1873.'
+	String get desc => 'SI metric unit. Equal to 1000 [kilogram] or 1ᴇ6 [gram]. Adopted 1873.';
+}
+
+// Path: UnitMass.kilogram
+class TranslationsUnitMassKilogramEn {
+	TranslationsUnitMassKilogramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'kilogram'
+	String get name => 'kilogram';
+
+	/// en: 'kg'
+	String get symbol => 'kg';
+
+	/// en: 'Base SI metric unit. Equal to 10 [hectogram] or 1000 [gram].'
+	String get desc => 'Base SI metric unit. Equal to 10 [hectogram] or 1000 [gram].';
+}
+
+// Path: UnitMass.hectogram
+class TranslationsUnitMassHectogramEn {
+	TranslationsUnitMassHectogramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'hectogram'
+	String get name => 'hectogram';
+
+	/// en: 'hg'
+	String get symbol => 'hg';
+
+	/// en: 'SI metric unit. Equal to 10 [decagram] or 100 [gram]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [decagram] or 100 [gram]. Adopted 1795.';
+}
+
+// Path: UnitMass.decagram
+class TranslationsUnitMassDecagramEn {
+	TranslationsUnitMassDecagramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'decagram'
+	String get name => 'decagram';
+
+	/// en: 'dag'
+	String get symbol => 'dag';
+
+	/// en: 'SI metric unit. Equal to 10 [gram]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [gram]. Adopted 1795.';
+}
+
+// Path: UnitMass.gram
+class TranslationsUnitMassGramEn {
+	TranslationsUnitMassGramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'gram'
+	String get name => 'gram';
+
+	/// en: 'g'
+	String get symbol => 'g';
+
+	/// en: 'SI metric unit. Equal to 0.001 [kilogram].'
+	String get desc => 'SI metric unit. Equal to 0.001 [kilogram].';
+}
+
+// Path: UnitMass.decigram
+class TranslationsUnitMassDecigramEn {
+	TranslationsUnitMassDecigramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'decigram'
+	String get name => 'decigram';
+
+	/// en: 'dg'
+	String get symbol => 'dg';
+
+	/// en: 'SI metric unit. Equal to 10 [centigram] or 0.1 [gram]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [centigram] or 0.1 [gram]. Adopted 1795.';
+}
+
+// Path: UnitMass.centigram
+class TranslationsUnitMassCentigramEn {
+	TranslationsUnitMassCentigramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'centigram'
+	String get name => 'centigram';
+
+	/// en: 'cg'
+	String get symbol => 'cg';
+
+	/// en: 'SI metric unit. Equal to 10 [milligram] or 0.01 [gram]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [milligram] or 0.01 [gram]. Adopted 1795.';
+}
+
+// Path: UnitMass.milligram
+class TranslationsUnitMassMilligramEn {
+	TranslationsUnitMassMilligramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'milligram'
+	String get name => 'milligram';
+
+	/// en: 'mg'
+	String get symbol => 'mg';
+
+	/// en: 'SI metric unit. Equal to 1000 [microgram] or 0.001 [gram]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 1000 [microgram] or 0.001 [gram]. Adopted 1795.';
+}
+
+// Path: UnitMass.microgram
+class TranslationsUnitMassMicrogramEn {
+	TranslationsUnitMassMicrogramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'microgram'
+	String get name => 'microgram';
+
+	/// en: 'μg'
+	String get symbol => 'μg';
+
+	/// en: 'SI metric unit. Equal to 1000 [nanogram] or 1ᴇ-6 [gram]. Adopted 1873.'
+	String get desc => 'SI metric unit. Equal to 1000 [nanogram] or 1ᴇ-6 [gram]. Adopted 1873.';
+}
+
+// Path: UnitMass.nanogram
+class TranslationsUnitMassNanogramEn {
+	TranslationsUnitMassNanogramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'nanogram'
+	String get name => 'nanogram';
+
+	/// en: 'ng'
+	String get symbol => 'ng';
+
+	/// en: 'SI metric unit. Equal to 1000 [picogram] or 1ᴇ-9 [gram]. Adopted 1960.'
+	String get desc => 'SI metric unit. Equal to 1000 [picogram] or 1ᴇ-9 [gram]. Adopted 1960.';
+}
+
+// Path: UnitMass.picogram
+class TranslationsUnitMassPicogramEn {
+	TranslationsUnitMassPicogramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'picogram'
+	String get name => 'picogram';
+
+	/// en: 'pg'
+	String get symbol => 'pg';
+
+	/// en: 'SI metric unit. Equal to 1000 [femtogram] or 1ᴇ-12 [gram]. Adopted 1960.'
+	String get desc => 'SI metric unit. Equal to 1000 [femtogram] or 1ᴇ-12 [gram]. Adopted 1960.';
+}
+
+// Path: UnitMass.femtogram
+class TranslationsUnitMassFemtogramEn {
+	TranslationsUnitMassFemtogramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'femtogram,,,|,,,fermi'
+	String get name => 'femtogram,,,|,,,fermi';
+
+	/// en: 'fg'
+	String get symbol => 'fg';
+
+	/// en: 'SI metric unit. Equal to 1000 [attogram] or 1ᴇ-15 [gram]. Adopted 1964.'
+	String get desc => 'SI metric unit. Equal to 1000 [attogram] or 1ᴇ-15 [gram]. Adopted 1964.';
+}
+
+// Path: UnitMass.attogram
+class TranslationsUnitMassAttogramEn {
+	TranslationsUnitMassAttogramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'attogram'
+	String get name => 'attogram';
+
+	/// en: 'ag'
+	String get symbol => 'ag';
+
+	/// en: 'SI metric unit. Equal to 1000 [zeptogram] or 1ᴇ-18 [gram]. Adopted 1964.'
+	String get desc => 'SI metric unit. Equal to 1000 [zeptogram] or 1ᴇ-18 [gram]. Adopted 1964.';
+}
+
+// Path: UnitMass.zeptogram
+class TranslationsUnitMassZeptogramEn {
+	TranslationsUnitMassZeptogramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'zeptogram'
+	String get name => 'zeptogram';
+
+	/// en: 'zg'
+	String get symbol => 'zg';
+
+	/// en: 'SI metric unit. Equal to 1000 [yoctogram] or 1ᴇ-21 [gram]. Adopted 1991.'
+	String get desc => 'SI metric unit. Equal to 1000 [yoctogram] or 1ᴇ-21 [gram]. Adopted 1991.';
+}
+
+// Path: UnitMass.yoctogram
+class TranslationsUnitMassYoctogramEn {
+	TranslationsUnitMassYoctogramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'yoctogram'
+	String get name => 'yoctogram';
+
+	/// en: 'yg'
+	String get symbol => 'yg';
+
+	/// en: 'SI metric unit. Equal to 1000 [rontogram] or 1ᴇ-24 [gram]. Adopted 1991.'
+	String get desc => 'SI metric unit. Equal to 1000 [rontogram] or 1ᴇ-24 [gram]. Adopted 1991.';
+}
+
+// Path: UnitMass.rontogram
+class TranslationsUnitMassRontogramEn {
+	TranslationsUnitMassRontogramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'rontogram'
+	String get name => 'rontogram';
+
+	/// en: 'rg'
+	String get symbol => 'rg';
+
+	/// en: 'SI metric unit. Equal to 1000 [quectogram] or 1ᴇ-27 [gram]. Adopted 2022.'
+	String get desc => 'SI metric unit. Equal to 1000 [quectogram] or 1ᴇ-27 [gram]. Adopted 2022.';
+}
+
+// Path: UnitMass.quectogram
+class TranslationsUnitMassQuectogramEn {
+	TranslationsUnitMassQuectogramEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'quectogram'
+	String get name => 'quectogram';
+
+	/// en: 'qg'
+	String get symbol => 'qg';
+
+	/// en: 'SI metric unit. Equal to 1ᴇ-30 [gram]. Adopted 2022.'
+	String get desc => 'SI metric unit. Equal to 1ᴇ-30 [gram]. Adopted 2022.';
+}
+
 // Path: UnitPaper.bale
 class TranslationsUnitPaperBaleEn {
 	TranslationsUnitPaperBaleEn.internal(this._root);
@@ -2624,88 +3733,769 @@ class TranslationsUnitPaperReamPerfectEn {
 	String get desc => 'Equal to 516 [sheet].';
 }
 
+// Path: UnitSpeed.meterPerSecond
+class TranslationsUnitSpeedMeterPerSecondEn {
+	TranslationsUnitSpeedMeterPerSecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'meter per second,,,|,,,metre per second'
+	String get name => 'meter per second,,,|,,,metre per second';
+
+	/// en: 'm/s'
+	String get symbol => 'm/s';
+
+	/// en: 'SI base metric unit.'
+	String get desc => 'SI base metric unit.';
+}
+
+// Path: UnitSpeed.footPerSecond
+class TranslationsUnitSpeedFootPerSecondEn {
+	TranslationsUnitSpeedFootPerSecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'foot per second'
+	String get name => 'foot per second';
+
+	/// en: 'fps'
+	String get symbol => 'fps';
+
+	/// en: 'FPS unit. Equal to 0.3048 [meterPerSecond].'
+	String get desc => 'FPS unit. Equal to 0.3048 [meterPerSecond].';
+}
+
+// Path: UnitTime.quettasecond
+class TranslationsUnitTimeQuettasecondEn {
+	TranslationsUnitTimeQuettasecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'quettasecond'
+	String get name => 'quettasecond';
+
+	/// en: 'Qs'
+	String get symbol => 'Qs';
+
+	/// en: 'SI metric unit. Equal to 1000 [ronnasecond] or 1ᴇ30 [second]. Adopted 2022.'
+	String get desc => 'SI metric unit. Equal to 1000 [ronnasecond] or 1ᴇ30 [second]. Adopted 2022.';
+}
+
+// Path: UnitTime.ronnasecond
+class TranslationsUnitTimeRonnasecondEn {
+	TranslationsUnitTimeRonnasecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'ronnasecond'
+	String get name => 'ronnasecond';
+
+	/// en: 'Rs'
+	String get symbol => 'Rs';
+
+	/// en: 'SI metric unit. Equal to 1000 [yottasecond] or 1ᴇ27 [second]. Adopted 2022.'
+	String get desc => 'SI metric unit. Equal to 1000 [yottasecond] or 1ᴇ27 [second]. Adopted 2022.';
+}
+
+// Path: UnitTime.yottasecond
+class TranslationsUnitTimeYottasecondEn {
+	TranslationsUnitTimeYottasecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'yottasecond'
+	String get name => 'yottasecond';
+
+	/// en: 'Ys'
+	String get symbol => 'Ys';
+
+	/// en: 'SI metric unit. Equal to 1000 [zettasecond] or 1ᴇ24 second. Adopted 1991.'
+	String get desc => 'SI metric unit. Equal to 1000 [zettasecond] or 1ᴇ24 second. Adopted 1991.';
+}
+
+// Path: UnitTime.zettasecond
+class TranslationsUnitTimeZettasecondEn {
+	TranslationsUnitTimeZettasecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'zettasecond'
+	String get name => 'zettasecond';
+
+	/// en: 'Zs'
+	String get symbol => 'Zs';
+
+	/// en: 'SI metric unit. Equal to 1000 [exasecond] or 1ᴇ21 [second]. Adopted 1991.'
+	String get desc => 'SI metric unit. Equal to 1000 [exasecond] or 1ᴇ21 [second]. Adopted 1991.';
+}
+
+// Path: UnitTime.exasecond
+class TranslationsUnitTimeExasecondEn {
+	TranslationsUnitTimeExasecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'exasecond'
+	String get name => 'exasecond';
+
+	/// en: 'Es'
+	String get symbol => 'Es';
+
+	/// en: 'SI metric unit. Equal to 1000 [petasecond] or 1ᴇ18 [second]. Adopted 1975.'
+	String get desc => 'SI metric unit. Equal to 1000 [petasecond] or 1ᴇ18 [second]. Adopted 1975.';
+}
+
+// Path: UnitTime.petasecond
+class TranslationsUnitTimePetasecondEn {
+	TranslationsUnitTimePetasecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'petasecond'
+	String get name => 'petasecond';
+
+	/// en: 'Ps'
+	String get symbol => 'Ps';
+
+	/// en: 'SI metric unit. Equal to 1000 [terasecond] or 1ᴇ15 [second]. Adopted 1975.'
+	String get desc => 'SI metric unit. Equal to 1000 [terasecond] or 1ᴇ15 [second]. Adopted 1975.';
+}
+
+// Path: UnitTime.terasecond
+class TranslationsUnitTimeTerasecondEn {
+	TranslationsUnitTimeTerasecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'terasecond'
+	String get name => 'terasecond';
+
+	/// en: 'Ts'
+	String get symbol => 'Ts';
+
+	/// en: 'SI metric unit. Equal to 1000 [gigasecond] or 1ᴇ12 [second]. Adopted 1960.'
+	String get desc => 'SI metric unit. Equal to 1000 [gigasecond] or 1ᴇ12 [second]. Adopted 1960.';
+}
+
+// Path: UnitTime.gigasecond
+class TranslationsUnitTimeGigasecondEn {
+	TranslationsUnitTimeGigasecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'gigasecond'
+	String get name => 'gigasecond';
+
+	/// en: 'Gs'
+	String get symbol => 'Gs';
+
+	/// en: 'SI metric unit. Equal to 1000 [megasecond] or 1ᴇ9 [second]. Adopted 1960.'
+	String get desc => 'SI metric unit. Equal to 1000 [megasecond] or 1ᴇ9 [second]. Adopted 1960.';
+}
+
+// Path: UnitTime.megasecond
+class TranslationsUnitTimeMegasecondEn {
+	TranslationsUnitTimeMegasecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'megasecond'
+	String get name => 'megasecond';
+
+	/// en: 'Ms'
+	String get symbol => 'Ms';
+
+	/// en: 'SI metric unit. Equal to 1000 [kilosecond] or 1ᴇ6 [second]. Adopted 1873.'
+	String get desc => 'SI metric unit. Equal to 1000 [kilosecond] or 1ᴇ6 [second]. Adopted 1873.';
+}
+
+// Path: UnitTime.kilosecond
+class TranslationsUnitTimeKilosecondEn {
+	TranslationsUnitTimeKilosecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'kilosecond'
+	String get name => 'kilosecond';
+
+	/// en: 'ks'
+	String get symbol => 'ks';
+
+	/// en: 'SI metric unit. Equal to 10 [hectosecond] or 1000 [second]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [hectosecond] or 1000 [second]. Adopted 1795.';
+}
+
+// Path: UnitTime.hectosecond
+class TranslationsUnitTimeHectosecondEn {
+	TranslationsUnitTimeHectosecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'hectosecond'
+	String get name => 'hectosecond';
+
+	/// en: 'hs'
+	String get symbol => 'hs';
+
+	/// en: 'SI metric unit. Equal to 10 [decasecond] or 100 [second]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [decasecond] or 100 [second]. Adopted 1795.';
+}
+
+// Path: UnitTime.decasecond
+class TranslationsUnitTimeDecasecondEn {
+	TranslationsUnitTimeDecasecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'decasecond'
+	String get name => 'decasecond';
+
+	/// en: 'das'
+	String get symbol => 'das';
+
+	/// en: 'SI metric unit. Equal to 10 [second]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [second]. Adopted 1795.';
+}
+
+// Path: UnitTime.second
+class TranslationsUnitTimeSecondEn {
+	TranslationsUnitTimeSecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'second'
+	String get name => 'second';
+
+	/// en: 's'
+	String get symbol => 's';
+
+	/// en: 'Base SI metric unit.'
+	String get desc => 'Base SI metric unit.';
+}
+
+// Path: UnitTime.decisecond
+class TranslationsUnitTimeDecisecondEn {
+	TranslationsUnitTimeDecisecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'decisecond'
+	String get name => 'decisecond';
+
+	/// en: 'ds'
+	String get symbol => 'ds';
+
+	/// en: 'SI metric unit. Equal to 10 [centisecond] or 0.1 [second]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [centisecond] or 0.1 [second]. Adopted 1795.';
+}
+
+// Path: UnitTime.centisecond
+class TranslationsUnitTimeCentisecondEn {
+	TranslationsUnitTimeCentisecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'centisecond'
+	String get name => 'centisecond';
+
+	/// en: 'cs'
+	String get symbol => 'cs';
+
+	/// en: 'SI metric unit. Equal to 10 [millisecond] or 0.01 [second]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [millisecond] or 0.01 [second]. Adopted 1795.';
+}
+
+// Path: UnitTime.millisecond
+class TranslationsUnitTimeMillisecondEn {
+	TranslationsUnitTimeMillisecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'millisecond'
+	String get name => 'millisecond';
+
+	/// en: 'ms'
+	String get symbol => 'ms';
+
+	/// en: 'SI metric unit. Equal to 1000 [microsecond] or 0.001 [second]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 1000 [microsecond] or 0.001 [second]. Adopted 1795.';
+}
+
+// Path: UnitTime.microsecond
+class TranslationsUnitTimeMicrosecondEn {
+	TranslationsUnitTimeMicrosecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'microsecond'
+	String get name => 'microsecond';
+
+	/// en: 'μs'
+	String get symbol => 'μs';
+
+	/// en: 'SI metric unit. Equal to 1000 [nanosecond] or 1ᴇ-6 [second]. Adopted 1873.'
+	String get desc => 'SI metric unit. Equal to 1000 [nanosecond] or 1ᴇ-6 [second]. Adopted 1873.';
+}
+
+// Path: UnitTime.nanosecond
+class TranslationsUnitTimeNanosecondEn {
+	TranslationsUnitTimeNanosecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'nanosecond'
+	String get name => 'nanosecond';
+
+	/// en: 'ns'
+	String get symbol => 'ns';
+
+	/// en: 'SI metric unit. Equal to 1000 [picosecond] or 1ᴇ-9 [second]. Adopted 1960.'
+	String get desc => 'SI metric unit. Equal to 1000 [picosecond] or 1ᴇ-9 [second]. Adopted 1960.';
+}
+
+// Path: UnitTime.picosecond
+class TranslationsUnitTimePicosecondEn {
+	TranslationsUnitTimePicosecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'picosecond'
+	String get name => 'picosecond';
+
+	/// en: 'ps'
+	String get symbol => 'ps';
+
+	/// en: 'SI metric unit. Equal to 1000 [femtosecond] or 1ᴇ-12 [second]. Adopted 1960.'
+	String get desc => 'SI metric unit. Equal to 1000 [femtosecond] or 1ᴇ-12 [second]. Adopted 1960.';
+}
+
+// Path: UnitTime.femtosecond
+class TranslationsUnitTimeFemtosecondEn {
+	TranslationsUnitTimeFemtosecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'femtosecond'
+	String get name => 'femtosecond';
+
+	/// en: 'fs'
+	String get symbol => 'fs';
+
+	/// en: 'SI metric unit. Equal to 1000 [attosecond] or 1ᴇ-15 [second]. Adopted 1964.'
+	String get desc => 'SI metric unit. Equal to 1000 [attosecond] or 1ᴇ-15 [second]. Adopted 1964.';
+}
+
+// Path: UnitTime.attosecond
+class TranslationsUnitTimeAttosecondEn {
+	TranslationsUnitTimeAttosecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'attosecond'
+	String get name => 'attosecond';
+
+	/// en: 'as'
+	String get symbol => 'as';
+
+	/// en: 'SI metric unit. Equal to 1000 [zeptosecond] or 1ᴇ-18 [second]. Adopted 1964.'
+	String get desc => 'SI metric unit. Equal to 1000 [zeptosecond] or 1ᴇ-18 [second]. Adopted 1964.';
+}
+
+// Path: UnitTime.zeptosecond
+class TranslationsUnitTimeZeptosecondEn {
+	TranslationsUnitTimeZeptosecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'zeptosecond'
+	String get name => 'zeptosecond';
+
+	/// en: 'zs'
+	String get symbol => 'zs';
+
+	/// en: 'SI metric unit. Equal to 1000 [yoctosecond] or 1ᴇ-21 [second]. Adopted 1991.'
+	String get desc => 'SI metric unit. Equal to 1000 [yoctosecond] or 1ᴇ-21 [second]. Adopted 1991.';
+}
+
+// Path: UnitTime.yoctosecond
+class TranslationsUnitTimeYoctosecondEn {
+	TranslationsUnitTimeYoctosecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'yoctosecond'
+	String get name => 'yoctosecond';
+
+	/// en: 'ys'
+	String get symbol => 'ys';
+
+	/// en: 'SI metric unit. Equal to 1000 [rontosecond] or 1ᴇ-24 [second]. Adopted 1991.'
+	String get desc => 'SI metric unit. Equal to 1000 [rontosecond] or 1ᴇ-24 [second]. Adopted 1991.';
+}
+
+// Path: UnitTime.rontosecond
+class TranslationsUnitTimeRontosecondEn {
+	TranslationsUnitTimeRontosecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'rontosecond'
+	String get name => 'rontosecond';
+
+	/// en: 'rs'
+	String get symbol => 'rs';
+
+	/// en: 'SI metric unit. Equal to 1000 [quectosecond] or 1ᴇ-27 [second]. Adopted 2022.'
+	String get desc => 'SI metric unit. Equal to 1000 [quectosecond] or 1ᴇ-27 [second]. Adopted 2022.';
+}
+
+// Path: UnitTime.quectosecond
+class TranslationsUnitTimeQuectosecondEn {
+	TranslationsUnitTimeQuectosecondEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'quectosecond'
+	String get name => 'quectosecond';
+
+	/// en: 'qs'
+	String get symbol => 'qs';
+
+	/// en: 'SI metric unit. Equal to 1ᴇ-30 [second]. Adopted 2022.'
+	String get desc => 'SI metric unit. Equal to 1ᴇ-30 [second]. Adopted 2022.';
+}
+
+// Path: UnitTime.minute
+class TranslationsUnitTimeMinuteEn {
+	TranslationsUnitTimeMinuteEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'minute'
+	String get name => 'minute';
+
+	/// en: 'min'
+	String get symbol => 'min';
+
+	/// en: 'Non-SI metric unit. Equal to 60 [second].'
+	String get desc => 'Non-SI metric unit. Equal to 60 [second].';
+}
+
+// Path: UnitTime.hour
+class TranslationsUnitTimeHourEn {
+	TranslationsUnitTimeHourEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'hour'
+	String get name => 'hour';
+
+	/// en: 'hr'
+	String get symbol => 'hr';
+
+	/// en: 'Non-SI metric unit. Equal to 60 [minute] or 3600 [second].'
+	String get desc => 'Non-SI metric unit. Equal to 60 [minute] or 3600 [second].';
+}
+
+// Path: UnitTime.dayCalendar
+class TranslationsUnitTimeDayCalendarEn {
+	TranslationsUnitTimeDayCalendarEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'day,,,|,,,calendar day,,,|,,,civil day'
+	String get name => 'day,,,|,,,calendar day,,,|,,,civil day';
+
+	/// en: 'd'
+	String get symbol => 'd';
+
+	/// en: 'Non-SI metric unit. Equal to 24 [hour] or 86400 [second].'
+	String get desc => 'Non-SI metric unit. Equal to 24 [hour] or 86400 [second].';
+}
+
+// Path: UnitTime.week
+class TranslationsUnitTimeWeekEn {
+	TranslationsUnitTimeWeekEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'week'
+	String get name => 'week';
+
+	/// en: 'd'
+	String get symbol => 'd';
+
+	/// en: 'Conventional unit. Equal to 7 [day].'
+	String get desc => 'Conventional unit. Equal to 7 [day].';
+}
+
+// Path: UnitTime.yearCommon
+class TranslationsUnitTimeYearCommonEn {
+	TranslationsUnitTimeYearCommonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'year,,,|,,,common year,,,|,,,calendar year'
+	String get name => 'year,,,|,,,common year,,,|,,,calendar year';
+
+	/// en: 'yr'
+	String get symbol => 'yr';
+
+	/// en: 'Conventional unit. Equal to 52 [week] or 365 [day].'
+	String get desc => 'Conventional unit. Equal to 52 [week] or 365 [day].';
+}
+
+// Path: UnitTime.yearLeap
+class TranslationsUnitTimeYearLeapEn {
+	TranslationsUnitTimeYearLeapEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'leap year,,,|,,,intercalary year,,,|,,,bissextile year'
+	String get name => 'leap year,,,|,,,intercalary year,,,|,,,bissextile year';
+
+	/// en: 'leap year'
+	String get symbol => 'leap year';
+
+	/// en: 'Conventional unit. Equal 366 [day].'
+	String get desc => 'Conventional unit. Equal 366 [day].';
+}
+
 /// Flat map(s) containing all translations.
 /// Only for edge cases! For simple maps, use the map function of this library.
 extension on Translations {
 	dynamic _flatMapFunction(String path) {
 		switch (path) {
+			case 'UnitAcceleration.meterPerSecondSquared.name': return 'meter per second squared,,,|,,,metre per second squared,,,|,,,meter per square second,,,|,,,metre per square second';
+			case 'UnitAcceleration.meterPerSecondSquared.symbol': return 'm/s²';
+			case 'UnitAcceleration.meterPerSecondSquared.desc': return 'SI base metric unit.';
+			case 'UnitAcceleration.footPerSecondSquared.name': return 'foot per second squared,,,|,,,foot per square second';
+			case 'UnitAcceleration.footPerSecondSquared.symbol': return 'ft/s²';
+			case 'UnitAcceleration.footPerSecondSquared.desc': return 'FPS unit. Equal to 0.3048 [meterPerSecondSquared].';
 			case 'UnitCategories.metricSi.name': return 'Metric (SI)';
 			case 'UnitCategories.metricSi.desc': return 'Metric system units from the International System of Units (SI).';
 			case 'UnitCategories.metricNonSi.name': return 'Metric (Non-SI)';
 			case 'UnitCategories.metricNonSi.desc': return 'Metric system units not from the International System of Units (SI).';
-			case 'UnitLength.quettameter.name': return 'quettameter';
+			case 'UnitForce.quettanewton.name': return 'quettanewton';
+			case 'UnitForce.quettanewton.symbol': return 'QN';
+			case 'UnitForce.quettanewton.desc': return 'SI metric unit. Equal to 1000 [ronnanewton] or 1ᴇ30 [newton]. Adopted 2022.';
+			case 'UnitForce.ronnanewton.name': return 'ronnanewton';
+			case 'UnitForce.ronnanewton.symbol': return 'RN';
+			case 'UnitForce.ronnanewton.desc': return 'SI metric unit. Equal to 1000 [yottanewton] or 1ᴇ27 [newton]. Adopted 2022.';
+			case 'UnitForce.yottanewton.name': return 'yottanewton';
+			case 'UnitForce.yottanewton.symbol': return 'YN';
+			case 'UnitForce.yottanewton.desc': return 'SI metric unit. Equal to 1000 [zettanewton] or 1ᴇ24 newton. Adopted 1991.';
+			case 'UnitForce.zettanewton.name': return 'zettanewton';
+			case 'UnitForce.zettanewton.symbol': return 'ZN';
+			case 'UnitForce.zettanewton.desc': return 'SI metric unit. Equal to 1000 [exanewton] or 1ᴇ21 [newton]. Adopted 1991.';
+			case 'UnitForce.exanewton.name': return 'exanewton';
+			case 'UnitForce.exanewton.symbol': return 'EN';
+			case 'UnitForce.exanewton.desc': return 'SI metric unit. Equal to 1000 [petanewton] or 1ᴇ18 [newton]. Adopted 1975.';
+			case 'UnitForce.petanewton.name': return 'petanewton';
+			case 'UnitForce.petanewton.symbol': return 'PN';
+			case 'UnitForce.petanewton.desc': return 'SI metric unit. Equal to 1000 [teranewton] or 1ᴇ15 [newton]. Adopted 1975.';
+			case 'UnitForce.teranewton.name': return 'teranewton';
+			case 'UnitForce.teranewton.symbol': return 'TN';
+			case 'UnitForce.teranewton.desc': return 'SI metric unit. Equal to 1000 [giganewton] or 1ᴇ12 [newton]. Adopted 1960.';
+			case 'UnitForce.giganewton.name': return 'giganewton';
+			case 'UnitForce.giganewton.symbol': return 'GN';
+			case 'UnitForce.giganewton.desc': return 'SI metric unit. Equal to 1000 [meganewton] or 1ᴇ9 [newton]. Adopted 1960.';
+			case 'UnitForce.meganewton.name': return 'meganewton';
+			case 'UnitForce.meganewton.symbol': return 'MN';
+			case 'UnitForce.meganewton.desc': return 'SI metric unit. Equal to 1000 [kilonewton] or 1ᴇ6 [newton]. Adopted 1873.';
+			case 'UnitForce.kilonewton.name': return 'kilonewton';
+			case 'UnitForce.kilonewton.symbol': return 'kN';
+			case 'UnitForce.kilonewton.desc': return 'SI metric unit. Equal to 10 [hectonewton] or 1000 [newton]. Adopted 1795.';
+			case 'UnitForce.hectonewton.name': return 'hectonewton';
+			case 'UnitForce.hectonewton.symbol': return 'hN';
+			case 'UnitForce.hectonewton.desc': return 'SI metric unit. Equal to 10 [decanewton] or 100 [newton]. Adopted 1795.';
+			case 'UnitForce.decanewton.name': return 'decanewton';
+			case 'UnitForce.decanewton.symbol': return 'daN';
+			case 'UnitForce.decanewton.desc': return 'SI metric unit. Equal to 10 [newton]. Adopted 1795.';
+			case 'UnitForce.newton.name': return 'newton';
+			case 'UnitForce.newton.symbol': return '\N';
+			case 'UnitForce.newton.desc': return 'Base SI metric unit.';
+			case 'UnitForce.decinewton.name': return 'decinewton';
+			case 'UnitForce.decinewton.symbol': return 'dN';
+			case 'UnitForce.decinewton.desc': return 'SI metric unit. Equal to 10 [centinewton] or 0.1 [newton]. Adopted 1795.';
+			case 'UnitForce.centinewton.name': return 'centinewton';
+			case 'UnitForce.centinewton.symbol': return 'cN';
+			case 'UnitForce.centinewton.desc': return 'SI metric unit. Equal to 10 [millinewton] or 0.01 [newton]. Adopted 1795.';
+			case 'UnitForce.millinewton.name': return 'millinewton';
+			case 'UnitForce.millinewton.symbol': return 'mN';
+			case 'UnitForce.millinewton.desc': return 'SI metric unit. Equal to 1000 [micronewton] or 0.001 [newton]. Adopted 1795.';
+			case 'UnitForce.micronewton.name': return 'micronewton';
+			case 'UnitForce.micronewton.symbol': return 'μs';
+			case 'UnitForce.micronewton.desc': return 'SI metric unit. Equal to 1000 [nanonewton] or 1ᴇ-6 [newton]. Adopted 1873.';
+			case 'UnitForce.nanonewton.name': return 'nanonewton';
+			case 'UnitForce.nanonewton.symbol': return 'nN';
+			case 'UnitForce.nanonewton.desc': return 'SI metric unit. Equal to 1000 [piconewton] or 1ᴇ-9 [newton]. Adopted 1960.';
+			case 'UnitForce.piconewton.name': return 'piconewton';
+			case 'UnitForce.piconewton.symbol': return 'pN';
+			case 'UnitForce.piconewton.desc': return 'SI metric unit. Equal to 1000 [femtonewton] or 1ᴇ-12 [newton]. Adopted 1960.';
+			case 'UnitForce.femtonewton.name': return 'femtonewton';
+			case 'UnitForce.femtonewton.symbol': return 'fN';
+			case 'UnitForce.femtonewton.desc': return 'SI metric unit. Equal to 1000 [attonewton] or 1ᴇ-15 [newton]. Adopted 1964.';
+			case 'UnitForce.attonewton.name': return 'attonewton';
+			case 'UnitForce.attonewton.symbol': return 'aN';
+			case 'UnitForce.attonewton.desc': return 'SI metric unit. Equal to 1000 [zeptonewton] or 1ᴇ-18 [newton]. Adopted 1964.';
+			case 'UnitForce.zeptonewton.name': return 'zeptonewton';
+			case 'UnitForce.zeptonewton.symbol': return 'zN';
+			case 'UnitForce.zeptonewton.desc': return 'SI metric unit. Equal to 1000 [yoctonewton] or 1ᴇ-21 [newton]. Adopted 1991.';
+			case 'UnitForce.yoctonewton.name': return 'yoctonewton';
+			case 'UnitForce.yoctonewton.symbol': return 'yN';
+			case 'UnitForce.yoctonewton.desc': return 'SI metric unit. Equal to 1000 [rontonewton] or 1ᴇ-24 [newton]. Adopted 1991.';
+			case 'UnitForce.rontonewton.name': return 'rontonewton';
+			case 'UnitForce.rontonewton.symbol': return 'rN';
+			case 'UnitForce.rontonewton.desc': return 'SI metric unit. Equal to 1000 [quectonewton] or 1ᴇ-27 [newton]. Adopted 2022.';
+			case 'UnitForce.quectonewton.name': return 'quectonewton';
+			case 'UnitForce.quectonewton.symbol': return 'qN';
+			case 'UnitForce.quectonewton.desc': return 'SI metric unit. Equal to 1ᴇ-30 [newton]. Adopted 2022.';
+			case 'UnitForce.poundForce.name': return 'pound-force,,,|,,,pound';
+			case 'UnitForce.poundForce.symbol': return 'lbf';
+			case 'UnitForce.poundForce.desc': return 'English unit. Equal to 4.4482216152605 [newton].';
+			case 'UnitForce.kip.name': return 'kip,,,|,,,kilopound,,,|,,,kilopound-force';
+			case 'UnitForce.kip.symbol': return 'kip';
+			case 'UnitForce.kip.desc': return 'English unit. Equal to 1000 [poundForce] or 4448.2216152605 [newton].';
+			case 'UnitLength.quettameter.name': return 'quettameter,,,|,,,quettametre';
 			case 'UnitLength.quettameter.symbol': return 'Qm';
 			case 'UnitLength.quettameter.desc': return 'SI metric unit. Equal to 1000 [ronnameter] or 1ᴇ30 [meter]. Adopted 2022.';
-			case 'UnitLength.ronnameter.name': return 'ronnameter';
+			case 'UnitLength.ronnameter.name': return 'ronnameter,,,|,,,ronnametre';
 			case 'UnitLength.ronnameter.symbol': return 'Rm';
 			case 'UnitLength.ronnameter.desc': return 'SI metric unit. Equal to 1000 [yottameter] or 1ᴇ27 [meter]. Adopted 2022.';
-			case 'UnitLength.yottameter.name': return 'yottameter';
+			case 'UnitLength.yottameter.name': return 'yottameter,,,|,,,yottametre';
 			case 'UnitLength.yottameter.symbol': return 'Ym';
 			case 'UnitLength.yottameter.desc': return 'SI metric unit. Equal to 1000 [zettameter] or 1ᴇ24 meter. Adopted 1991.';
-			case 'UnitLength.zettameter.name': return 'zettameter';
+			case 'UnitLength.zettameter.name': return 'zettameter,,,|,,,zettametre';
 			case 'UnitLength.zettameter.symbol': return 'Zm';
 			case 'UnitLength.zettameter.desc': return 'SI metric unit. Equal to 1000 [exameter] or 1ᴇ21 [meter]. Adopted 1991.';
-			case 'UnitLength.exameter.name': return 'exameter';
+			case 'UnitLength.exameter.name': return 'exameter,,,|,,,exametre';
 			case 'UnitLength.exameter.symbol': return 'Em';
 			case 'UnitLength.exameter.desc': return 'SI metric unit. Equal to 1000 [petameter] or 1ᴇ18 [meter]. Adopted 1975.';
-			case 'UnitLength.petameter.name': return 'petameter';
+			case 'UnitLength.petameter.name': return 'petameter,,,|,,,petametre';
 			case 'UnitLength.petameter.symbol': return 'Pm';
 			case 'UnitLength.petameter.desc': return 'SI metric unit. Equal to 1000 [terameter] or 1ᴇ15 [meter]. Adopted 1975.';
-			case 'UnitLength.terameter.name': return 'terameter';
+			case 'UnitLength.terameter.name': return 'terameter,,,|,,,terametre';
 			case 'UnitLength.terameter.symbol': return 'Tm';
 			case 'UnitLength.terameter.desc': return 'SI metric unit. Equal to 1000 [gigameter] or 1ᴇ12 [meter]. Adopted 1960.';
-			case 'UnitLength.gigameter.name': return 'gigameter';
+			case 'UnitLength.gigameter.name': return 'gigameter,,,|,,,gigametre';
 			case 'UnitLength.gigameter.symbol': return 'Gm';
 			case 'UnitLength.gigameter.desc': return 'SI metric unit. Equal to 1000 [megameter] or 1ᴇ9 [meter]. Adopted 1960.';
-			case 'UnitLength.megameter.name': return 'megameter';
+			case 'UnitLength.megameter.name': return 'megameter,,,|,,,megametre';
 			case 'UnitLength.megameter.symbol': return 'Mm';
 			case 'UnitLength.megameter.desc': return 'SI metric unit. Equal to 1000 [kilometer] or 1ᴇ6 [meter]. Adopted 1873.';
-			case 'UnitLength.kilometer.name': return 'kilometer,,,|,,,klick';
+			case 'UnitLength.kilometer.name': return 'kilometer,,,|,,,kilometre,,,|,,,klick';
 			case 'UnitLength.kilometer.symbol': return 'km';
 			case 'UnitLength.kilometer.desc': return 'SI metric unit. Equal to 10 [hectometer] or 1000 [meter]. Adopted 1795.';
-			case 'UnitLength.hectometer.name': return 'hectometer';
+			case 'UnitLength.hectometer.name': return 'hectometer,,,|,,,hectometre';
 			case 'UnitLength.hectometer.symbol': return 'hm';
 			case 'UnitLength.hectometer.desc': return 'SI metric unit. Equal to 10 [decameter] or 100 [meter]. Adopted 1795.';
-			case 'UnitLength.decameter.name': return 'decameter';
+			case 'UnitLength.decameter.name': return 'decameter,,,|,,,decametre';
 			case 'UnitLength.decameter.symbol': return 'dam';
 			case 'UnitLength.decameter.desc': return 'SI metric unit. Equal to 10 [meter]. Adopted 1795.';
-			case 'UnitLength.meter.name': return 'meter';
+			case 'UnitLength.meter.name': return 'meter,,,|,,,metre';
 			case 'UnitLength.meter.symbol': return 'm';
 			case 'UnitLength.meter.desc': return 'Base SI metric unit.';
-			case 'UnitLength.decimeter.name': return 'decimeter';
+			case 'UnitLength.decimeter.name': return 'decimeter,,,|,,,decimetre';
 			case 'UnitLength.decimeter.symbol': return 'dm';
-			case 'UnitLength.decimeter.desc': return 'SI metric unit. Equal to 10 centimeter or 0.1 meter. Adopted 1795.';
-			case 'UnitLength.centimeter.name': return 'centimeter';
+			case 'UnitLength.decimeter.desc': return 'SI metric unit. Equal to 10 [centimeter] or 0.1 [meter]. Adopted 1795.';
+			case 'UnitLength.centimeter.name': return 'centimeter,,,|,,,centimetre';
 			case 'UnitLength.centimeter.symbol': return 'cm';
 			case 'UnitLength.centimeter.desc': return 'SI metric unit. Equal to 10 [millimeter] or 0.01 [meter]. Adopted 1795.';
-			case 'UnitLength.millimeter.name': return 'millimeter';
+			case 'UnitLength.millimeter.name': return 'millimeter,,,|,,,millimetre';
 			case 'UnitLength.millimeter.symbol': return 'mm';
 			case 'UnitLength.millimeter.desc': return 'SI metric unit. Equal to 1000 [micrometer] or 0.001 [meter]. Adopted 1795.';
-			case 'UnitLength.micrometer.name': return 'micrometer,,,|,,,micron';
+			case 'UnitLength.micrometer.name': return 'micrometer,,,|,,,micrometre,,,|,,,micron';
 			case 'UnitLength.micrometer.symbol': return 'μm';
 			case 'UnitLength.micrometer.desc': return 'SI metric unit. Equal to 1000 [nanometer] or 1ᴇ-6 [meter]. Adopted 1873.';
-			case 'UnitLength.nanometer.name': return 'nanometer';
+			case 'UnitLength.nanometer.name': return 'nanometer,,,|,,,nanometre';
 			case 'UnitLength.nanometer.symbol': return 'nm';
 			case 'UnitLength.nanometer.desc': return 'SI metric unit. Equal to 1000 [picometer] or 1ᴇ-9 [meter]. Adopted 1960.';
-			case 'UnitLength.picometer.name': return 'picometer';
+			case 'UnitLength.picometer.name': return 'picometer,,,|,,,picometre';
 			case 'UnitLength.picometer.symbol': return 'pm';
 			case 'UnitLength.picometer.desc': return 'SI metric unit. Equal to 1000 [femtometer] or 1ᴇ-12 [meter]. Adopted 1960.';
-			case 'UnitLength.femtometer.name': return 'femtometer,,,|,,,fermi';
+			case 'UnitLength.femtometer.name': return 'femtometer,,,|,,,femtometre,,,|,,,fermi';
 			case 'UnitLength.femtometer.symbol': return 'fm';
 			case 'UnitLength.femtometer.desc': return 'SI metric unit. Equal to 1000 [attometer] or 1ᴇ-15 [meter]. Adopted 1964.';
-			case 'UnitLength.attometer.name': return 'attometer';
+			case 'UnitLength.attometer.name': return 'attometer,,,|,,,attometre';
 			case 'UnitLength.attometer.symbol': return 'am';
 			case 'UnitLength.attometer.desc': return 'SI metric unit. Equal to 1000 [zeptometer] or 1ᴇ-18 [meter]. Adopted 1964.';
-			case 'UnitLength.zeptometer.name': return 'zeptometer';
+			case 'UnitLength.zeptometer.name': return 'zeptometer,,,|,,,zeptometre';
 			case 'UnitLength.zeptometer.symbol': return 'zm';
 			case 'UnitLength.zeptometer.desc': return 'SI metric unit. Equal to 1000 [yoctometer] or 1ᴇ-21 [meter]. Adopted 1991.';
-			case 'UnitLength.yoctometer.name': return 'yoctometer';
+			case 'UnitLength.yoctometer.name': return 'yoctometer,,,|,,,yoctometre';
 			case 'UnitLength.yoctometer.symbol': return 'ym';
 			case 'UnitLength.yoctometer.desc': return 'SI metric unit. Equal to 1000 [rontometer] or 1ᴇ-24 [meter]. Adopted 1991.';
-			case 'UnitLength.rontometer.name': return 'rontometer';
+			case 'UnitLength.rontometer.name': return 'rontometer,,,|,,,rontometre';
 			case 'UnitLength.rontometer.symbol': return 'rm';
 			case 'UnitLength.rontometer.desc': return 'SI metric unit. Equal to 1000 [quectometer] or 1ᴇ-27 [meter]. Adopted 2022.';
-			case 'UnitLength.quectometer.name': return 'quectometer';
+			case 'UnitLength.quectometer.name': return 'quectometer,,,|,,,quectometre';
 			case 'UnitLength.quectometer.symbol': return 'qm';
 			case 'UnitLength.quectometer.desc': return 'SI metric unit. Equal to 1ᴇ-30 [meter]. Adopted 2022.';
 			case 'UnitLength.myriameter.name': return 'myriameter';
@@ -3002,6 +4792,81 @@ extension on Translations {
 			case 'UnitLength.lyne.name': return 'lyne';
 			case 'UnitLength.lyne.symbol': return 'lyne';
 			case 'UnitLength.lyne.desc': return 'Old Dutch unit. Equal to 1.96569027̅ [millimeter].';
+			case 'UnitMass.quettagram.name': return 'quettagram';
+			case 'UnitMass.quettagram.symbol': return 'Qg';
+			case 'UnitMass.quettagram.desc': return 'SI metric unit. Equal to 1000 [ronnagram] or 1ᴇ30 [gram]. Adopted 2022.';
+			case 'UnitMass.ronnagram.name': return 'ronnagram';
+			case 'UnitMass.ronnagram.symbol': return 'Rg';
+			case 'UnitMass.ronnagram.desc': return 'SI metric unit. Equal to 1000 [yottagram] or 1ᴇ27 [gram]. Adopted 2022.';
+			case 'UnitMass.yottagram.name': return 'yottagram';
+			case 'UnitMass.yottagram.symbol': return 'Yg';
+			case 'UnitMass.yottagram.desc': return 'SI metric unit. Equal to 1000 [zettagram] or 1ᴇ24 gram. Adopted 1991.';
+			case 'UnitMass.zettagram.name': return 'zettagram';
+			case 'UnitMass.zettagram.symbol': return 'Zg';
+			case 'UnitMass.zettagram.desc': return 'SI metric unit. Equal to 1000 [exagram] or 1ᴇ21 [gram]. Adopted 1991.';
+			case 'UnitMass.exagram.name': return 'exagram';
+			case 'UnitMass.exagram.symbol': return 'Eg';
+			case 'UnitMass.exagram.desc': return 'SI metric unit. Equal to 1000 [petagram] or 1ᴇ18 [gram]. Adopted 1975.';
+			case 'UnitMass.petagram.name': return 'petagram';
+			case 'UnitMass.petagram.symbol': return 'Pg';
+			case 'UnitMass.petagram.desc': return 'SI metric unit. Equal to 1000 [teragram] or 1ᴇ15 [gram]. Adopted 1975.';
+			case 'UnitMass.teragram.name': return 'teragram';
+			case 'UnitMass.teragram.symbol': return 'Tg';
+			case 'UnitMass.teragram.desc': return 'SI metric unit. Equal to 1000 [gigagram] or 1ᴇ12 [gram]. Adopted 1960.';
+			case 'UnitMass.gigagram.name': return 'gigagram';
+			case 'UnitMass.gigagram.symbol': return 'Gg';
+			case 'UnitMass.gigagram.desc': return 'SI metric unit. Equal to 1000 [megagram] or 1ᴇ9 [gram]. Adopted 1960.';
+			case 'UnitMass.megagram.name': return 'megagram';
+			case 'UnitMass.megagram.symbol': return 'Mg';
+			case 'UnitMass.megagram.desc': return 'SI metric unit. Equal to 1000 [kilogram] or 1ᴇ6 [gram]. Adopted 1873.';
+			case 'UnitMass.kilogram.name': return 'kilogram';
+			case 'UnitMass.kilogram.symbol': return 'kg';
+			case 'UnitMass.kilogram.desc': return 'Base SI metric unit. Equal to 10 [hectogram] or 1000 [gram].';
+			case 'UnitMass.hectogram.name': return 'hectogram';
+			case 'UnitMass.hectogram.symbol': return 'hg';
+			case 'UnitMass.hectogram.desc': return 'SI metric unit. Equal to 10 [decagram] or 100 [gram]. Adopted 1795.';
+			case 'UnitMass.decagram.name': return 'decagram';
+			case 'UnitMass.decagram.symbol': return 'dag';
+			case 'UnitMass.decagram.desc': return 'SI metric unit. Equal to 10 [gram]. Adopted 1795.';
+			case 'UnitMass.gram.name': return 'gram';
+			case 'UnitMass.gram.symbol': return 'g';
+			case 'UnitMass.gram.desc': return 'SI metric unit. Equal to 0.001 [kilogram].';
+			case 'UnitMass.decigram.name': return 'decigram';
+			case 'UnitMass.decigram.symbol': return 'dg';
+			case 'UnitMass.decigram.desc': return 'SI metric unit. Equal to 10 [centigram] or 0.1 [gram]. Adopted 1795.';
+			case 'UnitMass.centigram.name': return 'centigram';
+			case 'UnitMass.centigram.symbol': return 'cg';
+			case 'UnitMass.centigram.desc': return 'SI metric unit. Equal to 10 [milligram] or 0.01 [gram]. Adopted 1795.';
+			case 'UnitMass.milligram.name': return 'milligram';
+			case 'UnitMass.milligram.symbol': return 'mg';
+			case 'UnitMass.milligram.desc': return 'SI metric unit. Equal to 1000 [microgram] or 0.001 [gram]. Adopted 1795.';
+			case 'UnitMass.microgram.name': return 'microgram';
+			case 'UnitMass.microgram.symbol': return 'μg';
+			case 'UnitMass.microgram.desc': return 'SI metric unit. Equal to 1000 [nanogram] or 1ᴇ-6 [gram]. Adopted 1873.';
+			case 'UnitMass.nanogram.name': return 'nanogram';
+			case 'UnitMass.nanogram.symbol': return 'ng';
+			case 'UnitMass.nanogram.desc': return 'SI metric unit. Equal to 1000 [picogram] or 1ᴇ-9 [gram]. Adopted 1960.';
+			case 'UnitMass.picogram.name': return 'picogram';
+			case 'UnitMass.picogram.symbol': return 'pg';
+			case 'UnitMass.picogram.desc': return 'SI metric unit. Equal to 1000 [femtogram] or 1ᴇ-12 [gram]. Adopted 1960.';
+			case 'UnitMass.femtogram.name': return 'femtogram,,,|,,,fermi';
+			case 'UnitMass.femtogram.symbol': return 'fg';
+			case 'UnitMass.femtogram.desc': return 'SI metric unit. Equal to 1000 [attogram] or 1ᴇ-15 [gram]. Adopted 1964.';
+			case 'UnitMass.attogram.name': return 'attogram';
+			case 'UnitMass.attogram.symbol': return 'ag';
+			case 'UnitMass.attogram.desc': return 'SI metric unit. Equal to 1000 [zeptogram] or 1ᴇ-18 [gram]. Adopted 1964.';
+			case 'UnitMass.zeptogram.name': return 'zeptogram';
+			case 'UnitMass.zeptogram.symbol': return 'zg';
+			case 'UnitMass.zeptogram.desc': return 'SI metric unit. Equal to 1000 [yoctogram] or 1ᴇ-21 [gram]. Adopted 1991.';
+			case 'UnitMass.yoctogram.name': return 'yoctogram';
+			case 'UnitMass.yoctogram.symbol': return 'yg';
+			case 'UnitMass.yoctogram.desc': return 'SI metric unit. Equal to 1000 [rontogram] or 1ᴇ-24 [gram]. Adopted 1991.';
+			case 'UnitMass.rontogram.name': return 'rontogram';
+			case 'UnitMass.rontogram.symbol': return 'rg';
+			case 'UnitMass.rontogram.desc': return 'SI metric unit. Equal to 1000 [quectogram] or 1ᴇ-27 [gram]. Adopted 2022.';
+			case 'UnitMass.quectogram.name': return 'quectogram';
+			case 'UnitMass.quectogram.symbol': return 'qg';
+			case 'UnitMass.quectogram.desc': return 'SI metric unit. Equal to 1ᴇ-30 [gram]. Adopted 2022.';
 			case 'UnitPaper.bale.name': return 'bale';
 			case 'UnitPaper.bale.symbol': return 'bale';
 			case 'UnitPaper.bale.desc': return 'Equal to 5 [bundle] or 5000 [sheet].';
@@ -3032,6 +4897,105 @@ extension on Translations {
 			case 'UnitPaper.reamPerfect.name': return 'perfect ream';
 			case 'UnitPaper.reamPerfect.symbol': return 'perfect ream';
 			case 'UnitPaper.reamPerfect.desc': return 'Equal to 516 [sheet].';
+			case 'UnitSpeed.meterPerSecond.name': return 'meter per second,,,|,,,metre per second';
+			case 'UnitSpeed.meterPerSecond.symbol': return 'm/s';
+			case 'UnitSpeed.meterPerSecond.desc': return 'SI base metric unit.';
+			case 'UnitSpeed.footPerSecond.name': return 'foot per second';
+			case 'UnitSpeed.footPerSecond.symbol': return 'fps';
+			case 'UnitSpeed.footPerSecond.desc': return 'FPS unit. Equal to 0.3048 [meterPerSecond].';
+			case 'UnitTime.quettasecond.name': return 'quettasecond';
+			case 'UnitTime.quettasecond.symbol': return 'Qs';
+			case 'UnitTime.quettasecond.desc': return 'SI metric unit. Equal to 1000 [ronnasecond] or 1ᴇ30 [second]. Adopted 2022.';
+			case 'UnitTime.ronnasecond.name': return 'ronnasecond';
+			case 'UnitTime.ronnasecond.symbol': return 'Rs';
+			case 'UnitTime.ronnasecond.desc': return 'SI metric unit. Equal to 1000 [yottasecond] or 1ᴇ27 [second]. Adopted 2022.';
+			case 'UnitTime.yottasecond.name': return 'yottasecond';
+			case 'UnitTime.yottasecond.symbol': return 'Ys';
+			case 'UnitTime.yottasecond.desc': return 'SI metric unit. Equal to 1000 [zettasecond] or 1ᴇ24 second. Adopted 1991.';
+			case 'UnitTime.zettasecond.name': return 'zettasecond';
+			case 'UnitTime.zettasecond.symbol': return 'Zs';
+			case 'UnitTime.zettasecond.desc': return 'SI metric unit. Equal to 1000 [exasecond] or 1ᴇ21 [second]. Adopted 1991.';
+			case 'UnitTime.exasecond.name': return 'exasecond';
+			case 'UnitTime.exasecond.symbol': return 'Es';
+			case 'UnitTime.exasecond.desc': return 'SI metric unit. Equal to 1000 [petasecond] or 1ᴇ18 [second]. Adopted 1975.';
+			case 'UnitTime.petasecond.name': return 'petasecond';
+			case 'UnitTime.petasecond.symbol': return 'Ps';
+			case 'UnitTime.petasecond.desc': return 'SI metric unit. Equal to 1000 [terasecond] or 1ᴇ15 [second]. Adopted 1975.';
+			case 'UnitTime.terasecond.name': return 'terasecond';
+			case 'UnitTime.terasecond.symbol': return 'Ts';
+			case 'UnitTime.terasecond.desc': return 'SI metric unit. Equal to 1000 [gigasecond] or 1ᴇ12 [second]. Adopted 1960.';
+			case 'UnitTime.gigasecond.name': return 'gigasecond';
+			case 'UnitTime.gigasecond.symbol': return 'Gs';
+			case 'UnitTime.gigasecond.desc': return 'SI metric unit. Equal to 1000 [megasecond] or 1ᴇ9 [second]. Adopted 1960.';
+			case 'UnitTime.megasecond.name': return 'megasecond';
+			case 'UnitTime.megasecond.symbol': return 'Ms';
+			case 'UnitTime.megasecond.desc': return 'SI metric unit. Equal to 1000 [kilosecond] or 1ᴇ6 [second]. Adopted 1873.';
+			case 'UnitTime.kilosecond.name': return 'kilosecond';
+			case 'UnitTime.kilosecond.symbol': return 'ks';
+			case 'UnitTime.kilosecond.desc': return 'SI metric unit. Equal to 10 [hectosecond] or 1000 [second]. Adopted 1795.';
+			case 'UnitTime.hectosecond.name': return 'hectosecond';
+			case 'UnitTime.hectosecond.symbol': return 'hs';
+			case 'UnitTime.hectosecond.desc': return 'SI metric unit. Equal to 10 [decasecond] or 100 [second]. Adopted 1795.';
+			case 'UnitTime.decasecond.name': return 'decasecond';
+			case 'UnitTime.decasecond.symbol': return 'das';
+			case 'UnitTime.decasecond.desc': return 'SI metric unit. Equal to 10 [second]. Adopted 1795.';
+			case 'UnitTime.second.name': return 'second';
+			case 'UnitTime.second.symbol': return 's';
+			case 'UnitTime.second.desc': return 'Base SI metric unit.';
+			case 'UnitTime.decisecond.name': return 'decisecond';
+			case 'UnitTime.decisecond.symbol': return 'ds';
+			case 'UnitTime.decisecond.desc': return 'SI metric unit. Equal to 10 [centisecond] or 0.1 [second]. Adopted 1795.';
+			case 'UnitTime.centisecond.name': return 'centisecond';
+			case 'UnitTime.centisecond.symbol': return 'cs';
+			case 'UnitTime.centisecond.desc': return 'SI metric unit. Equal to 10 [millisecond] or 0.01 [second]. Adopted 1795.';
+			case 'UnitTime.millisecond.name': return 'millisecond';
+			case 'UnitTime.millisecond.symbol': return 'ms';
+			case 'UnitTime.millisecond.desc': return 'SI metric unit. Equal to 1000 [microsecond] or 0.001 [second]. Adopted 1795.';
+			case 'UnitTime.microsecond.name': return 'microsecond';
+			case 'UnitTime.microsecond.symbol': return 'μs';
+			case 'UnitTime.microsecond.desc': return 'SI metric unit. Equal to 1000 [nanosecond] or 1ᴇ-6 [second]. Adopted 1873.';
+			case 'UnitTime.nanosecond.name': return 'nanosecond';
+			case 'UnitTime.nanosecond.symbol': return 'ns';
+			case 'UnitTime.nanosecond.desc': return 'SI metric unit. Equal to 1000 [picosecond] or 1ᴇ-9 [second]. Adopted 1960.';
+			case 'UnitTime.picosecond.name': return 'picosecond';
+			case 'UnitTime.picosecond.symbol': return 'ps';
+			case 'UnitTime.picosecond.desc': return 'SI metric unit. Equal to 1000 [femtosecond] or 1ᴇ-12 [second]. Adopted 1960.';
+			case 'UnitTime.femtosecond.name': return 'femtosecond';
+			case 'UnitTime.femtosecond.symbol': return 'fs';
+			case 'UnitTime.femtosecond.desc': return 'SI metric unit. Equal to 1000 [attosecond] or 1ᴇ-15 [second]. Adopted 1964.';
+			case 'UnitTime.attosecond.name': return 'attosecond';
+			case 'UnitTime.attosecond.symbol': return 'as';
+			case 'UnitTime.attosecond.desc': return 'SI metric unit. Equal to 1000 [zeptosecond] or 1ᴇ-18 [second]. Adopted 1964.';
+			case 'UnitTime.zeptosecond.name': return 'zeptosecond';
+			case 'UnitTime.zeptosecond.symbol': return 'zs';
+			case 'UnitTime.zeptosecond.desc': return 'SI metric unit. Equal to 1000 [yoctosecond] or 1ᴇ-21 [second]. Adopted 1991.';
+			case 'UnitTime.yoctosecond.name': return 'yoctosecond';
+			case 'UnitTime.yoctosecond.symbol': return 'ys';
+			case 'UnitTime.yoctosecond.desc': return 'SI metric unit. Equal to 1000 [rontosecond] or 1ᴇ-24 [second]. Adopted 1991.';
+			case 'UnitTime.rontosecond.name': return 'rontosecond';
+			case 'UnitTime.rontosecond.symbol': return 'rs';
+			case 'UnitTime.rontosecond.desc': return 'SI metric unit. Equal to 1000 [quectosecond] or 1ᴇ-27 [second]. Adopted 2022.';
+			case 'UnitTime.quectosecond.name': return 'quectosecond';
+			case 'UnitTime.quectosecond.symbol': return 'qs';
+			case 'UnitTime.quectosecond.desc': return 'SI metric unit. Equal to 1ᴇ-30 [second]. Adopted 2022.';
+			case 'UnitTime.minute.name': return 'minute';
+			case 'UnitTime.minute.symbol': return 'min';
+			case 'UnitTime.minute.desc': return 'Non-SI metric unit. Equal to 60 [second].';
+			case 'UnitTime.hour.name': return 'hour';
+			case 'UnitTime.hour.symbol': return 'hr';
+			case 'UnitTime.hour.desc': return 'Non-SI metric unit. Equal to 60 [minute] or 3600 [second].';
+			case 'UnitTime.dayCalendar.name': return 'day,,,|,,,calendar day,,,|,,,civil day';
+			case 'UnitTime.dayCalendar.symbol': return 'd';
+			case 'UnitTime.dayCalendar.desc': return 'Non-SI metric unit. Equal to 24 [hour] or 86400 [second].';
+			case 'UnitTime.week.name': return 'week';
+			case 'UnitTime.week.symbol': return 'd';
+			case 'UnitTime.week.desc': return 'Conventional unit. Equal to 7 [day].';
+			case 'UnitTime.yearCommon.name': return 'year,,,|,,,common year,,,|,,,calendar year';
+			case 'UnitTime.yearCommon.symbol': return 'yr';
+			case 'UnitTime.yearCommon.desc': return 'Conventional unit. Equal to 52 [week] or 365 [day].';
+			case 'UnitTime.yearLeap.name': return 'leap year,,,|,,,intercalary year,,,|,,,bissextile year';
+			case 'UnitTime.yearLeap.symbol': return 'leap year';
+			case 'UnitTime.yearLeap.desc': return 'Conventional unit. Equal 366 [day].';
 			default: return null;
 		}
 	}
