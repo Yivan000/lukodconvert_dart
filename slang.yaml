@@ -1,7 +1,7 @@
 fallback_strategy: base_locale
 flutter_integration: false
 input_directory: lib/i18n
-input_file_pattern: .yaml
+input_file_pattern: .json
 output_directory: lib
 output_file_name: strings.dart
 translate_var: strings

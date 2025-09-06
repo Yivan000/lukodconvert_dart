@@ -12,7 +12,7 @@ void main(List<String> args) {
   print(out.toString().replaceAll("/",","));
   print(out.toDecimal(scaleOnInfinitePrecision: 100));
 
-  print(UnitForce.newton.descLocalized);
+    
 
 //  print(UnitLength.shaftmentImperial.convertToBase('1'.toRational()).toDecimal(scaleOnInfinitePrecision: 100));
   print('\n');

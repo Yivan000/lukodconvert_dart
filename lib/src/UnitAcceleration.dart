@@ -11,14 +11,14 @@ enum UnitAcceleration with Unit {
   // METRICSI
   // --------------------------------------------
 
-  /// **meter per second squared / metre per second squared / meter per square second / metre per square second** (m/s²)
+  /// **meter per second squared / metre per second squared / meter per square second / metre per square second** ([m/s²])
   ///
   /// SI base metric unit.
   meterPerSecondSquared(
-    m1: "1",
-    m2: "1",
-    b1: "0",
-    b2: "1",
+    slopeNumerator: "1",
+    slopeDenominator: "1",
+    yinterceptNumerator: "0",
+    yinterceptDenominator: "1",
     category: UnitCategory.metricSi,
   ),
 
@@ -26,33 +26,33 @@ enum UnitAcceleration with Unit {
   // ENGLISH
   // --------------------------------------------
 
-  /// **foot per second squared / foot per square second** (ft/s²)
+  /// **foot per second squared / foot per square second** ([ft/s²])
   ///
   /// FPS unit. Equal to 0.3048 [meterPerSecondSquared].
   footPerSecondSquared(
-    m1: "381",
-    m2: "1250",
-    b1: "0",
-    b2: "1",
+    slopeNumerator: "381",
+    slopeDenominator: "1250",
+    yinterceptNumerator: "0",
+    yinterceptDenominator: "1",
     category: UnitCategory.english,
   ),
   ;
 
   const UnitAcceleration({
-    required this.m1,
-    this.m2 = "1",
-    this.b1 = "0",
-    this.b2 = "1",
+    required this.slopeNumerator,
+    this.slopeDenominator = "1",
+    this.yinterceptNumerator = "0",
+    this.yinterceptDenominator = "1",
     required this.category,
   });
   @override
-  final String m1;
+  final String slopeNumerator;
   @override
-  final String m2;
+  final String slopeDenominator;
   @override
-  final String b1;
+  final String yinterceptNumerator;
   @override
-  final String b2;
+  final String yinterceptDenominator;
   @override
   final UnitCategory category;
   @override

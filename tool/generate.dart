@@ -34,7 +34,8 @@ void main(List<String> args) async {
     if (i is Directory) {
       await output.open('i18n$relative').create();
     } else if (i is File) {
-      final file = await i.copy('${output.path}/i18n$relative');
+      // save to a json file instead
+      final file = await i.copy('${output.path}/i18n$relative'.replaceAll(".yaml", ".json"));
 
       //convert to maps, as recognized by slang
       var yaml = loadYaml(await file.readAsString()) as YamlMap;
@@ -43,11 +44,18 @@ void main(List<String> args) async {
             //value
             Map.from(value)
               ..["name"] = value["name"].join(
-                  ",,,|,,,"), // so that it would just be a comma-separated list, to be `.split()`ed later
+                  ",,,|,,,") // so that it would just be a comma-separated list, to be `.split()`ed later
+              ..["symbol"] = value["symbol"]?.join(
+                  ",,,|,,,")
+              ..removeWhere((key, value) => value == null) //null value remover, so that slang would not error
+              ,
+               // same here
+              
           ));
 
       final contents =
-          "#############################################\n# $dontEditMessage\n#############################################\n\n${jsonEncode(yaml_processed)}";
+        jsonEncode(yaml_processed);
+          //"#############################################\n# $dontEditMessage\n#############################################\n\n${jsonEncode(yaml_processed)}";
 
       await file.writeAsString(contents);
     }
@@ -196,10 +204,10 @@ enum $name with Unit {
   /// 
   /// $desc
   ${(i[0])}(
-    m1: "${i[1]}", 
-    m2: "${i[2]}", 
-    b1: "${i[3]}", 
-    b2: "${i[4]}", 
+    slopeNumerator: "${i[1]}", 
+    slopeDenominator: "${i[2]}", 
+    yinterceptNumerator: "${i[3]}", 
+    yinterceptDenominator: "${i[4]}", 
     category: UnitCategory.${i[5]},
   ),
 """;
@@ -221,20 +229,20 @@ enum $name with Unit {
   ;
 
   const $name({
-    required this.m1,
-    this.m2 = "1",
-    this.b1 = "0",
-    this.b2 = "1",
+    required this.slopeNumerator,
+    this.slopeDenominator = "1",
+    this.yinterceptNumerator = "0",
+    this.yinterceptDenominator = "1",
     required this.category,
   });
   @override
-  final String m1;
+  final String slopeNumerator;
   @override
-  final String m2;
+  final String slopeDenominator;
   @override
-  final String b1;
+  final String yinterceptNumerator;
   @override
-  final String b2;
+  final String yinterceptDenominator;
   @override
   final UnitCategory category;
   @override
@@ -315,31 +323,31 @@ part 'src/UnitCategories.dart';
 ${parts.fold("", (previousValue, element) => "${previousValue}part 'src/$element';\n")}
 
 mixin Unit on Enum {
-  /// Slope of the line, the 'm' in 'y=mx+b', aka the conversion factor. [m1] is the numerator, [m2] is the denominator.
+  /// Slope of the line, the 'm' in 'y=mx+b', aka the conversion factor.
   ///
-  /// Access [m] for the full rational.
-  String get m1;
+  /// Access [slope] for the full rational.
+  String get slopeNumerator;
 
-  /// Slope of the line, the 'm' in 'y=mx+b', aka the conversion factor. [m1] is the numerator, [m2] is the denominator.
+  /// Slope of the line, the 'm' in 'y=mx+b', aka the conversion factor. 
   ///
-  /// Access [m] for the full rational.
-  String get m2;
+  /// Access [slope] for the full rational.
+  String get slopeDenominator;
 
-  /// The combination of [m1] and [m2].
-  Rational get m => Rational(m1.toBigInt(), m2.toBigInt());
+  /// The combination of [slopeNumerator] and [slopeDenominator].
+  Rational get slope => Rational(slopeNumerator.toBigInt(), slopeDenominator.toBigInt());
 
-  /// Y-intercept of the line, the 'b' in 'y=mx+b', aka the zero point. [b1] is numerator, [b2] is denominator.
+  /// Y-intercept of the line, the 'b' in 'y=mx+b', aka the zero point.
   ///
-  /// Access [b] for the full rational.
-  String get b1;
+  /// Access [yintercept] for the full rational.
+  String get yinterceptNumerator;
 
-  /// Y-intercept of the line, the 'b' in 'y=mx+b', aka the zero point. [b1] is numerator, [b2] is denominator.
+  /// Y-intercept of the line, the 'b' in 'y=mx+b', aka the zero point.
   ///
-  /// Access [b] for the full rational.
-  String get b2;
+  /// Access [yintercept] for the full rational.
+  String get yinterceptDenominator;
 
-  /// The combination of [b1] and [b2].
-  Rational get b => Rational(b1.tryBigInt() ?? BigInt.zero, b2.toBigInt());
+  /// The combination of [yinterceptNumerator] and [yinterceptDenominator].
+  Rational get yintercept => Rational(yinterceptNumerator.tryBigInt() ?? BigInt.zero, yinterceptDenominator.toBigInt());
 
   /// The category that this unit falls into.
   UnitCategory get category;
@@ -354,7 +362,7 @@ mixin Unit on Enum {
   /// // outputs 1 as there is 1 inch in 0.0254 meter
   /// ```
   // x = (y-b)/m
-  Rational convertFromBase(Rational base) => (base - b) / m;
+  Rational convertFromBase(Rational base) => (base - yintercept) / slope;
 
   /// Converts from this' unit to the [base] unit.
   ///
@@ -366,7 +374,7 @@ mixin Unit on Enum {
   /// // outputs 0.0254 as there is 0.0254 meters in 1 inch
   /// ```
   // y = mx+b
-  Rational convertToBase(Rational input) => (m * input) + b;
+  Rational convertToBase(Rational input) => (slope * input) + yintercept;
 
   /// This unit's amount when there is 1 base unit. Shortcut for `convertToBase(Rational.one)`.
   Rational convertOneBase() => convertToBase(Rational.one);
@@ -453,7 +461,7 @@ mixin Unit on Enum {
     return out;
   }
 
-  /// The localized name of the unit.
+  /// The localized name of the unit. First is preferred.
   List<String> get nameLocalized => strings['\${toString()}.name'].split(",,,|,,,");
 
   // Implementation of descLocalized
@@ -473,8 +481,9 @@ mixin Unit on Enum {
   /// The localized raw description of the unit.
   String get desc => strings['\${toString()}.desc'];
 
-  /// The localized symbol of the unit.
-  String get symbol => strings['\${toString()}.symbol'];
+  /// The localized symbol of the unit. First is preferred.
+  List<String> get symbol =>
+      strings['\${toString()}.symbol'].split(",,,|,,,");
 
   bool isSameType(Unit other) => runtimeType == other.runtimeType;
 

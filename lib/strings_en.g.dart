@@ -295,6 +295,7 @@ class TranslationsUnitSpeedEn {
 
 	// Translations
 	late final TranslationsUnitSpeedMeterPerSecondEn meterPerSecond = TranslationsUnitSpeedMeterPerSecondEn.internal(_root);
+	late final TranslationsUnitSpeedKilometerPerHourEn kilometerPerHour = TranslationsUnitSpeedKilometerPerHourEn.internal(_root);
 	late final TranslationsUnitSpeedFootPerSecondEn footPerSecond = TranslationsUnitSpeedFootPerSecondEn.internal(_root);
 }
 
@@ -741,8 +742,8 @@ class TranslationsUnitForceMicronewtonEn {
 	/// en: 'micronewton'
 	String get name => 'micronewton';
 
-	/// en: 'μs'
-	String get symbol => 'μs';
+	/// en: 'μN'
+	String get symbol => 'μN';
 
 	/// en: 'SI metric unit. Equal to 1000 [nanonewton] or 1ᴇ-6 [newton]. Adopted 1873.'
 	String get desc => 'SI metric unit. Equal to 1000 [nanonewton] or 1ᴇ-6 [newton]. Adopted 1873.';
@@ -903,8 +904,8 @@ class TranslationsUnitForcePoundForceEn {
 	/// en: 'pound-force,,,|,,,pound'
 	String get name => 'pound-force,,,|,,,pound';
 
-	/// en: 'lbf'
-	String get symbol => 'lbf';
+	/// en: 'lbf,,,|,,,lb'
+	String get symbol => 'lbf,,,|,,,lb';
 
 	/// en: 'English unit. Equal to 4.4482216152605 [newton].'
 	String get desc => 'English unit. Equal to 4.4482216152605 [newton].';
@@ -921,8 +922,8 @@ class TranslationsUnitForceKipEn {
 	/// en: 'kip,,,|,,,kilopound,,,|,,,kilopound-force'
 	String get name => 'kip,,,|,,,kilopound,,,|,,,kilopound-force';
 
-	/// en: 'kip'
-	String get symbol => 'kip';
+	/// en: 'kip,,,|,,,kipf'
+	String get symbol => 'kip,,,|,,,kipf';
 
 	/// en: 'English unit. Equal to 1000 [poundForce] or 4448.2216152605 [newton].'
 	String get desc => 'English unit. Equal to 1000 [poundForce] or 4448.2216152605 [newton].';
@@ -1425,8 +1426,8 @@ class TranslationsUnitLengthLeagueImperialEn {
 	/// en: 'UK league,,,|,,,UK statute league'
 	String get name => 'UK league,,,|,,,UK statute league';
 
-	/// en: 'st. lg'
-	String get symbol => 'st. lg';
+	/// en: 'lg,,,|,,,st. lg'
+	String get symbol => 'lg,,,|,,,st. lg';
 
 	/// en: 'Imperial linear unit. Equal to 3 [mileImperial] or 4.828032 [kilometer].'
 	String get desc => 'Imperial linear unit. Equal to 3 [mileImperial] or 4.828032 [kilometer].';
@@ -1443,8 +1444,8 @@ class TranslationsUnitLengthMileImperialEn {
 	/// en: 'UK mile,,,|,,,UK statute mile,,,|,,,land'
 	String get name => 'UK mile,,,|,,,UK statute mile,,,|,,,land';
 
-	/// en: 'st. mi'
-	String get symbol => 'st. mi';
+	/// en: 'mi,,,|,,,st. mi'
+	String get symbol => 'mi,,,|,,,st. mi';
 
 	/// en: 'Imperial linear unit. Equal to 1760 [yardImperial], 320 [rod], or 1.609344 [kilometer].'
 	String get desc => 'Imperial linear unit. Equal to 1760 [yardImperial], 320 [rod], or 1.609344 [kilometer].';
@@ -1605,8 +1606,8 @@ class TranslationsUnitLengthInchImperialEn {
 	/// en: 'inch'
 	String get name => 'inch';
 
-	/// en: 'in'
-	String get symbol => 'in';
+	/// en: 'in,,,|,,,\"'
+	String get symbol => 'in,,,|,,,\"';
 
 	/// en: 'Imperial linear unit. Equal to 12 [lineImperialUK], 40 [lineImperialUS], or 2.54 [centimeter].'
 	String get desc => 'Imperial linear unit. Equal to 12 [lineImperialUK], 40 [lineImperialUS], or 2.54 [centimeter].';
@@ -1872,8 +1873,8 @@ class TranslationsUnitLengthButtonEn {
 
 	// Translations
 
-	/// en: 'Button'
-	String get name => 'Button';
+	/// en: 'button'
+	String get name => 'button';
 
 	/// en: 'button'
 	String get symbol => 'button';
@@ -1947,8 +1948,8 @@ class TranslationsUnitLengthLeagueNauticalUKEn {
 	/// en: 'UK nautical league'
 	String get name => 'UK nautical league';
 
-	/// en: 'nlg'
-	String get symbol => 'nlg';
+	/// en: 'nlg,,,|,,,naut. lg'
+	String get symbol => 'nlg,,,|,,,naut. lg';
 
 	/// en: 'Imperial unit. Equal to 3 [mileNauticalUK] or 5.559552 [kilometer].'
 	String get desc => 'Imperial unit. Equal to 3 [mileNauticalUK] or 5.559552 [kilometer].';
@@ -1965,8 +1966,8 @@ class TranslationsUnitLengthMileNauticalUKEn {
 	/// en: 'UK nautical mile'
 	String get name => 'UK nautical mile';
 
-	/// en: 'nmi'
-	String get symbol => 'nmi';
+	/// en: 'nmi,,,|,,,naut. mi'
+	String get symbol => 'nmi,,,|,,,naut. mi';
 
 	/// en: 'Imperial nautical unit. Equal to 10 [cableNauticalUK] or 1.853184 [kilometer].'
 	String get desc => 'Imperial nautical unit. Equal to 10 [cableNauticalUK] or 1.853184 [kilometer].';
@@ -3783,11 +3784,29 @@ class TranslationsUnitSpeedMeterPerSecondEn {
 	/// en: 'meter per second,,,|,,,metre per second'
 	String get name => 'meter per second,,,|,,,metre per second';
 
-	/// en: 'm/s'
-	String get symbol => 'm/s';
+	/// en: 'm/s,,,|,,,m·s⁻¹'
+	String get symbol => 'm/s,,,|,,,m·s⁻¹';
 
 	/// en: 'SI base metric unit.'
 	String get desc => 'SI base metric unit.';
+}
+
+// Path: UnitSpeed.kilometerPerHour
+class TranslationsUnitSpeedKilometerPerHourEn {
+	TranslationsUnitSpeedKilometerPerHourEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'kilometer per hour,,,|,,,kilometre per hour,,,|,,,klick'
+	String get name => 'kilometer per hour,,,|,,,kilometre per hour,,,|,,,klick';
+
+	/// en: 'km/h,,,|,,,kph,,,|,,,kmph,,,|,,,km/hr,,,|,,,km·h⁻¹'
+	String get symbol => 'km/h,,,|,,,kph,,,|,,,kmph,,,|,,,km/hr,,,|,,,km·h⁻¹';
+
+	/// en: 'SI metric unit.'
+	String get desc => 'SI metric unit.';
 }
 
 // Path: UnitSpeed.footPerSecond
@@ -4323,8 +4342,8 @@ class TranslationsUnitTemperatureReaumurEn {
 	/// en: 'Réaumur,,,|,,,degree Réaumur'
 	String get name => 'Réaumur,,,|,,,degree Réaumur';
 
-	/// en: '˚Ré'
-	String get symbol => '˚Ré';
+	/// en: '˚Ré,,,|,,,˚Re'
+	String get symbol => '˚Ré,,,|,,,˚Re';
 
 	/// en: 'Old French unit. 0 ˚Ré is equal to 0 [celsius]; 80 ˚Ré is equal to 100 [celsius].'
 	String get desc => 'Old French unit. 0 ˚Ré is equal to 0 [celsius]; 80 ˚Ré is equal to 100 [celsius].';
@@ -4809,8 +4828,8 @@ class TranslationsUnitTimeHourEn {
 	/// en: 'hour'
 	String get name => 'hour';
 
-	/// en: 'hr'
-	String get symbol => 'hr';
+	/// en: 'hr,,,|,,,h'
+	String get symbol => 'hr,,,|,,,h';
 
 	/// en: 'Non-SI metric unit. Equal to 60 [minute] or 3600 [second].'
 	String get desc => 'Non-SI metric unit. Equal to 60 [minute] or 3600 [second].';
@@ -4845,8 +4864,8 @@ class TranslationsUnitTimeWeekEn {
 	/// en: 'week'
 	String get name => 'week';
 
-	/// en: 'd'
-	String get symbol => 'd';
+	/// en: 'wk'
+	String get symbol => 'wk';
 
 	/// en: 'Conventional unit. Equal to 7 [day].'
 	String get desc => 'Conventional unit. Equal to 7 [day].';
@@ -4952,7 +4971,7 @@ extension on Translations {
 			case 'UnitForce.millinewton.symbol': return 'mN';
 			case 'UnitForce.millinewton.desc': return 'SI metric unit. Equal to 1000 [micronewton] or 0.001 [newton]. Adopted 1795.';
 			case 'UnitForce.micronewton.name': return 'micronewton';
-			case 'UnitForce.micronewton.symbol': return 'μs';
+			case 'UnitForce.micronewton.symbol': return 'μN';
 			case 'UnitForce.micronewton.desc': return 'SI metric unit. Equal to 1000 [nanonewton] or 1ᴇ-6 [newton]. Adopted 1873.';
 			case 'UnitForce.nanonewton.name': return 'nanonewton';
 			case 'UnitForce.nanonewton.symbol': return 'nN';
@@ -4979,10 +4998,10 @@ extension on Translations {
 			case 'UnitForce.quectonewton.symbol': return 'qN';
 			case 'UnitForce.quectonewton.desc': return 'SI metric unit. Equal to 1ᴇ-30 [newton]. Adopted 2022.';
 			case 'UnitForce.poundForce.name': return 'pound-force,,,|,,,pound';
-			case 'UnitForce.poundForce.symbol': return 'lbf';
+			case 'UnitForce.poundForce.symbol': return 'lbf,,,|,,,lb';
 			case 'UnitForce.poundForce.desc': return 'English unit. Equal to 4.4482216152605 [newton].';
 			case 'UnitForce.kip.name': return 'kip,,,|,,,kilopound,,,|,,,kilopound-force';
-			case 'UnitForce.kip.symbol': return 'kip';
+			case 'UnitForce.kip.symbol': return 'kip,,,|,,,kipf';
 			case 'UnitForce.kip.desc': return 'English unit. Equal to 1000 [poundForce] or 4448.2216152605 [newton].';
 			case 'UnitLength.quettameter.name': return 'quettameter,,,|,,,quettametre';
 			case 'UnitLength.quettameter.symbol': return 'Qm';
@@ -5066,10 +5085,10 @@ extension on Translations {
 			case 'UnitLength.angstrom.symbol': return 'Å';
 			case 'UnitLength.angstrom.desc': return 'Non-SI metric unit. Equal to 0.1 [nanometer].';
 			case 'UnitLength.leagueImperial.name': return 'UK league,,,|,,,UK statute league';
-			case 'UnitLength.leagueImperial.symbol': return 'st. lg';
+			case 'UnitLength.leagueImperial.symbol': return 'lg,,,|,,,st. lg';
 			case 'UnitLength.leagueImperial.desc': return 'Imperial linear unit. Equal to 3 [mileImperial] or 4.828032 [kilometer].';
 			case 'UnitLength.mileImperial.name': return 'UK mile,,,|,,,UK statute mile,,,|,,,land';
-			case 'UnitLength.mileImperial.symbol': return 'st. mi';
+			case 'UnitLength.mileImperial.symbol': return 'mi,,,|,,,st. mi';
 			case 'UnitLength.mileImperial.desc': return 'Imperial linear unit. Equal to 1760 [yardImperial], 320 [rod], or 1.609344 [kilometer].';
 			case 'UnitLength.rod.name': return 'rod,,,|,,,pole,,,|,,,perch';
 			case 'UnitLength.rod.symbol': return 'rd';
@@ -5096,7 +5115,7 @@ extension on Translations {
 			case 'UnitLength.palmImperial.symbol': return 'plm';
 			case 'UnitLength.palmImperial.desc': return 'Imperial linear unit. Equal to 3 [inchImperial] or 7.62 [centimeter].';
 			case 'UnitLength.inchImperial.name': return 'inch';
-			case 'UnitLength.inchImperial.symbol': return 'in';
+			case 'UnitLength.inchImperial.symbol': return 'in,,,|,,,\"';
 			case 'UnitLength.inchImperial.desc': return 'Imperial linear unit. Equal to 12 [lineImperialUK], 40 [lineImperialUS], or 2.54 [centimeter].';
 			case 'UnitLength.lineImperialUK.name': return 'UK line';
 			case 'UnitLength.lineImperialUK.symbol': return 'line';
@@ -5140,7 +5159,7 @@ extension on Translations {
 			case 'UnitLength.barleycorn.name': return 'barleycorn';
 			case 'UnitLength.barleycorn.symbol': return 'Bc';
 			case 'UnitLength.barleycorn.desc': return 'Imperial (UK) unit. Equal to ⅓ [inchImperial] or 8.46̅ [millimeter].';
-			case 'UnitLength.button.name': return 'Button';
+			case 'UnitLength.button.name': return 'button';
 			case 'UnitLength.button.symbol': return 'button';
 			case 'UnitLength.button.desc': return 'Imperial (UK) unit. Equal to 1⁄12 [inchImperial] or 2.116̅ [millimeter].';
 			case 'UnitLength.iron.name': return 'iron';
@@ -5153,10 +5172,10 @@ extension on Translations {
 			case 'UnitLength.thouImperial.symbol': return 'th';
 			case 'UnitLength.thouImperial.desc': return 'Imperial (UK) unit. Equal to 1⁄1000 [inchImperial] or 25.4 [micrometer].';
 			case 'UnitLength.leagueNauticalUK.name': return 'UK nautical league';
-			case 'UnitLength.leagueNauticalUK.symbol': return 'nlg';
+			case 'UnitLength.leagueNauticalUK.symbol': return 'nlg,,,|,,,naut. lg';
 			case 'UnitLength.leagueNauticalUK.desc': return 'Imperial unit. Equal to 3 [mileNauticalUK] or 5.559552 [kilometer].';
 			case 'UnitLength.mileNauticalUK.name': return 'UK nautical mile';
-			case 'UnitLength.mileNauticalUK.symbol': return 'nmi';
+			case 'UnitLength.mileNauticalUK.symbol': return 'nmi,,,|,,,naut. mi';
 			case 'UnitLength.mileNauticalUK.desc': return 'Imperial nautical unit. Equal to 10 [cableNauticalUK] or 1.853184 [kilometer].';
 			case 'UnitLength.cableNauticalUK.name': return 'UK nautical cable,,,|,,,cable length';
 			case 'UnitLength.cableNauticalUK.symbol': return 'ncbl';
@@ -5459,8 +5478,11 @@ extension on Translations {
 			case 'UnitPaper.reamPerfect.symbol': return 'perfect ream';
 			case 'UnitPaper.reamPerfect.desc': return 'Equal to 516 [sheet].';
 			case 'UnitSpeed.meterPerSecond.name': return 'meter per second,,,|,,,metre per second';
-			case 'UnitSpeed.meterPerSecond.symbol': return 'm/s';
+			case 'UnitSpeed.meterPerSecond.symbol': return 'm/s,,,|,,,m·s⁻¹';
 			case 'UnitSpeed.meterPerSecond.desc': return 'SI base metric unit.';
+			case 'UnitSpeed.kilometerPerHour.name': return 'kilometer per hour,,,|,,,kilometre per hour,,,|,,,klick';
+			case 'UnitSpeed.kilometerPerHour.symbol': return 'km/h,,,|,,,kph,,,|,,,kmph,,,|,,,km/hr,,,|,,,km·h⁻¹';
+			case 'UnitSpeed.kilometerPerHour.desc': return 'SI metric unit.';
 			case 'UnitSpeed.footPerSecond.name': return 'foot per second';
 			case 'UnitSpeed.footPerSecond.symbol': return 'fps';
 			case 'UnitSpeed.footPerSecond.desc': return 'FPS unit. Equal to 0.3048 [meterPerSecond].';
@@ -5549,7 +5571,7 @@ extension on Translations {
 			case 'UnitTemperature.rankine.symbol': return '˚R';
 			case 'UnitTemperature.rankine.desc': return 'Imperial derived unit. 0 ˚R is equal to -459.67 [fahrenheit], -275.15 [celsius], or 0 [kelvin].';
 			case 'UnitTemperature.reaumur.name': return 'Réaumur,,,|,,,degree Réaumur';
-			case 'UnitTemperature.reaumur.symbol': return '˚Ré';
+			case 'UnitTemperature.reaumur.symbol': return '˚Ré,,,|,,,˚Re';
 			case 'UnitTemperature.reaumur.desc': return 'Old French unit. 0 ˚Ré is equal to 0 [celsius]; 80 ˚Ré is equal to 100 [celsius].';
 			case 'UnitTime.quettasecond.name': return 'quettasecond';
 			case 'UnitTime.quettasecond.symbol': return 'Qs';
@@ -5630,13 +5652,13 @@ extension on Translations {
 			case 'UnitTime.minute.symbol': return 'min';
 			case 'UnitTime.minute.desc': return 'Non-SI metric unit. Equal to 60 [second].';
 			case 'UnitTime.hour.name': return 'hour';
-			case 'UnitTime.hour.symbol': return 'hr';
+			case 'UnitTime.hour.symbol': return 'hr,,,|,,,h';
 			case 'UnitTime.hour.desc': return 'Non-SI metric unit. Equal to 60 [minute] or 3600 [second].';
 			case 'UnitTime.dayCalendar.name': return 'day,,,|,,,calendar day,,,|,,,civil day';
 			case 'UnitTime.dayCalendar.symbol': return 'd';
 			case 'UnitTime.dayCalendar.desc': return 'Non-SI metric unit. Equal to 24 [hour] or 86400 [second].';
 			case 'UnitTime.week.name': return 'week';
-			case 'UnitTime.week.symbol': return 'd';
+			case 'UnitTime.week.symbol': return 'wk';
 			case 'UnitTime.week.desc': return 'Conventional unit. Equal to 7 [day].';
 			case 'UnitTime.yearCommon.name': return 'year,,,|,,,common year,,,|,,,calendar year';
 			case 'UnitTime.yearCommon.symbol': return 'yr';

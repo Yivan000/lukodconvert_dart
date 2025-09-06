@@ -11,132 +11,132 @@ enum UnitPaper with Unit {
   // ENGLISH
   // --------------------------------------------
 
-  /// **sheet** (sheet)
+  /// **sheet** ([sheet])
   ///
   /// A single sheet of paper.
   sheet(
-    m1: "1",
-    m2: "1",
-    b1: "0",
-    b2: "1",
+    slopeNumerator: "1",
+    slopeDenominator: "1",
+    yinterceptNumerator: "0",
+    yinterceptDenominator: "1",
     category: UnitCategory.english,
   ),
 
-  /// **bale** (bale)
+  /// **bale** ([bale])
   ///
   /// Equal to 5 [bundle] or 5000 [sheet].
   bale(
-    m1: "5000",
-    m2: "1",
-    b1: "0",
-    b2: "1",
+    slopeNumerator: "5000",
+    slopeDenominator: "1",
+    yinterceptNumerator: "0",
+    yinterceptDenominator: "1",
     category: UnitCategory.english,
   ),
 
-  /// **bundle** (bundle)
+  /// **bundle** ([bundle])
   ///
   /// Equal to 10 [ream] or 1000 [sheet].
   bundle(
-    m1: "1000",
-    m2: "1",
-    b1: "0",
-    b2: "1",
+    slopeNumerator: "1000",
+    slopeDenominator: "1",
+    yinterceptNumerator: "0",
+    yinterceptDenominator: "1",
     category: UnitCategory.english,
   ),
 
-  /// **ream / long ream** (ream)
+  /// **ream / long ream** ([ream])
   ///
   /// Equal to 20 [quires] or 500 [sheet].
   ream(
-    m1: "500",
-    m2: "1",
-    b1: "0",
-    b2: "1",
+    slopeNumerator: "500",
+    slopeDenominator: "1",
+    yinterceptNumerator: "0",
+    yinterceptDenominator: "1",
     category: UnitCategory.english,
   ),
 
-  /// **quire** (quire)
+  /// **quire** ([quire])
   ///
   /// Equal to 25 [sheet].
   quire(
-    m1: "25",
-    m2: "1",
-    b1: "0",
-    b2: "1",
+    slopeNumerator: "25",
+    slopeDenominator: "1",
+    yinterceptNumerator: "0",
+    yinterceptDenominator: "1",
     category: UnitCategory.english,
   ),
 
-  /// **bale (old)** (bale)
+  /// **bale (old)** ([bale])
   ///
   /// Equal to 5 [bundleOld] or 4800 [sheet].
   baleOld(
-    m1: "4800",
-    m2: "1",
-    b1: "0",
-    b2: "1",
+    slopeNumerator: "4800",
+    slopeDenominator: "1",
+    yinterceptNumerator: "0",
+    yinterceptDenominator: "1",
     category: UnitCategory.english,
   ),
 
-  /// **bundle (old)** (bundle)
+  /// **bundle (old)** ([bundle])
   ///
   /// Equal to 10 [reamOld] or 960 [sheet].
   bundleOld(
-    m1: "960",
-    m2: "1",
-    b1: "0",
-    b2: "1",
+    slopeNumerator: "960",
+    slopeDenominator: "1",
+    yinterceptNumerator: "0",
+    yinterceptDenominator: "1",
     category: UnitCategory.english,
   ),
 
-  /// **ream (old) / short ream** (ream)
+  /// **ream (old) / short ream** ([ream])
   ///
   /// Equal to 20 [quiresOld] or 480 [sheet].
   reamOld(
-    m1: "480",
-    m2: "1",
-    b1: "0",
-    b2: "1",
+    slopeNumerator: "480",
+    slopeDenominator: "1",
+    yinterceptNumerator: "0",
+    yinterceptDenominator: "1",
     category: UnitCategory.english,
   ),
 
-  /// **quire (old)** (quire)
+  /// **quire (old)** ([quire])
   ///
   /// Equal to 24 [sheet].
   quireOld(
-    m1: "24",
-    m2: "1",
-    b1: "0",
-    b2: "1",
+    slopeNumerator: "24",
+    slopeDenominator: "1",
+    yinterceptNumerator: "0",
+    yinterceptDenominator: "1",
     category: UnitCategory.english,
   ),
 
-  /// **perfect ream** (perfect ream)
+  /// **perfect ream** ([perfect ream])
   ///
   /// Equal to 516 [sheet].
   reamPerfect(
-    m1: "516",
-    m2: "1",
-    b1: "0",
-    b2: "1",
+    slopeNumerator: "516",
+    slopeDenominator: "1",
+    yinterceptNumerator: "0",
+    yinterceptDenominator: "1",
     category: UnitCategory.english,
   ),
   ;
 
   const UnitPaper({
-    required this.m1,
-    this.m2 = "1",
-    this.b1 = "0",
-    this.b2 = "1",
+    required this.slopeNumerator,
+    this.slopeDenominator = "1",
+    this.yinterceptNumerator = "0",
+    this.yinterceptDenominator = "1",
     required this.category,
   });
   @override
-  final String m1;
+  final String slopeNumerator;
   @override
-  final String m2;
+  final String slopeDenominator;
   @override
-  final String b1;
+  final String yinterceptNumerator;
   @override
-  final String b2;
+  final String yinterceptDenominator;
   @override
   final UnitCategory category;
   @override
