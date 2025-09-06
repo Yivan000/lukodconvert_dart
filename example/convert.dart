@@ -5,9 +5,9 @@ import 'package:decimal/decimal.dart';
 void main(List<String> args) {
 
   var out = Unit.convert(
-    inputUnit: UnitMass.kilogram,
-    inputRational: '1'.toRational(),
-    outputUnit: UnitMass.gram,
+    inputUnit: UnitTemperature.reaumur,
+    inputRational: '32'.toRational(),
+    outputUnit: UnitTemperature.kelvin,
   );
   print(out.toString().replaceAll("/",","));
   print(out.toDecimal(scaleOnInfinitePrecision: 100));

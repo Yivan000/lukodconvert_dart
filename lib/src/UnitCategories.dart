@@ -78,15 +78,10 @@ enum UnitCategory {
   /// _No description provided_
   finnish,
 
-  /// **frenchTraditional**
+  /// **french**
   ///
   /// _No description provided_
-  frenchTraditional,
-
-  /// **frenchMesuresusuelles**
-  ///
-  /// _No description provided_
-  frenchMesuresusuelles,
+  french,
 
   /// **german**
   ///
@@ -517,6 +512,11 @@ enum UnitCategory {
   ///
   /// _No description provided_
   physical,
+
+  /// **invented**
+  ///
+  /// _No description provided_
+  invented,
 
   /// **custom**
   ///

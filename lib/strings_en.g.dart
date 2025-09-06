@@ -40,6 +40,7 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	late final TranslationsUnitMassEn UnitMass = TranslationsUnitMassEn.internal(_root);
 	late final TranslationsUnitPaperEn UnitPaper = TranslationsUnitPaperEn.internal(_root);
 	late final TranslationsUnitSpeedEn UnitSpeed = TranslationsUnitSpeedEn.internal(_root);
+	late final TranslationsUnitTemperatureEn UnitTemperature = TranslationsUnitTemperatureEn.internal(_root);
 	late final TranslationsUnitTimeEn UnitTime = TranslationsUnitTimeEn.internal(_root);
 }
 
@@ -295,6 +296,44 @@ class TranslationsUnitSpeedEn {
 	// Translations
 	late final TranslationsUnitSpeedMeterPerSecondEn meterPerSecond = TranslationsUnitSpeedMeterPerSecondEn.internal(_root);
 	late final TranslationsUnitSpeedFootPerSecondEn footPerSecond = TranslationsUnitSpeedFootPerSecondEn.internal(_root);
+}
+
+// Path: UnitTemperature
+class TranslationsUnitTemperatureEn {
+	TranslationsUnitTemperatureEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+	late final TranslationsUnitTemperatureQuettakelvinEn quettakelvin = TranslationsUnitTemperatureQuettakelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureRonnakelvinEn ronnakelvin = TranslationsUnitTemperatureRonnakelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureYottakelvinEn yottakelvin = TranslationsUnitTemperatureYottakelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureZettakelvinEn zettakelvin = TranslationsUnitTemperatureZettakelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureExakelvinEn exakelvin = TranslationsUnitTemperatureExakelvinEn.internal(_root);
+	late final TranslationsUnitTemperaturePetakelvinEn petakelvin = TranslationsUnitTemperaturePetakelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureTerakelvinEn terakelvin = TranslationsUnitTemperatureTerakelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureGigakelvinEn gigakelvin = TranslationsUnitTemperatureGigakelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureMegakelvinEn megakelvin = TranslationsUnitTemperatureMegakelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureKilokelvinEn kilokelvin = TranslationsUnitTemperatureKilokelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureHectokelvinEn hectokelvin = TranslationsUnitTemperatureHectokelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureDecakelvinEn decakelvin = TranslationsUnitTemperatureDecakelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureKelvinEn kelvin = TranslationsUnitTemperatureKelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureDecikelvinEn decikelvin = TranslationsUnitTemperatureDecikelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureCentikelvinEn centikelvin = TranslationsUnitTemperatureCentikelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureMillikelvinEn millikelvin = TranslationsUnitTemperatureMillikelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureMicrokelvinEn microkelvin = TranslationsUnitTemperatureMicrokelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureNanokelvinEn nanokelvin = TranslationsUnitTemperatureNanokelvinEn.internal(_root);
+	late final TranslationsUnitTemperaturePicokelvinEn picokelvin = TranslationsUnitTemperaturePicokelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureFemtokelvinEn femtokelvin = TranslationsUnitTemperatureFemtokelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureAttokelvinEn attokelvin = TranslationsUnitTemperatureAttokelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureZeptokelvinEn zeptokelvin = TranslationsUnitTemperatureZeptokelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureYoctokelvinEn yoctokelvin = TranslationsUnitTemperatureYoctokelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureRontokelvinEn rontokelvin = TranslationsUnitTemperatureRontokelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureQuectokelvinEn quectokelvin = TranslationsUnitTemperatureQuectokelvinEn.internal(_root);
+	late final TranslationsUnitTemperatureCelsiusEn celsius = TranslationsUnitTemperatureCelsiusEn.internal(_root);
+	late final TranslationsUnitTemperatureFahrenheitEn fahrenheit = TranslationsUnitTemperatureFahrenheitEn.internal(_root);
+	late final TranslationsUnitTemperatureRankineEn rankine = TranslationsUnitTemperatureRankineEn.internal(_root);
+	late final TranslationsUnitTemperatureReaumurEn reaumur = TranslationsUnitTemperatureReaumurEn.internal(_root);
 }
 
 // Path: UnitTime
@@ -3769,6 +3808,528 @@ class TranslationsUnitSpeedFootPerSecondEn {
 	String get desc => 'FPS unit. Equal to 0.3048 [meterPerSecond].';
 }
 
+// Path: UnitTemperature.quettakelvin
+class TranslationsUnitTemperatureQuettakelvinEn {
+	TranslationsUnitTemperatureQuettakelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'quettakelvin'
+	String get name => 'quettakelvin';
+
+	/// en: 'QK'
+	String get symbol => 'QK';
+
+	/// en: 'SI metric unit. Equal to 1000 [ronnakelvin] or 1ᴇ30 [kelvin]. Adopted 2022.'
+	String get desc => 'SI metric unit. Equal to 1000 [ronnakelvin] or 1ᴇ30 [kelvin]. Adopted 2022.';
+}
+
+// Path: UnitTemperature.ronnakelvin
+class TranslationsUnitTemperatureRonnakelvinEn {
+	TranslationsUnitTemperatureRonnakelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'ronnakelvin'
+	String get name => 'ronnakelvin';
+
+	/// en: 'RK'
+	String get symbol => 'RK';
+
+	/// en: 'SI metric unit. Equal to 1000 [yottakelvin] or 1ᴇ27 [kelvin]. Adopted 2022.'
+	String get desc => 'SI metric unit. Equal to 1000 [yottakelvin] or 1ᴇ27 [kelvin]. Adopted 2022.';
+}
+
+// Path: UnitTemperature.yottakelvin
+class TranslationsUnitTemperatureYottakelvinEn {
+	TranslationsUnitTemperatureYottakelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'yottakelvin'
+	String get name => 'yottakelvin';
+
+	/// en: 'YK'
+	String get symbol => 'YK';
+
+	/// en: 'SI metric unit. Equal to 1000 [zettakelvin] or 1ᴇ24 kelvin. Adopted 1991.'
+	String get desc => 'SI metric unit. Equal to 1000 [zettakelvin] or 1ᴇ24 kelvin. Adopted 1991.';
+}
+
+// Path: UnitTemperature.zettakelvin
+class TranslationsUnitTemperatureZettakelvinEn {
+	TranslationsUnitTemperatureZettakelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'zettakelvin'
+	String get name => 'zettakelvin';
+
+	/// en: 'ZK'
+	String get symbol => 'ZK';
+
+	/// en: 'SI metric unit. Equal to 1000 [exakelvin] or 1ᴇ21 [kelvin]. Adopted 1991.'
+	String get desc => 'SI metric unit. Equal to 1000 [exakelvin] or 1ᴇ21 [kelvin]. Adopted 1991.';
+}
+
+// Path: UnitTemperature.exakelvin
+class TranslationsUnitTemperatureExakelvinEn {
+	TranslationsUnitTemperatureExakelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'exakelvin'
+	String get name => 'exakelvin';
+
+	/// en: 'EK'
+	String get symbol => 'EK';
+
+	/// en: 'SI metric unit. Equal to 1000 [petakelvin] or 1ᴇ18 [kelvin]. Adopted 1975.'
+	String get desc => 'SI metric unit. Equal to 1000 [petakelvin] or 1ᴇ18 [kelvin]. Adopted 1975.';
+}
+
+// Path: UnitTemperature.petakelvin
+class TranslationsUnitTemperaturePetakelvinEn {
+	TranslationsUnitTemperaturePetakelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'petakelvin'
+	String get name => 'petakelvin';
+
+	/// en: 'PK'
+	String get symbol => 'PK';
+
+	/// en: 'SI metric unit. Equal to 1000 [terakelvin] or 1ᴇ15 [kelvin]. Adopted 1975.'
+	String get desc => 'SI metric unit. Equal to 1000 [terakelvin] or 1ᴇ15 [kelvin]. Adopted 1975.';
+}
+
+// Path: UnitTemperature.terakelvin
+class TranslationsUnitTemperatureTerakelvinEn {
+	TranslationsUnitTemperatureTerakelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'terakelvin'
+	String get name => 'terakelvin';
+
+	/// en: 'TK'
+	String get symbol => 'TK';
+
+	/// en: 'SI metric unit. Equal to 1000 [gigakelvin] or 1ᴇ12 [kelvin]. Adopted 1960.'
+	String get desc => 'SI metric unit. Equal to 1000 [gigakelvin] or 1ᴇ12 [kelvin]. Adopted 1960.';
+}
+
+// Path: UnitTemperature.gigakelvin
+class TranslationsUnitTemperatureGigakelvinEn {
+	TranslationsUnitTemperatureGigakelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'gigakelvin'
+	String get name => 'gigakelvin';
+
+	/// en: 'GK'
+	String get symbol => 'GK';
+
+	/// en: 'SI metric unit. Equal to 1000 [megakelvin] or 1ᴇ9 [kelvin]. Adopted 1960.'
+	String get desc => 'SI metric unit. Equal to 1000 [megakelvin] or 1ᴇ9 [kelvin]. Adopted 1960.';
+}
+
+// Path: UnitTemperature.megakelvin
+class TranslationsUnitTemperatureMegakelvinEn {
+	TranslationsUnitTemperatureMegakelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'megakelvin'
+	String get name => 'megakelvin';
+
+	/// en: 'MK'
+	String get symbol => 'MK';
+
+	/// en: 'SI metric unit. Equal to 1000 [kilokelvin] or 1ᴇ6 [kelvin]. Adopted 1873.'
+	String get desc => 'SI metric unit. Equal to 1000 [kilokelvin] or 1ᴇ6 [kelvin]. Adopted 1873.';
+}
+
+// Path: UnitTemperature.kilokelvin
+class TranslationsUnitTemperatureKilokelvinEn {
+	TranslationsUnitTemperatureKilokelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'kilokelvin'
+	String get name => 'kilokelvin';
+
+	/// en: 'kK'
+	String get symbol => 'kK';
+
+	/// en: 'SI metric unit. Equal to 10 [hectokelvin] or 1000 [kelvin]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [hectokelvin] or 1000 [kelvin]. Adopted 1795.';
+}
+
+// Path: UnitTemperature.hectokelvin
+class TranslationsUnitTemperatureHectokelvinEn {
+	TranslationsUnitTemperatureHectokelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'hectokelvin'
+	String get name => 'hectokelvin';
+
+	/// en: 'hK'
+	String get symbol => 'hK';
+
+	/// en: 'SI metric unit. Equal to 10 [decakelvin] or 100 [kelvin]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [decakelvin] or 100 [kelvin]. Adopted 1795.';
+}
+
+// Path: UnitTemperature.decakelvin
+class TranslationsUnitTemperatureDecakelvinEn {
+	TranslationsUnitTemperatureDecakelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'decakelvin'
+	String get name => 'decakelvin';
+
+	/// en: 'daK'
+	String get symbol => 'daK';
+
+	/// en: 'SI metric unit. Equal to 10 [kelvin]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [kelvin]. Adopted 1795.';
+}
+
+// Path: UnitTemperature.kelvin
+class TranslationsUnitTemperatureKelvinEn {
+	TranslationsUnitTemperatureKelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'kelvin'
+	String get name => 'kelvin';
+
+	/// en: 'K'
+	String get symbol => 'K';
+
+	/// en: 'Base SI metric unit.'
+	String get desc => 'Base SI metric unit.';
+}
+
+// Path: UnitTemperature.decikelvin
+class TranslationsUnitTemperatureDecikelvinEn {
+	TranslationsUnitTemperatureDecikelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'decikelvin'
+	String get name => 'decikelvin';
+
+	/// en: 'dK'
+	String get symbol => 'dK';
+
+	/// en: 'SI metric unit. Equal to 10 [centikelvin] or 0.1 [kelvin]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [centikelvin] or 0.1 [kelvin]. Adopted 1795.';
+}
+
+// Path: UnitTemperature.centikelvin
+class TranslationsUnitTemperatureCentikelvinEn {
+	TranslationsUnitTemperatureCentikelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'centikelvin'
+	String get name => 'centikelvin';
+
+	/// en: 'cK'
+	String get symbol => 'cK';
+
+	/// en: 'SI metric unit. Equal to 10 [millikelvin] or 0.01 [kelvin]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 10 [millikelvin] or 0.01 [kelvin]. Adopted 1795.';
+}
+
+// Path: UnitTemperature.millikelvin
+class TranslationsUnitTemperatureMillikelvinEn {
+	TranslationsUnitTemperatureMillikelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'millikelvin'
+	String get name => 'millikelvin';
+
+	/// en: 'mK'
+	String get symbol => 'mK';
+
+	/// en: 'SI metric unit. Equal to 1000 [microkelvin] or 0.001 [kelvin]. Adopted 1795.'
+	String get desc => 'SI metric unit. Equal to 1000 [microkelvin] or 0.001 [kelvin]. Adopted 1795.';
+}
+
+// Path: UnitTemperature.microkelvin
+class TranslationsUnitTemperatureMicrokelvinEn {
+	TranslationsUnitTemperatureMicrokelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'microkelvin'
+	String get name => 'microkelvin';
+
+	/// en: 'μK'
+	String get symbol => 'μK';
+
+	/// en: 'SI metric unit. Equal to 1000 [nanokelvin] or 1ᴇ-6 [kelvin]. Adopted 1873.'
+	String get desc => 'SI metric unit. Equal to 1000 [nanokelvin] or 1ᴇ-6 [kelvin]. Adopted 1873.';
+}
+
+// Path: UnitTemperature.nanokelvin
+class TranslationsUnitTemperatureNanokelvinEn {
+	TranslationsUnitTemperatureNanokelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'nanokelvin'
+	String get name => 'nanokelvin';
+
+	/// en: 'nK'
+	String get symbol => 'nK';
+
+	/// en: 'SI metric unit. Equal to 1000 [picokelvin] or 1ᴇ-9 [kelvin]. Adopted 1960.'
+	String get desc => 'SI metric unit. Equal to 1000 [picokelvin] or 1ᴇ-9 [kelvin]. Adopted 1960.';
+}
+
+// Path: UnitTemperature.picokelvin
+class TranslationsUnitTemperaturePicokelvinEn {
+	TranslationsUnitTemperaturePicokelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'picokelvin'
+	String get name => 'picokelvin';
+
+	/// en: 'pK'
+	String get symbol => 'pK';
+
+	/// en: 'SI metric unit. Equal to 1000 [femtokelvin] or 1ᴇ-12 [kelvin]. Adopted 1960.'
+	String get desc => 'SI metric unit. Equal to 1000 [femtokelvin] or 1ᴇ-12 [kelvin]. Adopted 1960.';
+}
+
+// Path: UnitTemperature.femtokelvin
+class TranslationsUnitTemperatureFemtokelvinEn {
+	TranslationsUnitTemperatureFemtokelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'femtokelvin'
+	String get name => 'femtokelvin';
+
+	/// en: 'fK'
+	String get symbol => 'fK';
+
+	/// en: 'SI metric unit. Equal to 1000 [attokelvin] or 1ᴇ-15 [kelvin]. Adopted 1964.'
+	String get desc => 'SI metric unit. Equal to 1000 [attokelvin] or 1ᴇ-15 [kelvin]. Adopted 1964.';
+}
+
+// Path: UnitTemperature.attokelvin
+class TranslationsUnitTemperatureAttokelvinEn {
+	TranslationsUnitTemperatureAttokelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'attokelvin'
+	String get name => 'attokelvin';
+
+	/// en: 'aK'
+	String get symbol => 'aK';
+
+	/// en: 'SI metric unit. Equal to 1000 [zeptokelvin] or 1ᴇ-18 [kelvin]. Adopted 1964.'
+	String get desc => 'SI metric unit. Equal to 1000 [zeptokelvin] or 1ᴇ-18 [kelvin]. Adopted 1964.';
+}
+
+// Path: UnitTemperature.zeptokelvin
+class TranslationsUnitTemperatureZeptokelvinEn {
+	TranslationsUnitTemperatureZeptokelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'zeptokelvin'
+	String get name => 'zeptokelvin';
+
+	/// en: 'zK'
+	String get symbol => 'zK';
+
+	/// en: 'SI metric unit. Equal to 1000 [yoctokelvin] or 1ᴇ-21 [kelvin]. Adopted 1991.'
+	String get desc => 'SI metric unit. Equal to 1000 [yoctokelvin] or 1ᴇ-21 [kelvin]. Adopted 1991.';
+}
+
+// Path: UnitTemperature.yoctokelvin
+class TranslationsUnitTemperatureYoctokelvinEn {
+	TranslationsUnitTemperatureYoctokelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'yoctokelvin'
+	String get name => 'yoctokelvin';
+
+	/// en: 'yK'
+	String get symbol => 'yK';
+
+	/// en: 'SI metric unit. Equal to 1000 [rontokelvin] or 1ᴇ-24 [kelvin]. Adopted 1991.'
+	String get desc => 'SI metric unit. Equal to 1000 [rontokelvin] or 1ᴇ-24 [kelvin]. Adopted 1991.';
+}
+
+// Path: UnitTemperature.rontokelvin
+class TranslationsUnitTemperatureRontokelvinEn {
+	TranslationsUnitTemperatureRontokelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'rontokelvin'
+	String get name => 'rontokelvin';
+
+	/// en: 'rK'
+	String get symbol => 'rK';
+
+	/// en: 'SI metric unit. Equal to 1000 [quectokelvin] or 1ᴇ-27 [kelvin]. Adopted 2022.'
+	String get desc => 'SI metric unit. Equal to 1000 [quectokelvin] or 1ᴇ-27 [kelvin]. Adopted 2022.';
+}
+
+// Path: UnitTemperature.quectokelvin
+class TranslationsUnitTemperatureQuectokelvinEn {
+	TranslationsUnitTemperatureQuectokelvinEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'quectokelvin'
+	String get name => 'quectokelvin';
+
+	/// en: 'qK'
+	String get symbol => 'qK';
+
+	/// en: 'SI metric unit. Equal to 1ᴇ-30 [kelvin]. Adopted 2022.'
+	String get desc => 'SI metric unit. Equal to 1ᴇ-30 [kelvin]. Adopted 2022.';
+}
+
+// Path: UnitTemperature.celsius
+class TranslationsUnitTemperatureCelsiusEn {
+	TranslationsUnitTemperatureCelsiusEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'Celsius,,,|,,,centigrade,,,|,,,degree Celsius,,,|,,,degree centigrade'
+	String get name => 'Celsius,,,|,,,centigrade,,,|,,,degree Celsius,,,|,,,degree centigrade';
+
+	/// en: '˚C'
+	String get symbol => '˚C';
+
+	/// en: 'SI derived metric unit. 0˚C is equal to 273.15 [kelvin].'
+	String get desc => 'SI derived metric unit. 0˚C is equal to 273.15 [kelvin].';
+}
+
+// Path: UnitTemperature.fahrenheit
+class TranslationsUnitTemperatureFahrenheitEn {
+	TranslationsUnitTemperatureFahrenheitEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'Fahrenheit,,,|,,,degree Fahrenheit'
+	String get name => 'Fahrenheit,,,|,,,degree Fahrenheit';
+
+	/// en: '˚F'
+	String get symbol => '˚F';
+
+	/// en: 'Imperial unit. 0 ˚F is equal to -17.7̅ [celsius] or 255.372̅ [kelvin].'
+	String get desc => 'Imperial unit. 0 ˚F is equal to -17.7̅ [celsius] or 255.372̅ [kelvin].';
+}
+
+// Path: UnitTemperature.rankine
+class TranslationsUnitTemperatureRankineEn {
+	TranslationsUnitTemperatureRankineEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'Rankine,,,|,,,degree Rankine'
+	String get name => 'Rankine,,,|,,,degree Rankine';
+
+	/// en: '˚R'
+	String get symbol => '˚R';
+
+	/// en: 'Imperial derived unit. 0 ˚R is equal to -459.67 [fahrenheit], -275.15 [celsius], or 0 [kelvin].'
+	String get desc => 'Imperial derived unit. 0 ˚R is equal to -459.67 [fahrenheit], -275.15 [celsius], or 0 [kelvin].';
+}
+
+// Path: UnitTemperature.reaumur
+class TranslationsUnitTemperatureReaumurEn {
+	TranslationsUnitTemperatureReaumurEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'Réaumur,,,|,,,degree Réaumur'
+	String get name => 'Réaumur,,,|,,,degree Réaumur';
+
+	/// en: '˚Ré'
+	String get symbol => '˚Ré';
+
+	/// en: 'Old French unit. 0 ˚Ré is equal to 0 [celsius]; 80 ˚Ré is equal to 100 [celsius].'
+	String get desc => 'Old French unit. 0 ˚Ré is equal to 0 [celsius]; 80 ˚Ré is equal to 100 [celsius].';
+}
+
 // Path: UnitTime.quettasecond
 class TranslationsUnitTimeQuettasecondEn {
 	TranslationsUnitTimeQuettasecondEn.internal(this._root);
@@ -4903,6 +5464,93 @@ extension on Translations {
 			case 'UnitSpeed.footPerSecond.name': return 'foot per second';
 			case 'UnitSpeed.footPerSecond.symbol': return 'fps';
 			case 'UnitSpeed.footPerSecond.desc': return 'FPS unit. Equal to 0.3048 [meterPerSecond].';
+			case 'UnitTemperature.quettakelvin.name': return 'quettakelvin';
+			case 'UnitTemperature.quettakelvin.symbol': return 'QK';
+			case 'UnitTemperature.quettakelvin.desc': return 'SI metric unit. Equal to 1000 [ronnakelvin] or 1ᴇ30 [kelvin]. Adopted 2022.';
+			case 'UnitTemperature.ronnakelvin.name': return 'ronnakelvin';
+			case 'UnitTemperature.ronnakelvin.symbol': return 'RK';
+			case 'UnitTemperature.ronnakelvin.desc': return 'SI metric unit. Equal to 1000 [yottakelvin] or 1ᴇ27 [kelvin]. Adopted 2022.';
+			case 'UnitTemperature.yottakelvin.name': return 'yottakelvin';
+			case 'UnitTemperature.yottakelvin.symbol': return 'YK';
+			case 'UnitTemperature.yottakelvin.desc': return 'SI metric unit. Equal to 1000 [zettakelvin] or 1ᴇ24 kelvin. Adopted 1991.';
+			case 'UnitTemperature.zettakelvin.name': return 'zettakelvin';
+			case 'UnitTemperature.zettakelvin.symbol': return 'ZK';
+			case 'UnitTemperature.zettakelvin.desc': return 'SI metric unit. Equal to 1000 [exakelvin] or 1ᴇ21 [kelvin]. Adopted 1991.';
+			case 'UnitTemperature.exakelvin.name': return 'exakelvin';
+			case 'UnitTemperature.exakelvin.symbol': return 'EK';
+			case 'UnitTemperature.exakelvin.desc': return 'SI metric unit. Equal to 1000 [petakelvin] or 1ᴇ18 [kelvin]. Adopted 1975.';
+			case 'UnitTemperature.petakelvin.name': return 'petakelvin';
+			case 'UnitTemperature.petakelvin.symbol': return 'PK';
+			case 'UnitTemperature.petakelvin.desc': return 'SI metric unit. Equal to 1000 [terakelvin] or 1ᴇ15 [kelvin]. Adopted 1975.';
+			case 'UnitTemperature.terakelvin.name': return 'terakelvin';
+			case 'UnitTemperature.terakelvin.symbol': return 'TK';
+			case 'UnitTemperature.terakelvin.desc': return 'SI metric unit. Equal to 1000 [gigakelvin] or 1ᴇ12 [kelvin]. Adopted 1960.';
+			case 'UnitTemperature.gigakelvin.name': return 'gigakelvin';
+			case 'UnitTemperature.gigakelvin.symbol': return 'GK';
+			case 'UnitTemperature.gigakelvin.desc': return 'SI metric unit. Equal to 1000 [megakelvin] or 1ᴇ9 [kelvin]. Adopted 1960.';
+			case 'UnitTemperature.megakelvin.name': return 'megakelvin';
+			case 'UnitTemperature.megakelvin.symbol': return 'MK';
+			case 'UnitTemperature.megakelvin.desc': return 'SI metric unit. Equal to 1000 [kilokelvin] or 1ᴇ6 [kelvin]. Adopted 1873.';
+			case 'UnitTemperature.kilokelvin.name': return 'kilokelvin';
+			case 'UnitTemperature.kilokelvin.symbol': return 'kK';
+			case 'UnitTemperature.kilokelvin.desc': return 'SI metric unit. Equal to 10 [hectokelvin] or 1000 [kelvin]. Adopted 1795.';
+			case 'UnitTemperature.hectokelvin.name': return 'hectokelvin';
+			case 'UnitTemperature.hectokelvin.symbol': return 'hK';
+			case 'UnitTemperature.hectokelvin.desc': return 'SI metric unit. Equal to 10 [decakelvin] or 100 [kelvin]. Adopted 1795.';
+			case 'UnitTemperature.decakelvin.name': return 'decakelvin';
+			case 'UnitTemperature.decakelvin.symbol': return 'daK';
+			case 'UnitTemperature.decakelvin.desc': return 'SI metric unit. Equal to 10 [kelvin]. Adopted 1795.';
+			case 'UnitTemperature.kelvin.name': return 'kelvin';
+			case 'UnitTemperature.kelvin.symbol': return 'K';
+			case 'UnitTemperature.kelvin.desc': return 'Base SI metric unit.';
+			case 'UnitTemperature.decikelvin.name': return 'decikelvin';
+			case 'UnitTemperature.decikelvin.symbol': return 'dK';
+			case 'UnitTemperature.decikelvin.desc': return 'SI metric unit. Equal to 10 [centikelvin] or 0.1 [kelvin]. Adopted 1795.';
+			case 'UnitTemperature.centikelvin.name': return 'centikelvin';
+			case 'UnitTemperature.centikelvin.symbol': return 'cK';
+			case 'UnitTemperature.centikelvin.desc': return 'SI metric unit. Equal to 10 [millikelvin] or 0.01 [kelvin]. Adopted 1795.';
+			case 'UnitTemperature.millikelvin.name': return 'millikelvin';
+			case 'UnitTemperature.millikelvin.symbol': return 'mK';
+			case 'UnitTemperature.millikelvin.desc': return 'SI metric unit. Equal to 1000 [microkelvin] or 0.001 [kelvin]. Adopted 1795.';
+			case 'UnitTemperature.microkelvin.name': return 'microkelvin';
+			case 'UnitTemperature.microkelvin.symbol': return 'μK';
+			case 'UnitTemperature.microkelvin.desc': return 'SI metric unit. Equal to 1000 [nanokelvin] or 1ᴇ-6 [kelvin]. Adopted 1873.';
+			case 'UnitTemperature.nanokelvin.name': return 'nanokelvin';
+			case 'UnitTemperature.nanokelvin.symbol': return 'nK';
+			case 'UnitTemperature.nanokelvin.desc': return 'SI metric unit. Equal to 1000 [picokelvin] or 1ᴇ-9 [kelvin]. Adopted 1960.';
+			case 'UnitTemperature.picokelvin.name': return 'picokelvin';
+			case 'UnitTemperature.picokelvin.symbol': return 'pK';
+			case 'UnitTemperature.picokelvin.desc': return 'SI metric unit. Equal to 1000 [femtokelvin] or 1ᴇ-12 [kelvin]. Adopted 1960.';
+			case 'UnitTemperature.femtokelvin.name': return 'femtokelvin';
+			case 'UnitTemperature.femtokelvin.symbol': return 'fK';
+			case 'UnitTemperature.femtokelvin.desc': return 'SI metric unit. Equal to 1000 [attokelvin] or 1ᴇ-15 [kelvin]. Adopted 1964.';
+			case 'UnitTemperature.attokelvin.name': return 'attokelvin';
+			case 'UnitTemperature.attokelvin.symbol': return 'aK';
+			case 'UnitTemperature.attokelvin.desc': return 'SI metric unit. Equal to 1000 [zeptokelvin] or 1ᴇ-18 [kelvin]. Adopted 1964.';
+			case 'UnitTemperature.zeptokelvin.name': return 'zeptokelvin';
+			case 'UnitTemperature.zeptokelvin.symbol': return 'zK';
+			case 'UnitTemperature.zeptokelvin.desc': return 'SI metric unit. Equal to 1000 [yoctokelvin] or 1ᴇ-21 [kelvin]. Adopted 1991.';
+			case 'UnitTemperature.yoctokelvin.name': return 'yoctokelvin';
+			case 'UnitTemperature.yoctokelvin.symbol': return 'yK';
+			case 'UnitTemperature.yoctokelvin.desc': return 'SI metric unit. Equal to 1000 [rontokelvin] or 1ᴇ-24 [kelvin]. Adopted 1991.';
+			case 'UnitTemperature.rontokelvin.name': return 'rontokelvin';
+			case 'UnitTemperature.rontokelvin.symbol': return 'rK';
+			case 'UnitTemperature.rontokelvin.desc': return 'SI metric unit. Equal to 1000 [quectokelvin] or 1ᴇ-27 [kelvin]. Adopted 2022.';
+			case 'UnitTemperature.quectokelvin.name': return 'quectokelvin';
+			case 'UnitTemperature.quectokelvin.symbol': return 'qK';
+			case 'UnitTemperature.quectokelvin.desc': return 'SI metric unit. Equal to 1ᴇ-30 [kelvin]. Adopted 2022.';
+			case 'UnitTemperature.celsius.name': return 'Celsius,,,|,,,centigrade,,,|,,,degree Celsius,,,|,,,degree centigrade';
+			case 'UnitTemperature.celsius.symbol': return '˚C';
+			case 'UnitTemperature.celsius.desc': return 'SI derived metric unit. 0˚C is equal to 273.15 [kelvin].';
+			case 'UnitTemperature.fahrenheit.name': return 'Fahrenheit,,,|,,,degree Fahrenheit';
+			case 'UnitTemperature.fahrenheit.symbol': return '˚F';
+			case 'UnitTemperature.fahrenheit.desc': return 'Imperial unit. 0 ˚F is equal to -17.7̅ [celsius] or 255.372̅ [kelvin].';
+			case 'UnitTemperature.rankine.name': return 'Rankine,,,|,,,degree Rankine';
+			case 'UnitTemperature.rankine.symbol': return '˚R';
+			case 'UnitTemperature.rankine.desc': return 'Imperial derived unit. 0 ˚R is equal to -459.67 [fahrenheit], -275.15 [celsius], or 0 [kelvin].';
+			case 'UnitTemperature.reaumur.name': return 'Réaumur,,,|,,,degree Réaumur';
+			case 'UnitTemperature.reaumur.symbol': return '˚Ré';
+			case 'UnitTemperature.reaumur.desc': return 'Old French unit. 0 ˚Ré is equal to 0 [celsius]; 80 ˚Ré is equal to 100 [celsius].';
 			case 'UnitTime.quettasecond.name': return 'quettasecond';
 			case 'UnitTime.quettasecond.symbol': return 'Qs';
 			case 'UnitTime.quettasecond.desc': return 'SI metric unit. Equal to 1000 [ronnasecond] or 1ᴇ30 [second]. Adopted 2022.';

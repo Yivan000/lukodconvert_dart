@@ -18,6 +18,7 @@ part 'src/UnitLength.dart';
 part 'src/UnitMass.dart';
 part 'src/UnitPaper.dart';
 part 'src/UnitSpeed.dart';
+part 'src/UnitTemperature.dart';
 part 'src/UnitTime.dart';
 
 mixin Unit on Enum {
@@ -204,6 +205,7 @@ mixin Unit on Enum {
         "mass" => UnitMass.info,
         "paper" => UnitPaper.info,
         "speed" => UnitSpeed.info,
+        "temperature" => UnitTemperature.info,
         "time" => UnitTime.info,
         _ => throw ArgumentError("\"$id\" is not a valid id"),
       };
