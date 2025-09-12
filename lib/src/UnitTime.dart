@@ -387,7 +387,7 @@ enum UnitTime with Unit {
   ///
   /// Symbols: wk
   ///
-  /// Conventional unit. Equal to 7 [day].
+  /// Conventional unit. Equal to 7 [dayCalendar].
   week(
     slopeNumerator: "604800",
     slopeDenominator: "1",
@@ -400,7 +400,7 @@ enum UnitTime with Unit {
   ///
   /// Symbols: yr
   ///
-  /// Conventional unit. Equal to 52 [week] or 365 [day].
+  /// Conventional unit. Equal to 52 [week] or 365 [dayCalendar].
   yearCommon(
     slopeNumerator: "31536000",
     slopeDenominator: "1",
@@ -413,7 +413,7 @@ enum UnitTime with Unit {
   ///
   /// Symbols: leap year
   ///
-  /// Conventional unit. Equal 366 [day].
+  /// Conventional unit. Equal 366 [dayCalendar].
   yearLeap(
     slopeNumerator: "31622400",
     slopeDenominator: "1",
