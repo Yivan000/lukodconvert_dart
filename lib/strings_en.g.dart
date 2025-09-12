@@ -3316,7 +3316,7 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 			'symbol': [
 				'wk',
 			],
-			'desc': 'Conventional unit. Equal to 7 [day].',
+			'desc': 'Conventional unit. Equal to 7 [dayCalendar].',
 		},
 		'yearCommon': {
 			'name': [
@@ -3336,7 +3336,7 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 			'symbol': [
 				'yr',
 			],
-			'desc': 'Conventional unit. Equal to 52 [week] or 365 [day].',
+			'desc': 'Conventional unit. Equal to 52 [week] or 365 [dayCalendar].',
 		},
 		'yearLeap': {
 			'name': [
@@ -3356,7 +3356,7 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 			'symbol': [
 				'leap year',
 			],
-			'desc': 'Conventional unit. Equal 366 [day].',
+			'desc': 'Conventional unit. Equal 366 [dayCalendar].',
 		},
 	};
 }
@@ -5137,7 +5137,7 @@ extension on Translations {
 				other: 'weeks',
 			);
 			case 'UnitTime.week.symbol.0': return 'wk';
-			case 'UnitTime.week.desc': return 'Conventional unit. Equal to 7 [day].';
+			case 'UnitTime.week.desc': return 'Conventional unit. Equal to 7 [dayCalendar].';
 			case 'UnitTime.yearCommon.name.0': return ({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('en'))(n,
 				one: 'year',
 				other: 'years',
@@ -5151,7 +5151,7 @@ extension on Translations {
 				other: 'calendar years',
 			);
 			case 'UnitTime.yearCommon.symbol.0': return 'yr';
-			case 'UnitTime.yearCommon.desc': return 'Conventional unit. Equal to 52 [week] or 365 [day].';
+			case 'UnitTime.yearCommon.desc': return 'Conventional unit. Equal to 52 [week] or 365 [dayCalendar].';
 			case 'UnitTime.yearLeap.name.0': return ({required num n}) => (_root.$meta.cardinalResolver ?? PluralResolvers.cardinal('en'))(n,
 				one: 'leap year',
 				other: 'leap years',
@@ -5165,7 +5165,7 @@ extension on Translations {
 				other: 'bissextile years',
 			);
 			case 'UnitTime.yearLeap.symbol.0': return 'leap year';
-			case 'UnitTime.yearLeap.desc': return 'Conventional unit. Equal 366 [day].';
+			case 'UnitTime.yearLeap.desc': return 'Conventional unit. Equal 366 [dayCalendar].';
 			default: return null;
 		}
 	}

@@ -11,12 +11,17 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+All-in-one unit conversion package.
+
+*This is the Dart implementation of [LukodConvert](https://github.com/Yivan000/lukodconvert).*
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+* Contains **a lot of units** in **a lot of quantities** perfect for whatever usecase you may have.
+* Uses [rationals](https://pub.dev/packages/rational) so that precision won't be lost.
+* Names, symbols, and descriptions of units are localized *(uses the [slang](https://pub.dev/packages/rational) package)*
+* All units are contents of an [enum](https://dart.dev/language/enums), with all of the methods mixed in.
+* Can be utilized in Dart-only applications (works without Flutter).
 
 ## Getting started
 
