@@ -22,6 +22,11 @@ All-in-one unit conversion package.
 * Names, symbols, and descriptions of units are localized *(uses the [slang](https://pub.dev/packages/rational) package)*
 * All units are contents of an [enum](https://dart.dev/language/enums), with all of the methods mixed in.
 * Can be utilized in Dart-only applications (works without Flutter).
+* Contains **a lot of units** in **a lot of quantities** perfect for whatever usecase you may have.
+* Uses [rationals](https://pub.dev/packages/rational) so that precision won't be lost.
+* Names, symbols, and descriptions of units are localized *(uses the [slang](https://pub.dev/packages/rational) package)*
+* All units are contents of an [enum](https://dart.dev/language/enums), with all of the methods mixed in.
+* Can be utilized in Dart-only applications (works without Flutter).
 
 ## Getting started
 
