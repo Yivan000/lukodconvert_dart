@@ -26,41 +26,44 @@ void main(List<String> args) async {
 
   List<String> parts = [];
 
+  Map<String, Map<String, dynamic>> locales = {};
+  String currentLocale = "";
+
   // Copying i18n yaml files
   await output.open('i18n').create();
   await for (final i in input.open('i18n').list(recursive: true)) {
     String relative =
         i.path.substring(input.open('i18n').path.length).replaceAll("\\", "/");
+
     if (i is Directory) {
-      await output.open('i18n$relative').create();
+      currentLocale = i.uri.pathSegments[3];
+      locales[currentLocale] = {};
+      print("new locale: $currentLocale");
+
+      //await output.open('i18n$relative').create();
     } else if (i is File) {
-      // save to a json file instead
-      final file = await i.copy('${output.path}/i18n$relative'.replaceAll(".yaml", ".json"));
+      var yaml = loadYaml(await i.readAsString()) as YamlMap;
+      var yamlProcessed =
+          yaml.map((key, value) => MapEntry(key + "(map)", value));
 
-      //convert to maps, as recognized by slang
-      var yaml = loadYaml(await file.readAsString()) as YamlMap;
-      var yaml_processed = yaml.map((key, value) => MapEntry(
-            key,
-            //value
-            Map.from(value)
-              ..["name"] = value["name"].join(
-                  ",,,|,,,") // so that it would just be a comma-separated list, to be `.split()`ed later
-              ..["symbol"] = value["symbol"]?.join(
-                  ",,,|,,,")
-              ..removeWhere((key, value) => value == null) //null value remover, so that slang would not error
-              ,
-               // same here
-              
-          ));
-
-      final contents =
-        jsonEncode(yaml_processed);
-          //"#############################################\n# $dontEditMessage\n#############################################\n\n${jsonEncode(yaml_processed)}";
-
-      await file.writeAsString(contents);
+      locales[currentLocale]![
+          i.uri.pathSegments.last.replaceAll(".yaml", "(map)")] = yamlProcessed;
     }
   }
 
+  // save to jsons per locale
+  for (var locale in locales.entries) {
+    var file = await output
+        .openFile("i18n/${locale.key}.json")
+        .create(recursive: true);
+
+    print(file.path);
+
+    await file.writeAsString(jsonEncode(locale.value));
+  }
+
+
+  
   await for (final FileSystemEntity i in input.open('data').list()) {
     final name = i.uri.pathSegments.last.split(".")[0];
     if (i.uri.pathSegments.last == "UnitCategories.csv") {
@@ -93,7 +96,7 @@ void main(List<String> args) async {
           .openFile("src/$name.dart")
           .create(recursive: true)
           .then((file) async => file.writeAsString(
-                await generateDartUnit(
+                await generateDartQuantity(
                   inputData: i as File,
                   inputI18n: loadYaml(await input
                       .openFile("i18n/$lang/$name.yaml")
@@ -125,7 +128,8 @@ void main(List<String> args) async {
   print('Generated translation file.');
 }
 
-Future<String> generateDartUnit({
+/// Generate the Dart file for a quantity
+Future<String> generateDartQuantity({
   required File inputData,
   required YamlMap inputI18n,
   required dynamic inputJson,
@@ -153,7 +157,7 @@ enum $name with Unit {
   var units = [
     ...inputI18n.entries.map((e) => (e.value["name"] as YamlList).toList()),
     ...inputI18n.entries.map((e) => (e.value["name"] as YamlList)
-        .map((s) => (s as String).toLowerCase())
+        //.map((s) => (s as String).toLowerCase())
         .toList())
   ];
 
@@ -200,7 +204,9 @@ enum $name with Unit {
     */
 
     output += """
-  /// **${inputI18n[i[0]]?["name"]?.join(" / ") ?? i[0]}** (${inputI18n[i[0]]?["symbol"] ?? '_No symbol_'})
+  /// <b>${inputI18n[i[0]]?["name"]?.join(" / ") ?? i[0]}</b>
+  /// 
+  /// Symbols: ${inputI18n[i[0]]?["symbol"]?.toString().replaceAll(RegExp(r"[\[\]]"),"") ?? '_none_'}
   /// 
   /// $desc
   ${(i[0])}(
@@ -245,6 +251,8 @@ enum $name with Unit {
   final String yinterceptDenominator;
   @override
   final UnitCategory category;
+  @override
+  get _stringMap=>strings.$name[name]!;
   @override
   String get descLocalized => super._getDescLocalized(values);
 
@@ -312,6 +320,7 @@ String generateDartMain({required List<String> parts}) {
 
 // ignore_for_file: file_names
 
+/// The main library of this package.
 library lukodconvert;
 
 import 'package:decimal/decimal.dart';
@@ -462,12 +471,16 @@ mixin Unit on Enum {
   }
 
   /// The localized name of the unit. First is preferred.
-  List<String> get nameLocalized => strings['\${toString()}.name'].split(",,,|,,,");
+  List<String> getName({num number = 1}) =>
+      _getListStringWithPluralizationFunction(
+          list: _stringMap["name"], number: number);
 
   // Implementation of descLocalized
-  String _getDescLocalized<T extends Enum>(List<T> values) => (strings['\${toString()}.desc'] as String).replaceAllMapped(RegExp(r" \\[(.+?)\\]( |\\.|\\,)"), (match){
-    return " \${(values.byName(match[1]!) as Unit).nameLocalized[0]}\${match[2]!}";  
-  });
+  String _getDescLocalized<T extends Enum>(List<T> values) =>
+      (strings['\${toString()}.desc'] as String)
+          .replaceAllMapped(RegExp(r" \[(.+?)\]( |\.|\,)"), (match) {
+        return " \${(values.byName(match[1]!) as Unit).getName()[0]}\${match[2]!}";
+      });
   
   /// The localized description of the unit.
   /// The names of the referred units are also replaced with their localized strings.
@@ -479,13 +492,17 @@ mixin Unit on Enum {
   String get descLocalized;
 
   /// The localized raw description of the unit.
-  String get desc => strings['\${toString()}.desc'];
+  String get desc => _stringMap['desc'];
 
   /// The localized symbol of the unit. First is preferred.
-  List<String> get symbol =>
-      strings['\${toString()}.symbol'].split(",,,|,,,");
+  List<String> getSymbol({num number = 0}) =>
+      _getListStringWithPluralizationFunction(
+          list: _stringMap["symbol"], number: number);
 
   bool isSameType(Unit other) => runtimeType == other.runtimeType;
+
+  /// Internal getter to get the auto-generated map from slang
+  Map<String, dynamic> get _stringMap;
 
   static void checkIfSameType(Unit a, Unit b) {
     if (a.isSameType(b)) return;
@@ -497,10 +514,12 @@ mixin Unit on Enum {
     throw TypeError();
   }
 
+  /// Get the information of a certain quantity basing on its ID
   static QuantityInfo getQuantityInfoFromId(String id) => switch(id){
     ${parts.fold("", (prev, element) {
-    var arg = element.replaceAllMapped(
-        RegExp(r"Unit(.+)\.dart"), (match) => match[1]!).toLowerCase();
+    var arg = element
+        .replaceAllMapped(RegExp(r"Unit(.+)\.dart"), (match) => match[1]!)
+        .toLowerCase();
     var value =
         element.replaceAllMapped(RegExp(r"(.+)\.dart"), (match) => match[1]!);
 
@@ -511,12 +530,32 @@ mixin Unit on Enum {
 
 }
 
+/// The contents of [list] could be a String or a String Function({required num n}) cuz of pluralization.
+/// So this function forcefully changes all to fit a certain [number].
+List<String> _getListStringWithPluralizationFunction({
+  required List list,
+  required num number,
+}) {
+  return list.map((e) {
+    if (e is String) {
+      return e;
+    } else if (e is Function) {
+      return e(n: number) as String;
+    } else {
+      throw TypeError();
+    }
+  }).toList();
+}
+
+/// Container for the information of a quantity. 
+/// 
+/// Get from [Unit.getQuantityInfoFromId]
 class QuantityInfo{
 
   /// ID of this quantity
   final String id;
   
-  /// Quantities that make up this quantity
+  /// Quantities that make up this quantity. Useful for dimensional analysis.
   final List<DerivedQuantity> derivedQuantities;
 
   /// The base unit for this quantity
@@ -533,8 +572,12 @@ class QuantityInfo{
   });
 }
 
+/// Container for what quantities make up a certain quantity.
+/// 
+/// For example, `speed` contains `length` (exponent 1) and `time` (exonent -1).
 class DerivedQuantity{
   final String id;
+  /// Exponent is a string because it can be negative (preceeded with "-") and/or fractional (denoted with "/").
   final String exponent;
 
   const DerivedQuantity({

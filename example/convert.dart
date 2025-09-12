@@ -1,18 +1,24 @@
+import 'package:lukodconvert/strings.dart';
 import 'package:rational/rational.dart';
 import 'package:lukodconvert/lukodconvert.dart';
 import 'package:decimal/decimal.dart';
 
 void main(List<String> args) {
 
+  print(strings["UnitForce.kip"]);
+
   var out = Unit.convert(
-    inputUnit: UnitTemperature.reaumur,
-    inputRational: '32'.toRational(),
-    outputUnit: UnitTemperature.kelvin,
+    inputUnit: UnitLength.ronnameter,
+    inputRational: '93'.toRational(),
+    outputUnit: UnitLength.quettameter,
   );
   print(out.toString().replaceAll("/",","));
   print(out.toDecimal(scaleOnInfinitePrecision: 100));
 
-    
+  print(UnitForce.poundForce.getSymbol(number: 1));
+  print(UnitForce.poundForce.getName(number: 1));
+  print(UnitForce.poundForce.getSymbol(number: 2));
+  print(UnitForce.poundForce.getName(number: 2));
 
 //  print(UnitLength.shaftmentImperial.convertToBase('1'.toRational()).toDecimal(scaleOnInfinitePrecision: 100));
   print('\n');

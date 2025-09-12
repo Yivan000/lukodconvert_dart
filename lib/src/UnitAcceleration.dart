@@ -11,7 +11,9 @@ enum UnitAcceleration with Unit {
   // METRICSI
   // --------------------------------------------
 
-  /// **meter per second squared / metre per second squared / meter per square second / metre per square second** ([m/s²])
+  /// <b>{one: meter per second squared, other: meters per second squared} / {one: metre per second squared, other: metres per second squared} / {one: meter per square second, other: meters per square second} / {one: metre per square second, other: metres per square second}</b>
+  ///
+  /// Symbols: m/s²
   ///
   /// SI base metric unit.
   meterPerSecondSquared(
@@ -26,7 +28,9 @@ enum UnitAcceleration with Unit {
   // ENGLISH
   // --------------------------------------------
 
-  /// **foot per second squared / foot per square second** ([ft/s²])
+  /// <b>{one: foot per second squared, other: feet per second squared} / {one: foot per square second, other: feet per square second}</b>
+  ///
+  /// Symbols: ft/s²
   ///
   /// FPS unit. Equal to 0.3048 [meterPerSecondSquared].
   footPerSecondSquared(
@@ -55,6 +59,8 @@ enum UnitAcceleration with Unit {
   final String yinterceptDenominator;
   @override
   final UnitCategory category;
+  @override
+  get _stringMap => strings.UnitAcceleration[name]!;
   @override
   String get descLocalized => super._getDescLocalized(values);
 

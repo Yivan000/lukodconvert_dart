@@ -11,7 +11,9 @@ enum UnitTime with Unit {
   // METRICSI
   // --------------------------------------------
 
-  /// **second** ([s])
+  /// <b>{one: second, other: seconds}</b>
+  ///
+  /// Symbols: s
   ///
   /// Base SI metric unit.
   second(
@@ -22,7 +24,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **quettasecond** ([Qs])
+  /// <b>{one: quettasecond, other: quettaseconds}</b>
+  ///
+  /// Symbols: Qs
   ///
   /// SI metric unit. Equal to 1000 [ronnasecond] or 1ᴇ30 [second]. Adopted 2022.
   quettasecond(
@@ -33,7 +37,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **ronnasecond** ([Rs])
+  /// <b>{one: ronnasecond, other: ronnaseconds}</b>
+  ///
+  /// Symbols: Rs
   ///
   /// SI metric unit. Equal to 1000 [yottasecond] or 1ᴇ27 [second]. Adopted 2022.
   ronnasecond(
@@ -44,7 +50,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **yottasecond** ([Ys])
+  /// <b>{one: yottasecond, other: yottaseconds}</b>
+  ///
+  /// Symbols: Ys
   ///
   /// SI metric unit. Equal to 1000 [zettasecond] or 1ᴇ24 second. Adopted 1991.
   yottasecond(
@@ -55,7 +63,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **zettasecond** ([Zs])
+  /// <b>{one: zettasecond, other: zettaseconds}</b>
+  ///
+  /// Symbols: Zs
   ///
   /// SI metric unit. Equal to 1000 [exasecond] or 1ᴇ21 [second]. Adopted 1991.
   zettasecond(
@@ -66,7 +76,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **exasecond** ([Es])
+  /// <b>{one: exasecond, other: exaseconds}</b>
+  ///
+  /// Symbols: Es
   ///
   /// SI metric unit. Equal to 1000 [petasecond] or 1ᴇ18 [second]. Adopted 1975.
   exasecond(
@@ -77,7 +89,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **petasecond** ([Ps])
+  /// <b>{one: petasecond, other: petaseconds}</b>
+  ///
+  /// Symbols: Ps
   ///
   /// SI metric unit. Equal to 1000 [terasecond] or 1ᴇ15 [second]. Adopted 1975.
   petasecond(
@@ -88,7 +102,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **terasecond** ([Ts])
+  /// <b>{one: terasecond, other: teraseconds}</b>
+  ///
+  /// Symbols: Ts
   ///
   /// SI metric unit. Equal to 1000 [gigasecond] or 1ᴇ12 [second]. Adopted 1960.
   terasecond(
@@ -99,7 +115,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **gigasecond** ([Gs])
+  /// <b>{one: gigasecond, other: gigaseconds}</b>
+  ///
+  /// Symbols: Gs
   ///
   /// SI metric unit. Equal to 1000 [megasecond] or 1ᴇ9 [second]. Adopted 1960.
   gigasecond(
@@ -110,7 +128,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **megasecond** ([Ms])
+  /// <b>{one: megasecond, other: megaseconds}</b>
+  ///
+  /// Symbols: Ms
   ///
   /// SI metric unit. Equal to 1000 [kilosecond] or 1ᴇ6 [second]. Adopted 1873.
   megasecond(
@@ -121,7 +141,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **kilosecond** ([ks])
+  /// <b>{one: kilosecond, other: kiloseconds}</b>
+  ///
+  /// Symbols: ks
   ///
   /// SI metric unit. Equal to 10 [hectosecond] or 1000 [second]. Adopted 1795.
   kilosecond(
@@ -132,7 +154,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **hectosecond** ([hs])
+  /// <b>{one: hectosecond, other: hectoseconds}</b>
+  ///
+  /// Symbols: hs
   ///
   /// SI metric unit. Equal to 10 [decasecond] or 100 [second]. Adopted 1795.
   hectosecond(
@@ -143,7 +167,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **decasecond** ([das])
+  /// <b>{one: decasecond, other: decaseconds}</b>
+  ///
+  /// Symbols: das
   ///
   /// SI metric unit. Equal to 10 [second]. Adopted 1795.
   decasecond(
@@ -154,7 +180,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **decisecond** ([ds])
+  /// <b>{one: decisecond, other: deciseconds}</b>
+  ///
+  /// Symbols: ds
   ///
   /// SI metric unit. Equal to 10 [centisecond] or 0.1 [second]. Adopted 1795.
   decisecond(
@@ -165,7 +193,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **centisecond** ([cs])
+  /// <b>{one: centisecond, other: centiseconds}</b>
+  ///
+  /// Symbols: cs
   ///
   /// SI metric unit. Equal to 10 [millisecond] or 0.01 [second]. Adopted 1795.
   centisecond(
@@ -176,7 +206,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **millisecond** ([ms])
+  /// <b>{one: millisecond, other: milliseconds}</b>
+  ///
+  /// Symbols: ms
   ///
   /// SI metric unit. Equal to 1000 [microsecond] or 0.001 [second]. Adopted 1795.
   millisecond(
@@ -187,7 +219,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **microsecond** ([μs])
+  /// <b>{one: microsecond, other: microseconds}</b>
+  ///
+  /// Symbols: μs
   ///
   /// SI metric unit. Equal to 1000 [nanosecond] or 1ᴇ-6 [second]. Adopted 1873.
   microsecond(
@@ -198,7 +232,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **nanosecond** ([ns])
+  /// <b>{one: nanosecond, other: nanoseconds}</b>
+  ///
+  /// Symbols: ns
   ///
   /// SI metric unit. Equal to 1000 [picosecond] or 1ᴇ-9 [second]. Adopted 1960.
   nanosecond(
@@ -209,7 +245,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **picosecond** ([ps])
+  /// <b>{one: picosecond, other: picoseconds}</b>
+  ///
+  /// Symbols: ps
   ///
   /// SI metric unit. Equal to 1000 [femtosecond] or 1ᴇ-12 [second]. Adopted 1960.
   picosecond(
@@ -220,7 +258,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **femtosecond** ([fs])
+  /// <b>{one: femtosecond, other: femtoseconds}</b>
+  ///
+  /// Symbols: fs
   ///
   /// SI metric unit. Equal to 1000 [attosecond] or 1ᴇ-15 [second]. Adopted 1964.
   femtosecond(
@@ -231,7 +271,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **attosecond** ([as])
+  /// <b>{one: attosecond, other: attoseconds}</b>
+  ///
+  /// Symbols: as
   ///
   /// SI metric unit. Equal to 1000 [zeptosecond] or 1ᴇ-18 [second]. Adopted 1964.
   attosecond(
@@ -242,7 +284,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **zeptosecond** ([zs])
+  /// <b>{one: zeptosecond, other: zeptoseconds}</b>
+  ///
+  /// Symbols: zs
   ///
   /// SI metric unit. Equal to 1000 [yoctosecond] or 1ᴇ-21 [second]. Adopted 1991.
   zeptosecond(
@@ -253,7 +297,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **yoctosecond** ([ys])
+  /// <b>{one: yoctosecond, other: yoctoseconds}</b>
+  ///
+  /// Symbols: ys
   ///
   /// SI metric unit. Equal to 1000 [rontosecond] or 1ᴇ-24 [second]. Adopted 1991.
   yoctosecond(
@@ -264,7 +310,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **rontosecond** ([rs])
+  /// <b>{one: rontosecond, other: rontoseconds}</b>
+  ///
+  /// Symbols: rs
   ///
   /// SI metric unit. Equal to 1000 [quectosecond] or 1ᴇ-27 [second]. Adopted 2022.
   rontosecond(
@@ -275,7 +323,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **quectosecond** ([qs])
+  /// <b>{one: quectosecond, other: quectoseconds}</b>
+  ///
+  /// Symbols: qs
   ///
   /// SI metric unit. Equal to 1ᴇ-30 [second]. Adopted 2022.
   quectosecond(
@@ -290,7 +340,9 @@ enum UnitTime with Unit {
   // METRICNONSI
   // --------------------------------------------
 
-  /// **minute** ([min])
+  /// <b>{one: minute, other: minutes}</b>
+  ///
+  /// Symbols: {one: min, other: mins}
   ///
   /// Non-SI metric unit. Equal to 60 [second].
   minute(
@@ -301,7 +353,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricNonSi,
   ),
 
-  /// **hour** ([hr, h])
+  /// <b>{one: hour, other: hours}</b>
+  ///
+  /// Symbols: hr, h
   ///
   /// Non-SI metric unit. Equal to 60 [minute] or 3600 [second].
   hour(
@@ -312,7 +366,9 @@ enum UnitTime with Unit {
     category: UnitCategory.metricNonSi,
   ),
 
-  /// **day / calendar day / civil day** ([d])
+  /// <b>{one: day, other: days} / {one: calendar day, other: calendar days} / {one: civil day, other: civil days}</b>
+  ///
+  /// Symbols: d
   ///
   /// Non-SI metric unit. Equal to 24 [hour] or 86400 [second].
   dayCalendar(
@@ -327,7 +383,9 @@ enum UnitTime with Unit {
   // CONVENTIONAL
   // --------------------------------------------
 
-  /// **week** ([wk])
+  /// <b>{one: week, other: weeks}</b>
+  ///
+  /// Symbols: wk
   ///
   /// Conventional unit. Equal to 7 [day].
   week(
@@ -338,7 +396,9 @@ enum UnitTime with Unit {
     category: UnitCategory.conventional,
   ),
 
-  /// **year / common year / calendar year** ([yr])
+  /// <b>{one: year, other: years} / {one: common year, other: common years} / {one: calendar year, other: calendar years}</b>
+  ///
+  /// Symbols: yr
   ///
   /// Conventional unit. Equal to 52 [week] or 365 [day].
   yearCommon(
@@ -349,7 +409,9 @@ enum UnitTime with Unit {
     category: UnitCategory.conventional,
   ),
 
-  /// **leap year / intercalary year / bissextile year** ([leap year])
+  /// <b>{one: leap year, other: leap years} / {one: intercalary year, other: intercalary years} / {one: bissextile year, other: bissextile years}</b>
+  ///
+  /// Symbols: leap year
   ///
   /// Conventional unit. Equal 366 [day].
   yearLeap(
@@ -378,6 +440,8 @@ enum UnitTime with Unit {
   final String yinterceptDenominator;
   @override
   final UnitCategory category;
+  @override
+  get _stringMap => strings.UnitTime[name]!;
   @override
   String get descLocalized => super._getDescLocalized(values);
 

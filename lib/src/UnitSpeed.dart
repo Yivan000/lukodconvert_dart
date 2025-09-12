@@ -11,7 +11,9 @@ enum UnitSpeed with Unit {
   // METRICSI
   // --------------------------------------------
 
-  /// **meter per second / metre per second** ([m/s, m·s⁻¹])
+  /// <b>{one: meter per second, other: meters per second} / {one: metre per second, other: metres per second}</b>
+  ///
+  /// Symbols: m/s, m·s⁻¹
   ///
   /// SI base metric unit.
   meterPerSecond(
@@ -22,7 +24,9 @@ enum UnitSpeed with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **kilometer per hour / kilometre per hour / klick** ([km/h, kph, kmph, km/hr, km·h⁻¹])
+  /// <b>{one: kilometer per hour, other: kilometers per hour} / {one: kilometre per hour, other: kilometres per hour} / {one: klick, other: klicks}</b>
+  ///
+  /// Symbols: km/h, kph, kmph, km/hr, km·h⁻¹
   ///
   /// SI metric unit.
   kilometerPerHour(
@@ -37,7 +41,9 @@ enum UnitSpeed with Unit {
   // ENGLISH
   // --------------------------------------------
 
-  /// **foot per second** ([fps])
+  /// <b>{one: foot per second, other: feet per second}</b>
+  ///
+  /// Symbols: fps
   ///
   /// FPS unit. Equal to 0.3048 [meterPerSecond].
   footPerSecond(
@@ -66,6 +72,8 @@ enum UnitSpeed with Unit {
   final String yinterceptDenominator;
   @override
   final UnitCategory category;
+  @override
+  get _stringMap => strings.UnitSpeed[name]!;
   @override
   String get descLocalized => super._getDescLocalized(values);
 

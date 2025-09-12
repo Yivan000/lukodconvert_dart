@@ -11,7 +11,9 @@ enum UnitPaper with Unit {
   // ENGLISH
   // --------------------------------------------
 
-  /// **sheet** ([sheet])
+  /// <b>{one: sheet, other: sheets}</b>
+  ///
+  /// Symbols: sheet
   ///
   /// A single sheet of paper.
   sheet(
@@ -22,7 +24,9 @@ enum UnitPaper with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **bale** ([bale])
+  /// <b>{one: bale, other: bales}</b>
+  ///
+  /// Symbols: bale
   ///
   /// Equal to 5 [bundle] or 5000 [sheet].
   bale(
@@ -33,7 +37,9 @@ enum UnitPaper with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **bundle** ([bundle])
+  /// <b>{one: bundle, other: bundles}</b>
+  ///
+  /// Symbols: bundle
   ///
   /// Equal to 10 [ream] or 1000 [sheet].
   bundle(
@@ -44,7 +50,9 @@ enum UnitPaper with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **ream / long ream** ([ream])
+  /// <b>{one: ream, other: reams} / {one: long ream, other: long reams}</b>
+  ///
+  /// Symbols: ream
   ///
   /// Equal to 20 [quires] or 500 [sheet].
   ream(
@@ -55,7 +63,9 @@ enum UnitPaper with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **quire** ([quire])
+  /// <b>{one: quire, other: quires}</b>
+  ///
+  /// Symbols: quire
   ///
   /// Equal to 25 [sheet].
   quire(
@@ -66,7 +76,9 @@ enum UnitPaper with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **bale (old)** ([bale])
+  /// <b>{one: bale (old), other: bales (old)}</b>
+  ///
+  /// Symbols: bale
   ///
   /// Equal to 5 [bundleOld] or 4800 [sheet].
   baleOld(
@@ -77,7 +89,9 @@ enum UnitPaper with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **bundle (old)** ([bundle])
+  /// <b>{one: bundle (old), other: bundles (old)}</b>
+  ///
+  /// Symbols: bundle
   ///
   /// Equal to 10 [reamOld] or 960 [sheet].
   bundleOld(
@@ -88,7 +102,9 @@ enum UnitPaper with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **ream (old) / short ream** ([ream])
+  /// <b>{one: ream (old), other: reams (old)} / {one: short ream, other: short reams}</b>
+  ///
+  /// Symbols: ream
   ///
   /// Equal to 20 [quiresOld] or 480 [sheet].
   reamOld(
@@ -99,7 +115,9 @@ enum UnitPaper with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **quire (old)** ([quire])
+  /// <b>{one: quire (old), other: quires (old)}</b>
+  ///
+  /// Symbols: quire
   ///
   /// Equal to 24 [sheet].
   quireOld(
@@ -110,7 +128,9 @@ enum UnitPaper with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **perfect ream** ([perfect ream])
+  /// <b>{one: perfect ream, other: perfect reams}</b>
+  ///
+  /// Symbols: perfect ream
   ///
   /// Equal to 516 [sheet].
   reamPerfect(
@@ -139,6 +159,8 @@ enum UnitPaper with Unit {
   final String yinterceptDenominator;
   @override
   final UnitCategory category;
+  @override
+  get _stringMap => strings.UnitPaper[name]!;
   @override
   String get descLocalized => super._getDescLocalized(values);
 

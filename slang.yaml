@@ -5,5 +5,9 @@ input_file_pattern: .json
 output_directory: lib
 output_file_name: strings.dart
 translate_var: strings
-namespaces: true
+namespaces: false
 timestamp: false
+autodoc:
+  enabled: true
+  locales:
+    - en 

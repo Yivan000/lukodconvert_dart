@@ -11,7 +11,9 @@ enum UnitTemperature with Unit {
   // METRICSI
   // --------------------------------------------
 
-  /// **kelvin** ([K])
+  /// <b>{one: kelvin, other: kelvins}</b>
+  ///
+  /// Symbols: K
   ///
   /// Base SI metric unit.
   kelvin(
@@ -22,7 +24,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **quettakelvin** ([QK])
+  /// <b>{one: quettakelvin, other: quettakelvins}</b>
+  ///
+  /// Symbols: QK
   ///
   /// SI metric unit. Equal to 1000 [ronnakelvin] or 1ᴇ30 [kelvin]. Adopted 2022.
   quettakelvin(
@@ -33,7 +37,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **ronnakelvin** ([RK])
+  /// <b>{one: ronnakelvin, other: ronnakelvins}</b>
+  ///
+  /// Symbols: RK
   ///
   /// SI metric unit. Equal to 1000 [yottakelvin] or 1ᴇ27 [kelvin]. Adopted 2022.
   ronnakelvin(
@@ -44,7 +50,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **yottakelvin** ([YK])
+  /// <b>{one: yottakelvin, other: yottakelvins}</b>
+  ///
+  /// Symbols: YK
   ///
   /// SI metric unit. Equal to 1000 [zettakelvin] or 1ᴇ24 kelvin. Adopted 1991.
   yottakelvin(
@@ -55,7 +63,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **zettakelvin** ([ZK])
+  /// <b>{one: zettakelvin, other: zettakelvins}</b>
+  ///
+  /// Symbols: ZK
   ///
   /// SI metric unit. Equal to 1000 [exakelvin] or 1ᴇ21 [kelvin]. Adopted 1991.
   zettakelvin(
@@ -66,7 +76,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **exakelvin** ([EK])
+  /// <b>{one: exakelvin, other: exakelvins}</b>
+  ///
+  /// Symbols: EK
   ///
   /// SI metric unit. Equal to 1000 [petakelvin] or 1ᴇ18 [kelvin]. Adopted 1975.
   exakelvin(
@@ -77,7 +89,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **petakelvin** ([PK])
+  /// <b>{one: petakelvin, other: petakelvins}</b>
+  ///
+  /// Symbols: PK
   ///
   /// SI metric unit. Equal to 1000 [terakelvin] or 1ᴇ15 [kelvin]. Adopted 1975.
   petakelvin(
@@ -88,7 +102,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **terakelvin** ([TK])
+  /// <b>{one: terakelvin, other: terakelvins}</b>
+  ///
+  /// Symbols: TK
   ///
   /// SI metric unit. Equal to 1000 [gigakelvin] or 1ᴇ12 [kelvin]. Adopted 1960.
   terakelvin(
@@ -99,7 +115,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **gigakelvin** ([GK])
+  /// <b>{one: gigakelvin, other: gigakelvins}</b>
+  ///
+  /// Symbols: GK
   ///
   /// SI metric unit. Equal to 1000 [megakelvin] or 1ᴇ9 [kelvin]. Adopted 1960.
   gigakelvin(
@@ -110,7 +128,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **megakelvin** ([MK])
+  /// <b>{one: megakelvin, other: megakelvins}</b>
+  ///
+  /// Symbols: MK
   ///
   /// SI metric unit. Equal to 1000 [kilokelvin] or 1ᴇ6 [kelvin]. Adopted 1873.
   megakelvin(
@@ -121,7 +141,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **kilokelvin** ([kK])
+  /// <b>{one: kilokelvin, other: kilokelvins}</b>
+  ///
+  /// Symbols: kK
   ///
   /// SI metric unit. Equal to 10 [hectokelvin] or 1000 [kelvin]. Adopted 1795.
   kilokelvin(
@@ -132,7 +154,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **hectokelvin** ([hK])
+  /// <b>{one: hectokelvin, other: hectokelvins}</b>
+  ///
+  /// Symbols: hK
   ///
   /// SI metric unit. Equal to 10 [decakelvin] or 100 [kelvin]. Adopted 1795.
   hectokelvin(
@@ -143,7 +167,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **decakelvin** ([daK])
+  /// <b>{one: decakelvin, other: decakelvins}</b>
+  ///
+  /// Symbols: daK
   ///
   /// SI metric unit. Equal to 10 [kelvin]. Adopted 1795.
   decakelvin(
@@ -154,7 +180,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **decikelvin** ([dK])
+  /// <b>{one: decikelvin, other: decikelvins}</b>
+  ///
+  /// Symbols: dK
   ///
   /// SI metric unit. Equal to 10 [centikelvin] or 0.1 [kelvin]. Adopted 1795.
   decikelvin(
@@ -165,7 +193,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **centikelvin** ([cK])
+  /// <b>{one: centikelvin, other: centikelvins}</b>
+  ///
+  /// Symbols: cK
   ///
   /// SI metric unit. Equal to 10 [millikelvin] or 0.01 [kelvin]. Adopted 1795.
   centikelvin(
@@ -176,7 +206,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **millikelvin** ([mK])
+  /// <b>{one: millikelvin, other: millikelvins}</b>
+  ///
+  /// Symbols: mK
   ///
   /// SI metric unit. Equal to 1000 [microkelvin] or 0.001 [kelvin]. Adopted 1795.
   millikelvin(
@@ -187,7 +219,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **microkelvin** ([μK])
+  /// <b>{one: microkelvin, other: microkelvins}</b>
+  ///
+  /// Symbols: μK
   ///
   /// SI metric unit. Equal to 1000 [nanokelvin] or 1ᴇ-6 [kelvin]. Adopted 1873.
   microkelvin(
@@ -198,7 +232,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **nanokelvin** ([nK])
+  /// <b>{one: nanokelvin, other: nanokelvins}</b>
+  ///
+  /// Symbols: nK
   ///
   /// SI metric unit. Equal to 1000 [picokelvin] or 1ᴇ-9 [kelvin]. Adopted 1960.
   nanokelvin(
@@ -209,7 +245,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **picokelvin** ([pK])
+  /// <b>{one: picokelvin, other: picokelvins}</b>
+  ///
+  /// Symbols: pK
   ///
   /// SI metric unit. Equal to 1000 [femtokelvin] or 1ᴇ-12 [kelvin]. Adopted 1960.
   picokelvin(
@@ -220,7 +258,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **femtokelvin** ([fK])
+  /// <b>{one: femtokelvin, other: femtokelvins}</b>
+  ///
+  /// Symbols: fK
   ///
   /// SI metric unit. Equal to 1000 [attokelvin] or 1ᴇ-15 [kelvin]. Adopted 1964.
   femtokelvin(
@@ -231,7 +271,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **attokelvin** ([aK])
+  /// <b>{one: attokelvin, other: attokelvins}</b>
+  ///
+  /// Symbols: aK
   ///
   /// SI metric unit. Equal to 1000 [zeptokelvin] or 1ᴇ-18 [kelvin]. Adopted 1964.
   attokelvin(
@@ -242,7 +284,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **zeptokelvin** ([zK])
+  /// <b>{one: zeptokelvin, other: zeptokelvins}</b>
+  ///
+  /// Symbols: zK
   ///
   /// SI metric unit. Equal to 1000 [yoctokelvin] or 1ᴇ-21 [kelvin]. Adopted 1991.
   zeptokelvin(
@@ -253,7 +297,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **yoctokelvin** ([yK])
+  /// <b>{one: yoctokelvin, other: yoctokelvins}</b>
+  ///
+  /// Symbols: yK
   ///
   /// SI metric unit. Equal to 1000 [rontokelvin] or 1ᴇ-24 [kelvin]. Adopted 1991.
   yoctokelvin(
@@ -264,7 +310,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **rontokelvin** ([rK])
+  /// <b>{one: rontokelvin, other: rontokelvins}</b>
+  ///
+  /// Symbols: rK
   ///
   /// SI metric unit. Equal to 1000 [quectokelvin] or 1ᴇ-27 [kelvin]. Adopted 2022.
   rontokelvin(
@@ -275,7 +323,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **quectokelvin** ([qK])
+  /// <b>{one: quectokelvin, other: quectokelvins}</b>
+  ///
+  /// Symbols: qK
   ///
   /// SI metric unit. Equal to 1ᴇ-30 [kelvin]. Adopted 2022.
   quectokelvin(
@@ -286,7 +336,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **Celsius / centigrade / degree Celsius / degree centigrade** ([˚C])
+  /// <b>{one: Celsius, other: Celsius} / {one: centigrade, other: centigrades} / {one: degree Celsius, other: degrees Celsius} / {one: degree centigrade, other: degrees centigrade}</b>
+  ///
+  /// Symbols: ˚C
   ///
   /// SI derived metric unit. 0˚C is equal to 273.15 [kelvin].
   celsius(
@@ -301,7 +353,9 @@ enum UnitTemperature with Unit {
   // ENGLISH
   // --------------------------------------------
 
-  /// **Fahrenheit / degree Fahrenheit** ([˚F])
+  /// <b>{one: Fahrenheit, other: Fahrenheits} / {one: degree Fahrenheit, other: degrees Fahrenheit}</b>
+  ///
+  /// Symbols: ˚F
   ///
   /// Imperial unit. 0 ˚F is equal to -17.7̅ [celsius] or 255.372̅ [kelvin].
   fahrenheit(
@@ -312,7 +366,9 @@ enum UnitTemperature with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **Rankine / degree Rankine** ([˚R])
+  /// <b>{one: Rankine, other: Rankines} / {one: degree Rankine, other: degrees Rankine}</b>
+  ///
+  /// Symbols: ˚R
   ///
   /// Imperial derived unit. 0 ˚R is equal to -459.67 [fahrenheit], -275.15 [celsius], or 0 [kelvin].
   rankine(
@@ -327,7 +383,9 @@ enum UnitTemperature with Unit {
   // FRENCH
   // --------------------------------------------
 
-  /// **Réaumur / degree Réaumur** ([˚Ré, ˚Re])
+  /// <b>{one: Réaumur, other: Réaumurs} / {one: degree Réaumur, other: degrees Réaumur}</b>
+  ///
+  /// Symbols: ˚Ré, ˚Re
   ///
   /// Old French unit. 0 ˚Ré is equal to 0 [celsius]; 80 ˚Ré is equal to 100 [celsius].
   reaumur(
@@ -356,6 +414,8 @@ enum UnitTemperature with Unit {
   final String yinterceptDenominator;
   @override
   final UnitCategory category;
+  @override
+  get _stringMap => strings.UnitTemperature[name]!;
   @override
   String get descLocalized => super._getDescLocalized(values);
 

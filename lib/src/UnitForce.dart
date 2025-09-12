@@ -11,7 +11,9 @@ enum UnitForce with Unit {
   // METRICSI
   // --------------------------------------------
 
-  /// **newton** ([\N])
+  /// <b>{one: newton, other: newtons}</b>
+  ///
+  /// Symbols: N
   ///
   /// Base SI metric unit.
   newton(
@@ -22,7 +24,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **quettanewton** ([QN])
+  /// <b>{one: quettanewton, other: quettanewtons}</b>
+  ///
+  /// Symbols: QN
   ///
   /// SI metric unit. Equal to 1000 [ronnanewton] or 1ᴇ30 [newton]. Adopted 2022.
   quettanewton(
@@ -33,7 +37,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **ronnanewton** ([RN])
+  /// <b>{one: ronnanewton, other: ronnanewtons}</b>
+  ///
+  /// Symbols: RN
   ///
   /// SI metric unit. Equal to 1000 [yottanewton] or 1ᴇ27 [newton]. Adopted 2022.
   ronnanewton(
@@ -44,7 +50,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **yottanewton** ([YN])
+  /// <b>{one: yottanewton, other: yottanewtons}</b>
+  ///
+  /// Symbols: YN
   ///
   /// SI metric unit. Equal to 1000 [zettanewton] or 1ᴇ24 newton. Adopted 1991.
   yottanewton(
@@ -55,7 +63,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **zettanewton** ([ZN])
+  /// <b>{one: zettanewton, other: zettanewtons}</b>
+  ///
+  /// Symbols: ZN
   ///
   /// SI metric unit. Equal to 1000 [exanewton] or 1ᴇ21 [newton]. Adopted 1991.
   zettanewton(
@@ -66,7 +76,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **exanewton** ([EN])
+  /// <b>{one: exanewton, other: exanewtons}</b>
+  ///
+  /// Symbols: EN
   ///
   /// SI metric unit. Equal to 1000 [petanewton] or 1ᴇ18 [newton]. Adopted 1975.
   exanewton(
@@ -77,7 +89,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **petanewton** ([PN])
+  /// <b>{one: petanewton, other: petanewtons}</b>
+  ///
+  /// Symbols: PN
   ///
   /// SI metric unit. Equal to 1000 [teranewton] or 1ᴇ15 [newton]. Adopted 1975.
   petanewton(
@@ -88,7 +102,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **teranewton** ([TN])
+  /// <b>{one: teranewton, other: teranewtons}</b>
+  ///
+  /// Symbols: TN
   ///
   /// SI metric unit. Equal to 1000 [giganewton] or 1ᴇ12 [newton]. Adopted 1960.
   teranewton(
@@ -99,7 +115,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **giganewton** ([GN])
+  /// <b>{one: giganewton, other: giganewtons}</b>
+  ///
+  /// Symbols: GN
   ///
   /// SI metric unit. Equal to 1000 [meganewton] or 1ᴇ9 [newton]. Adopted 1960.
   giganewton(
@@ -110,7 +128,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **meganewton** ([MN])
+  /// <b>{one: meganewton, other: meganewtons}</b>
+  ///
+  /// Symbols: MN
   ///
   /// SI metric unit. Equal to 1000 [kilonewton] or 1ᴇ6 [newton]. Adopted 1873.
   meganewton(
@@ -121,7 +141,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **kilonewton** ([kN])
+  /// <b>{one: kilonewton, other: kilonewtons}</b>
+  ///
+  /// Symbols: kN
   ///
   /// SI metric unit. Equal to 10 [hectonewton] or 1000 [newton]. Adopted 1795.
   kilonewton(
@@ -132,7 +154,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **hectonewton** ([hN])
+  /// <b>{one: hectonewton, other: hectonewtons}</b>
+  ///
+  /// Symbols: hN
   ///
   /// SI metric unit. Equal to 10 [decanewton] or 100 [newton]. Adopted 1795.
   hectonewton(
@@ -143,7 +167,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **decanewton** ([daN])
+  /// <b>{one: decanewton, other: decanewtons}</b>
+  ///
+  /// Symbols: daN
   ///
   /// SI metric unit. Equal to 10 [newton]. Adopted 1795.
   decanewton(
@@ -154,7 +180,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **decinewton** ([dN])
+  /// <b>{one: decinewton, other: decinewtons}</b>
+  ///
+  /// Symbols: dN
   ///
   /// SI metric unit. Equal to 10 [centinewton] or 0.1 [newton]. Adopted 1795.
   decinewton(
@@ -165,7 +193,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **centinewton** ([cN])
+  /// <b>{one: centinewton, other: centinewtons}</b>
+  ///
+  /// Symbols: cN
   ///
   /// SI metric unit. Equal to 10 [millinewton] or 0.01 [newton]. Adopted 1795.
   centinewton(
@@ -176,7 +206,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **millinewton** ([mN])
+  /// <b>{one: millinewton, other: millinewtons}</b>
+  ///
+  /// Symbols: mN
   ///
   /// SI metric unit. Equal to 1000 [micronewton] or 0.001 [newton]. Adopted 1795.
   millinewton(
@@ -187,7 +219,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **micronewton** ([μN])
+  /// <b>{one: micronewton, other: micronewtons}</b>
+  ///
+  /// Symbols: μN
   ///
   /// SI metric unit. Equal to 1000 [nanonewton] or 1ᴇ-6 [newton]. Adopted 1873.
   micronewton(
@@ -198,7 +232,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **nanonewton** ([nN])
+  /// <b>{one: nanonewton, other: nanonewtons}</b>
+  ///
+  /// Symbols: nN
   ///
   /// SI metric unit. Equal to 1000 [piconewton] or 1ᴇ-9 [newton]. Adopted 1960.
   nanonewton(
@@ -209,7 +245,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **piconewton** ([pN])
+  /// <b>{one: piconewton, other: piconewtons}</b>
+  ///
+  /// Symbols: pN
   ///
   /// SI metric unit. Equal to 1000 [femtonewton] or 1ᴇ-12 [newton]. Adopted 1960.
   piconewton(
@@ -220,7 +258,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **femtonewton** ([fN])
+  /// <b>{one: femtonewton, other: femtonewtons}</b>
+  ///
+  /// Symbols: fN
   ///
   /// SI metric unit. Equal to 1000 [attonewton] or 1ᴇ-15 [newton]. Adopted 1964.
   femtonewton(
@@ -231,7 +271,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **attonewton** ([aN])
+  /// <b>{one: attonewton, other: attonewtons}</b>
+  ///
+  /// Symbols: aN
   ///
   /// SI metric unit. Equal to 1000 [zeptonewton] or 1ᴇ-18 [newton]. Adopted 1964.
   attonewton(
@@ -242,7 +284,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **zeptonewton** ([zN])
+  /// <b>{one: zeptonewton, other: zeptonewtons}</b>
+  ///
+  /// Symbols: zN
   ///
   /// SI metric unit. Equal to 1000 [yoctonewton] or 1ᴇ-21 [newton]. Adopted 1991.
   zeptonewton(
@@ -253,7 +297,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **yoctonewton** ([yN])
+  /// <b>{one: yoctonewton, other: yoctonewtons}</b>
+  ///
+  /// Symbols: yN
   ///
   /// SI metric unit. Equal to 1000 [rontonewton] or 1ᴇ-24 [newton]. Adopted 1991.
   yoctonewton(
@@ -264,7 +310,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **rontonewton** ([rN])
+  /// <b>{one: rontonewton, other: rontonewtons}</b>
+  ///
+  /// Symbols: rN
   ///
   /// SI metric unit. Equal to 1000 [quectonewton] or 1ᴇ-27 [newton]. Adopted 2022.
   rontonewton(
@@ -275,7 +323,9 @@ enum UnitForce with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **quectonewton** ([qN])
+  /// <b>{one: quectonewton, other: quectonewtons}</b>
+  ///
+  /// Symbols: qN
   ///
   /// SI metric unit. Equal to 1ᴇ-30 [newton]. Adopted 2022.
   quectonewton(
@@ -290,7 +340,9 @@ enum UnitForce with Unit {
   // ENGLISH
   // --------------------------------------------
 
-  /// **pound-force / pound** ([lbf, lb])
+  /// <b>{one: pound-force, other: pound-forces} / {one: pound, other: pounds}</b>
+  ///
+  /// Symbols: lbf, {one: lb, other: lbs}
   ///
   /// English unit. Equal to 4.4482216152605 [newton].
   poundForce(
@@ -301,7 +353,9 @@ enum UnitForce with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **kip / kilopound / kilopound-force** ([kip, kipf])
+  /// <b>{one: kip, other: kips} / {one: kilopound, other: kilopounds} / {one: kilopound-force, other: kilopound-forces}</b>
+  ///
+  /// Symbols: {one: kip, other: kips}, kipf
   ///
   /// English unit. Equal to 1000 [poundForce] or 4448.2216152605 [newton].
   kip(
@@ -330,6 +384,8 @@ enum UnitForce with Unit {
   final String yinterceptDenominator;
   @override
   final UnitCategory category;
+  @override
+  get _stringMap => strings.UnitForce[name]!;
   @override
   String get descLocalized => super._getDescLocalized(values);
 

@@ -11,7 +11,9 @@ enum UnitLength with Unit {
   // METRICSI
   // --------------------------------------------
 
-  /// **meter / metre** ([m])
+  /// <b>{one: meter, other: meters} / {one: metre, other: metres}</b>
+  ///
+  /// Symbols: m
   ///
   /// Base SI metric unit.
   meter(
@@ -22,7 +24,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **quettameter / quettametre** ([Qm])
+  /// <b>{one: quettameter, other: quettameters} / {one: quettametre, other: quettametres}</b>
+  ///
+  /// Symbols: Qm
   ///
   /// SI metric unit. Equal to 1000 [ronnameter] or 1ᴇ30 [meter]. Adopted 2022.
   quettameter(
@@ -33,7 +37,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **ronnameter / ronnametre** ([Rm])
+  /// <b>{one: ronnameter, other: ronnameters} / {one: ronnametre, other: ronnametres}</b>
+  ///
+  /// Symbols: Rm
   ///
   /// SI metric unit. Equal to 1000 [yottameter] or 1ᴇ27 [meter]. Adopted 2022.
   ronnameter(
@@ -44,7 +50,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **yottameter / yottametre** ([Ym])
+  /// <b>{one: yottameter, other: yottameters} / {one: yottametre, other: yottametres}</b>
+  ///
+  /// Symbols: Ym
   ///
   /// SI metric unit. Equal to 1000 [zettameter] or 1ᴇ24 meter. Adopted 1991.
   yottameter(
@@ -55,7 +63,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **zettameter / zettametre** ([Zm])
+  /// <b>{one: zettameter, other: zettameters} / {one: zettametre, other: zettametres}</b>
+  ///
+  /// Symbols: Zm
   ///
   /// SI metric unit. Equal to 1000 [exameter] or 1ᴇ21 [meter]. Adopted 1991.
   zettameter(
@@ -66,7 +76,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **exameter / exametre** ([Em])
+  /// <b>{one: exameter, other: exameters} / {one: exametre, other: exametres}</b>
+  ///
+  /// Symbols: Em
   ///
   /// SI metric unit. Equal to 1000 [petameter] or 1ᴇ18 [meter]. Adopted 1975.
   exameter(
@@ -77,7 +89,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **petameter / petametre** ([Pm])
+  /// <b>{one: petameter, other: petameters} / {one: petametre, other: petametres}</b>
+  ///
+  /// Symbols: Pm
   ///
   /// SI metric unit. Equal to 1000 [terameter] or 1ᴇ15 [meter]. Adopted 1975.
   petameter(
@@ -88,7 +102,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **terameter / terametre** ([Tm])
+  /// <b>{one: terameter, other: terameters} / {one: terametre, other: terametres}</b>
+  ///
+  /// Symbols: Tm
   ///
   /// SI metric unit. Equal to 1000 [gigameter] or 1ᴇ12 [meter]. Adopted 1960.
   terameter(
@@ -99,7 +115,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **gigameter / gigametre** ([Gm])
+  /// <b>{one: gigameter, other: gigameters} / {one: gigametre, other: gigametres}</b>
+  ///
+  /// Symbols: Gm
   ///
   /// SI metric unit. Equal to 1000 [megameter] or 1ᴇ9 [meter]. Adopted 1960.
   gigameter(
@@ -110,7 +128,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **megameter / megametre** ([Mm])
+  /// <b>{one: megameter, other: megameters} / {one: megametre, other: megametres}</b>
+  ///
+  /// Symbols: Mm
   ///
   /// SI metric unit. Equal to 1000 [kilometer] or 1ᴇ6 [meter]. Adopted 1873.
   megameter(
@@ -121,7 +141,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **kilometer / kilometre / klick** ([km])
+  /// <b>{one: kilometer, other: kilometers} / {one: kilometre, other: kilometres} / {one: klick, other: klicks}</b>
+  ///
+  /// Symbols: km
   ///
   /// SI metric unit. Equal to 10 [hectometer] or 1000 [meter]. Adopted 1795.
   kilometer(
@@ -132,7 +154,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **hectometer / hectometre** ([hm])
+  /// <b>{one: hectometer, other: hectometers} / {one: hectometre, other: hectometres}</b>
+  ///
+  /// Symbols: hm
   ///
   /// SI metric unit. Equal to 10 [decameter] or 100 [meter]. Adopted 1795.
   hectometer(
@@ -143,7 +167,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **decameter / decametre** ([dam])
+  /// <b>{one: decameter, other: decameters} / {one: decametre, other: decametres}</b>
+  ///
+  /// Symbols: dam
   ///
   /// SI metric unit. Equal to 10 [meter]. Adopted 1795.
   decameter(
@@ -154,7 +180,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **decimeter / decimetre** ([dm])
+  /// <b>{one: decimeter, other: decimeters} / {one: decimetre, other: decimetres}</b>
+  ///
+  /// Symbols: dm
   ///
   /// SI metric unit. Equal to 10 [centimeter] or 0.1 [meter]. Adopted 1795.
   decimeter(
@@ -165,7 +193,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **centimeter / centimetre** ([cm])
+  /// <b>{one: centimeter, other: centimeters} / {one: centimetre, other: centimetres}</b>
+  ///
+  /// Symbols: cm
   ///
   /// SI metric unit. Equal to 10 [millimeter] or 0.01 [meter]. Adopted 1795.
   centimeter(
@@ -176,7 +206,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **millimeter / millimetre** ([mm])
+  /// <b>{one: millimeter, other: millimeters} / {one: millimetre, other: millimetres}</b>
+  ///
+  /// Symbols: mm
   ///
   /// SI metric unit. Equal to 1000 [micrometer] or 0.001 [meter]. Adopted 1795.
   millimeter(
@@ -187,7 +219,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **micrometer / micrometre / micron** ([μm])
+  /// <b>{one: micrometer, other: micrometers} / {one: micrometre, other: micrometres} / {one: micron, other: microns}</b>
+  ///
+  /// Symbols: μm
   ///
   /// SI metric unit. Equal to 1000 [nanometer] or 1ᴇ-6 [meter]. Adopted 1873.
   micrometer(
@@ -198,7 +232,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **nanometer / nanometre** ([nm])
+  /// <b>{one: nanometer, other: nanometers} / {one: nanometre, other: nanometres}</b>
+  ///
+  /// Symbols: nm
   ///
   /// SI metric unit. Equal to 1000 [picometer] or 1ᴇ-9 [meter]. Adopted 1960.
   nanometer(
@@ -209,7 +245,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **picometer / picometre** ([pm])
+  /// <b>{one: picometer, other: picometers} / {one: picometre, other: picometres}</b>
+  ///
+  /// Symbols: pm
   ///
   /// SI metric unit. Equal to 1000 [femtometer] or 1ᴇ-12 [meter]. Adopted 1960.
   picometer(
@@ -220,7 +258,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **femtometer / femtometre / fermi** ([fm])
+  /// <b>{one: femtometer, other: femtometers} / {one: femtometre, other: femtometres} / {one: fermi, other: fermis}</b>
+  ///
+  /// Symbols: fm
   ///
   /// SI metric unit. Equal to 1000 [attometer] or 1ᴇ-15 [meter]. Adopted 1964.
   femtometer(
@@ -231,7 +271,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **attometer / attometre** ([am])
+  /// <b>{one: attometer, other: attometers} / {one: attometre, other: attometres}</b>
+  ///
+  /// Symbols: am
   ///
   /// SI metric unit. Equal to 1000 [zeptometer] or 1ᴇ-18 [meter]. Adopted 1964.
   attometer(
@@ -242,7 +284,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **zeptometer / zeptometre** ([zm])
+  /// <b>{one: zeptometer, other: zeptometers} / {one: zeptometre, other: zeptometres}</b>
+  ///
+  /// Symbols: zm
   ///
   /// SI metric unit. Equal to 1000 [yoctometer] or 1ᴇ-21 [meter]. Adopted 1991.
   zeptometer(
@@ -253,7 +297,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **yoctometer / yoctometre** ([ym])
+  /// <b>{one: yoctometer, other: yoctometers} / {one: yoctometre, other: yoctometres}</b>
+  ///
+  /// Symbols: ym
   ///
   /// SI metric unit. Equal to 1000 [rontometer] or 1ᴇ-24 [meter]. Adopted 1991.
   yoctometer(
@@ -264,7 +310,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **rontometer / rontometre** ([rm])
+  /// <b>{one: rontometer, other: rontometers} / {one: rontometre, other: rontometres}</b>
+  ///
+  /// Symbols: rm
   ///
   /// SI metric unit. Equal to 1000 [quectometer] or 1ᴇ-27 [meter]. Adopted 2022.
   rontometer(
@@ -275,7 +323,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricSi,
   ),
 
-  /// **quectometer / quectometre** ([qm])
+  /// <b>{one: quectometer, other: quectometers} / {one: quectometre, other: quectometres}</b>
+  ///
+  /// Symbols: qm
   ///
   /// SI metric unit. Equal to 1ᴇ-30 [meter]. Adopted 2022.
   quectometer(
@@ -290,7 +340,9 @@ enum UnitLength with Unit {
   // METRICNONSI
   // --------------------------------------------
 
-  /// **myriameter** ([my])
+  /// <b>{one: myriameter, other: myriameters}</b>
+  ///
+  /// Symbols: {one: my, other: mys}
   ///
   /// Non-SI deprecated metric unit. Equal to 10 [kilometer].
   myriameter(
@@ -301,7 +353,9 @@ enum UnitLength with Unit {
     category: UnitCategory.metricNonSi,
   ),
 
-  /// **ångström** ([Å])
+  /// <b>{one: ångström, other: ångströms}</b>
+  ///
+  /// Symbols: Å
   ///
   /// Non-SI metric unit. Equal to 0.1 [nanometer].
   angstrom(
@@ -316,7 +370,9 @@ enum UnitLength with Unit {
   // ENGLISH
   // --------------------------------------------
 
-  /// **UK league / UK statute league** ([lg, st. lg])
+  /// <b>{one: UK league, other: UK leagues} / {one: UK statute league, other: UK statute leagues}</b>
+  ///
+  /// Symbols: lg, st. lg
   ///
   /// Imperial linear unit. Equal to 3 [mileImperial] or 4.828032 [kilometer].
   leagueImperial(
@@ -327,7 +383,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **UK mile / UK statute mile / land** ([mi, st. mi])
+  /// <b>{one: UK mile, other: UK miles} / {one: UK statute mile, other: UK statute miles} / {one: land, other: lands}</b>
+  ///
+  /// Symbols: mi, st. mi
   ///
   /// Imperial linear unit. Equal to 1760 [yardImperial], 320 [rod], or 1.609344 [kilometer].
   mileImperial(
@@ -338,7 +396,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **rod / pole / perch** ([rd])
+  /// <b>{one: rod, other: rods} / {one: pole, other: poles} / {one: perch, other: perches}</b>
+  ///
+  /// Symbols: rd
   ///
   /// Imperial unit. Equal to 16.5 [footImperial], 11⁄2 [yardImperial], or 5.0292 [meter].
   rod(
@@ -349,7 +409,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **yard** ([yd])
+  /// <b>{one: yard, other: yards}</b>
+  ///
+  /// Symbols: yd
   ///
   /// Imperial unit. Equal to 3 [footImperial], 6⁄5 [pace], or 0.9144 [meter].
   yardImperial(
@@ -360,7 +422,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **pace** ([pc])
+  /// <b>{one: pace, other: paces}</b>
+  ///
+  /// Symbols: pc
   ///
   /// Imperial linear unit. Equal to 30 [inchImperial], 5⁄3 [cubitImperial], or 0.762 [meter].
   pace(
@@ -371,7 +435,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **cubit** ([cu])
+  /// <b>{one: cubit, other: cubits}</b>
+  ///
+  /// Symbols: cu
   ///
   /// Imperial linear unit. Equal to 18 [inchImperial], 3⁄2 [footImperial], or 0.4572 [meter].
   cubitImperial(
@@ -382,7 +448,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **foot** ([ft])
+  /// <b>{one: foot, other: feet}</b>
+  ///
+  /// Symbols: ft
   ///
   /// Imperial unit. Equal to 12 [inchImperial], 4⁄3 [spanImperial], or 30.48 [centimeter].
   footImperial(
@@ -393,7 +461,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **span** ([sp])
+  /// <b>{one: span, other: spans}</b>
+  ///
+  /// Symbols: sp
   ///
   /// Imperial linear unit. Equal to 9 [inchImperial], 9⁄4 [hand], or 22.86 [centimeter].
   spanImperial(
@@ -404,7 +474,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **hand** ([hd])
+  /// <b>{one: hand, other: hands}</b>
+  ///
+  /// Symbols: hd
   ///
   /// Imperial linear unit. Equal to 4 [inchImperial], 4⁄3 [palmImperial], or 10.16 [centimeter].
   hand(
@@ -415,7 +487,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **palm** ([plm])
+  /// <b>{one: palm, other: palms}</b>
+  ///
+  /// Symbols: plm
   ///
   /// Imperial linear unit. Equal to 3 [inchImperial] or 7.62 [centimeter].
   palmImperial(
@@ -426,7 +500,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **inch** ([in, \"])
+  /// <b>{one: inch, other: inches}</b>
+  ///
+  /// Symbols: in, "
   ///
   /// Imperial linear unit. Equal to 12 [lineImperialUK], 40 [lineImperialUS], or 2.54 [centimeter].
   inchImperial(
@@ -437,7 +513,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **UK line** ([line])
+  /// <b>{one: UK line, other: UK lines}</b>
+  ///
+  /// Symbols: {one: line, other: lines}
   ///
   /// Imperial linear unit. Equal to 12 [point] or 2.116̅ [millimeter].
   lineImperialUK(
@@ -448,7 +526,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **point** ([pt])
+  /// <b>{one: point, other: points}</b>
+  ///
+  /// Symbols: pt
   ///
   /// Smallest UK imperial linear unit. Equal to 0.17638̅ [millimeter].
   point(
@@ -459,7 +539,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **furlong / furrow long** ([fur])
+  /// <b>{one: furlong, other: furlongs} / {one: furrow long, other: furrow longs}</b>
+  ///
+  /// Symbols: fur
   ///
   /// Imperial surveyor unit. Equal to 220 [yardImperial], 10 [chainGunter], or 201.168 [meter].
   furlong(
@@ -470,7 +552,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **Gunter's chain** ([ch])
+  /// <b>{one: Gunter's chain, other: Gunter's chains}</b>
+  ///
+  /// Symbols: ch
   ///
   /// Imperial surveyor unit. Equal to 4 [rod] or 20.1168 [meter].
   chainGunter(
@@ -481,7 +565,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **Gunter's link** ([lk])
+  /// <b>{one: Gunter's link, other: Gunter's links}</b>
+  ///
+  /// Symbols: lk
   ///
   /// Smallest imperial surveyor unit. Equal to 20.1168 [centimeter].
   linkGunter(
@@ -492,7 +578,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **lea / skein** ([lea])
+  /// <b>{one: lea, other: leas} / {one: skein, other: skeins}</b>
+  ///
+  /// Symbols: lea
   ///
   /// Imperial (UK) linear unit. Equal to 360 [footImperial] or 109.728 [meter].
   lea(
@@ -503,7 +591,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **wrap** ([wrap])
+  /// <b>{one: wrap, other: wraps}</b>
+  ///
+  /// Symbols: wrap
   ///
   /// Imperial (UK) unit. Equal to 240 [footImperial] or 73.152 [meter].
   wrap(
@@ -514,7 +604,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **bolt** ([bolt])
+  /// <b>{one: bolt, other: bolts}</b>
+  ///
+  /// Symbols: bolt
   ///
   /// Imperial (UK) unit. Equal to 120 [footImperial] or 36.576 [meter].
   bolt(
@@ -525,7 +617,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **shackle** ([shackle])
+  /// <b>{one: shackle, other: shackles}</b>
+  ///
+  /// Symbols: shackle
   ///
   /// Imperial (UK) unit. Equal to 90 [footImperial] or 27.432 [meter].
   shackle(
@@ -536,7 +630,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **rope** ([rope])
+  /// <b>{one: rope, other: ropes}</b>
+  ///
+  /// Symbols: rope
   ///
   /// Imperial (UK) unit. Equal to 20 [footImperial] or 6.096 [meter].
   rope(
@@ -547,7 +643,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **ell** ([ell])
+  /// <b>{one: ell, other: ells}</b>
+  ///
+  /// Symbols: ell
   ///
   /// Imperial (UK) unit. Equal to 45 [inchImperial] or 1.143 [meter].
   ellImperial(
@@ -558,7 +656,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **nail** ([nail])
+  /// <b>{one: nail, other: nails}</b>
+  ///
+  /// Symbols: nail
   ///
   /// Imperial (UK) unit. Equal to 9⁄4 [inchImperial] or 5.715 [centimeter].
   nail(
@@ -569,7 +669,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **finger** ([finger])
+  /// <b>{one: finger, other: fingers}</b>
+  ///
+  /// Symbols: finger
   ///
   /// Imperial (UK) unit. Equal to 7⁄8 [inchImperial] or 2.2225 [centimeter].
   fingerImperial(
@@ -580,7 +682,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **barleycorn** ([Bc])
+  /// <b>{one: barleycorn, other: barleycorns}</b>
+  ///
+  /// Symbols: Bc
   ///
   /// Imperial (UK) unit. Equal to ⅓ [inchImperial] or 8.46̅ [millimeter].
   barleycorn(
@@ -591,7 +695,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **button** ([button])
+  /// <b>{one: button, other: buttons}</b>
+  ///
+  /// Symbols: button
   ///
   /// Imperial (UK) unit. Equal to 1⁄12 [inchImperial] or 2.116̅ [millimeter].
   button(
@@ -602,7 +708,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **iron** ([iron])
+  /// <b>{one: iron, other: irons}</b>
+  ///
+  /// Symbols: iron
   ///
   /// Imperial (UK) unit. Equal to 1⁄48 [inchImperial] or 0.52916̅ [millimeter].
   iron(
@@ -613,7 +721,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **calibre** ([calibre])
+  /// <b>{one: calibre, other: calibres}</b>
+  ///
+  /// Symbols: calibre
   ///
   /// Imperial (UK) unit. Equal to 1⁄100 [inchImperial] or 0.254 [millimeter].
   calibre(
@@ -624,7 +734,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **thou / mil** ([th])
+  /// <b>{one: thou, other: thous} / {one: mil, other: mils}</b>
+  ///
+  /// Symbols: th
   ///
   /// Imperial (UK) unit. Equal to 1⁄1000 [inchImperial] or 25.4 [micrometer].
   thouImperial(
@@ -635,7 +747,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **UK nautical league** ([nlg, naut. lg])
+  /// <b>{one: UK nautical league, other: UK nautical leagues}</b>
+  ///
+  /// Symbols: nlg, naut. lg
   ///
   /// Imperial unit. Equal to 3 [mileNauticalUK] or 5.559552 [kilometer].
   leagueNauticalUK(
@@ -646,7 +760,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **UK nautical mile** ([nmi, naut. mi])
+  /// <b>{one: UK nautical mile, other: UK nautical miles}</b>
+  ///
+  /// Symbols: nmi, naut. mi
   ///
   /// Imperial nautical unit. Equal to 10 [cableNauticalUK] or 1.853184 [kilometer].
   mileNauticalUK(
@@ -657,7 +773,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **UK nautical cable / cable length** ([ncbl])
+  /// <b>{one: UK nautical cable, other: UK nautical cables} / {one: cable length, other: cable lengths}</b>
+  ///
+  /// Symbols: ncbl
   ///
   /// Imperial nautical unit. Equal to 608 [footImperial], 608⁄15 [chainNauticalUK], or 185.3184 meter.
   cableNauticalUK(
@@ -668,7 +786,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **nautical chain** ([nch])
+  /// <b>{one: nautical chain, other: nautical chains}</b>
+  ///
+  /// Symbols: nch
   ///
   /// Imperial nautical unit. Equal to 5 [yardImperial], 5⁄2 [fathomImperial]:, or 4.572 [meter].
   chainNauticalUK(
@@ -679,7 +799,9 @@ enum UnitLength with Unit {
     category: UnitCategory.english,
   ),
 
-  /// **fathom** ([fath])
+  /// <b>{one: fathom, other: fathoms}</b>
+  ///
+  /// Symbols: fath
   ///
   /// Imperial nautical unit. Equal to 2 [yardImperial] or 1.8288 [meter].
   fathomImperial(
@@ -694,7 +816,9 @@ enum UnitLength with Unit {
   // CONSTANTS
   // --------------------------------------------
 
-  /// **copper X unit** ([xu(CuKα₁)])
+  /// <b>{one: copper X unit, other: copper X units}</b>
+  ///
+  /// Symbols: xu(CuKα₁)
   ///
   /// Copper X-ray wavelength unit. Equal to 1.00207697(28)ᴇ-13 [meter]. {2018 CODATA}
   xunitCopper(
@@ -705,7 +829,9 @@ enum UnitLength with Unit {
     category: UnitCategory.constants,
   ),
 
-  /// **molybdenum X unit** ([xu(MoKα₁)])
+  /// <b>{one: molybdenum X unit, other: molybdenum X units}</b>
+  ///
+  /// Symbols: xu(MoKα₁)
   ///
   /// Molybdenum X-ray wavelength unit. Equal to 1.00209952(53)ᴇ-13 [meter]. {2018 CODATA}
   xunitMolybdenum(
@@ -716,7 +842,9 @@ enum UnitLength with Unit {
     category: UnitCategory.constants,
   ),
 
-  /// **Plank length** ([Lₚ])
+  /// <b>{one: Plank length, other: Plank lengths}</b>
+  ///
+  /// Symbols: Lₚ
   ///
   /// Equal to 1.6160(12)ᴇ-35 [meter]
   plank(
@@ -731,7 +859,9 @@ enum UnitLength with Unit {
   // BYZANTINE
   // --------------------------------------------
 
-  /// **Byzantine digit / Byzantine finger / monas** ([δάκτυλος])
+  /// <b>{one: Byzantine digit, other: Byzantine digits} / {one: Byzantine finger, other: Byzantine fingers} / {one: monas, other: monades}</b>
+  ///
+  /// Symbols: δάκτυλος
   ///
   /// Ancient Byzantine unit. Equal to 1⁄16 [pousByzantine] or 1.951875 [centimeter].
   digitByzantine(
@@ -742,7 +872,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **Byzantine palm** ([παλαιστή])
+  /// <b>{one: Byzantine palm, other: Byzantine palms}</b>
+  ///
+  /// Symbols: παλαιστή
   ///
   /// Ancient Byzantine unit. Equal to ¼ [pousByzantine] or 7.8075 [centimeter].
   palmByzantine(
@@ -753,7 +885,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **Byzantine half-pous / Byzantine half-foot** ([ἡμιπόδιον])
+  /// <b>{one: Byzantine half-pous, other: Byzantine half-podes} / {one: Byzantine half-foot, other: Byzantine half-feet}</b>
+  ///
+  /// Symbols: ἡμιπόδιον
   ///
   /// Ancient Byzantine unit. Equal to ½ [pousByzantine] or 15.615 [centimeter].
   halfpous(
@@ -764,7 +898,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **Byzantine span** ([σπιθαμή])
+  /// <b>{one: Byzantine span, other: Byzantine spans}</b>
+  ///
+  /// Symbols: σπιθαμή
   ///
   /// Ancient Byzantine unit. Equal to ¾ [pousByzantine] or 23.4225 [centimeter].
   spanByzantine(
@@ -775,7 +911,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **Byzantine pous / Byzantine foot** ([ποῦς])
+  /// <b>{one: Byzantine pous, other: Byzantine podes} / {one: Byzantine foot, other: Byzantine feet}</b>
+  ///
+  /// Symbols: ποῦς
   ///
   /// Ancient Byzantine unit. Equal to 31.23 [centimeter].
   pousByzantine(
@@ -786,7 +924,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **public cubit** ([δημόσιος πῆχυς])
+  /// <b>{one: public cubit, other: public cubits}</b>
+  ///
+  /// Symbols: δημόσιος πῆχυς
   ///
   /// Ancient Byzantine unit. Equal to 1.5 [pousByzantine] or 46.845 [centimeter].
   cubitPublic(
@@ -797,7 +937,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **geometric cubit** ([γεωμετρικός πῆχυς])
+  /// <b>{one: geometric cubit, other: geometric cubits}</b>
+  ///
+  /// Symbols: γεωμετρικός πῆχυς
   ///
   /// Ancient Byzantine unit. Equal to 2 [pousByzantine] or 62.46 [centimeter].
   cubitGeometric(
@@ -808,7 +950,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **single pace** ([βῆμα ἁπλοῦν])
+  /// <b>{one: single pace, other: single paces}</b>
+  ///
+  /// Symbols: βῆμα ἁπλοῦν
   ///
   /// Ancient Byzantine unit. Equal to 2.5 [pousByzantine] or 78.075 [centimeter].
   paceSingle(
@@ -819,7 +963,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **double pace** ([βῆμα διπλοῦν])
+  /// <b>{one: double pace, other: double paces}</b>
+  ///
+  /// Symbols: βῆμα διπλοῦν
   ///
   /// Ancient Byzantine unit. Equal to 5 [pousByzantine] or 1.5615 [meter].
   paceDouble(
@@ -830,7 +976,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **simple orguia / simple fathom** ([ἁπλὴ ὀργυιά])
+  /// <b>{one: simple orguia, other: simple orguias} / {one: simple fathom, other: simple fathoms}</b>
+  ///
+  /// Symbols: ἁπλὴ ὀργυιά
   ///
   /// Ancient Byzantine unit. Equal to 6 [pousByzantine] or 1.8738 [meter].
   orguiaSimple(
@@ -841,7 +989,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **geometric orguia / geometric fathom** ([geômetrikê orguiá])
+  /// <b>{one: geometric orguia, other: geometric orguias} / {one: geometric fathom, other: geometric fathoms}</b>
+  ///
+  /// Symbols: geômetrikê orguiá
   ///
   /// Ancient Byzantine unit. Equal to 6¾ [pousByzantine] or 2.108025 [meter].
   orguiaGeometric(
@@ -852,7 +1002,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **perch** ([δεκάποδον])
+  /// <b>{one: perch, other: perches}</b>
+  ///
+  /// Symbols: δεκάποδον
   ///
   /// Ancient Byzantine unit. Equal to 10 [pousByzantine] or 3.123 [meter].
   perch(
@@ -863,7 +1015,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **schoinion (Balkan & West Anatolian)** ([σχοινιον])
+  /// <b>{one: schoinion (Balkan & West Anatolian), other: schoinia (Balkan & West Anatolian)}</b>
+  ///
+  /// Symbols: σχοινιον
   ///
   /// Ancient Byzantine unit in Balkan and west Anatolian. Equal to 60 [pousByzantine] or 18.738 [meter].
   schoinionBalkan(
@@ -874,7 +1028,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **schoinion (Asia Minor)** ([σχοινιον])
+  /// <b>{one: schoinion (Asia Minor), other: schoinia (Asia Minor)}</b>
+  ///
+  /// Symbols: σχοινιον
   ///
   /// Ancient Byzantine unit in the rest of Asia Minor. Equal to 72 [pousByzantine] or 22.4856 [meter].
   schoinionAsia(
@@ -885,7 +1041,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **plethron** ([πλέθρον])
+  /// <b>{one: plethron, other: plethra}</b>
+  ///
+  /// Symbols: πλέθρον
   ///
   /// Ancient Byzantine unit. Equal to 100 [pousByzantine] or 31.23 [meter].
   plethron(
@@ -896,7 +1054,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **stade** ([στάδιον])
+  /// <b>{one: stade, other: stades}</b>
+  ///
+  /// Symbols: στάδιον
   ///
   /// Ancient Byzantine unit. Equal to 600 [pousByzantine] or 187.38 [meter].
   stade(
@@ -907,7 +1067,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **bowshot** ([δοξαριού βολή])
+  /// <b>{one: bowshot, other: bowshots}</b>
+  ///
+  /// Symbols: δοξαριού βολή
   ///
   /// Ancient Byzantine unit. Equal to 1000 [pousByzantine] or 312.3 [meter].
   bowshot(
@@ -918,7 +1080,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **Byzantine mile** ([μίλιον])
+  /// <b>{one: Byzantine mile, other: Byzantine miles}</b>
+  ///
+  /// Symbols: μίλιον
   ///
   /// Ancient Byzantine unit. Equal to 5000 [pousByzantine] or 1.5615 [kilometer].
   mileByzantine(
@@ -929,7 +1093,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **schoenus** ([σχοινος])
+  /// <b>{one: schoenus, other: schoeni}</b>
+  ///
+  /// Symbols: σχοινος
   ///
   /// Ancient Byzantine unit. Equal to 20000 [pousByzantine] or 6.246 [kilometer].
   schoenus(
@@ -940,7 +1106,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **day's journey** ([ὁδός ἡμέρας])
+  /// <b>{one: day's journey, other: days' journeys}</b>
+  ///
+  /// Symbols: ὁδός ἡμέρας
   ///
   /// Ancient Byzantine unit. Equal to 150000 [pousByzantine] or 46.845 [kilometer].
   journeyDay(
@@ -951,7 +1119,9 @@ enum UnitLength with Unit {
     category: UnitCategory.byzantine,
   ),
 
-  /// **week's journey** ([ὁδός σαββάτου])
+  /// <b>{one: week's journey, other: weeks' journeys}</b>
+  ///
+  /// Symbols: ὁδός σαββάτου
   ///
   /// Ancient Byzantine unit. Equal to 1050000 [pousByzantine] or 327.915 [kilometer].
   journeyWeek(
@@ -966,7 +1136,9 @@ enum UnitLength with Unit {
   // CORNISH
   // --------------------------------------------
 
-  /// **Cornish fathom** ([ftm])
+  /// <b>{one: Cornish fathom, other: Cornish fathoms}</b>
+  ///
+  /// Symbols: ftm
   ///
   /// Old Cornish unit. Equal to 5 [footImperial] or 1.524 [meter].
   fathomCornish(
@@ -977,7 +1149,9 @@ enum UnitLength with Unit {
     category: UnitCategory.cornish,
   ),
 
-  /// **Cornish mile** ([mi])
+  /// <b>{one: Cornish mile, other: Cornish miles}</b>
+  ///
+  /// Symbols: mi
   ///
   /// Old Cornish unit. Equal to 1.5 [mileImperial] or 2.414016 [kilometer].
   mileCornish(
@@ -992,7 +1166,9 @@ enum UnitLength with Unit {
   // CYPRIOT
   // --------------------------------------------
 
-  /// **pic** ([pic])
+  /// <b>pic</b>
+  ///
+  /// Symbols: pic
   ///
   /// Old Cypriot unit. Equal to 2 [footCypriot] or 60.96 [centimeter].
   pic(
@@ -1003,7 +1179,9 @@ enum UnitLength with Unit {
     category: UnitCategory.cypriot,
   ),
 
-  /// **Cypriot foot** ([ft])
+  /// <b>{one: Cypriot foot, other: Cypriot feet}</b>
+  ///
+  /// Symbols: ft
   ///
   /// Old Cypriot unit. Equal to 30.48 [centimeter].
   footCypriot(
@@ -1018,7 +1196,9 @@ enum UnitLength with Unit {
   // CZECH
   // --------------------------------------------
 
-  /// **Bohemian stopa** ([stopa])
+  /// <b>Bohemian stopa</b>
+  ///
+  /// Symbols: stopa
   ///
   /// Old Czech unit in Bohemia. Equal to 0.296 [meter].
   stopaBohemian(
@@ -1029,7 +1209,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **Bohemian loket** ([loket])
+  /// <b>Bohemian loket</b>
+  ///
+  /// Symbols: loket
   ///
   /// Old Czech unit in Bohemia. Equal to 2 [stopaBohemian] or 0.592 [meter].
   loketBohemian(
@@ -1040,7 +1222,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **Bohemian sah** ([sah])
+  /// <b>Bohemian sah</b>
+  ///
+  /// Symbols: sah
   ///
   /// Old Czech unit in Bohemia. Equal to 3 [stopaBohemian] or 1.776 [meter].
   sahBohemian(
@@ -1051,7 +1235,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **Bohemian latro** ([latro])
+  /// <b>Bohemian latro</b>
+  ///
+  /// Symbols: latro
   ///
   /// Old Czech unit in Bohemia. Equal to 129⁄120 [sahBohemian] or 1.9092 [meter].
   latroBohemian(
@@ -1062,7 +1248,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **Bohemian mile** ([mi])
+  /// <b>Bohemian mile</b>
+  ///
+  /// Symbols: mi
   ///
   /// Old Czech unit in Bohemia. Equal to 3660 [latroBohemian] or 6.987672 [kilometer].
   mileBohemian(
@@ -1073,7 +1261,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **Praha stopa** ([stopa])
+  /// <b>Praha stopa</b>
+  ///
+  /// Symbols: stopa
   ///
   /// Old Czech unit in Prague. Equal to 0.2965 [meter].
   stopaPraha(
@@ -1084,7 +1274,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **Praha loket** ([loket])
+  /// <b>Praha loket</b>
+  ///
+  /// Symbols: loket
   ///
   /// Old Czech unit in Prague. Equal to 2 [stopaPraha] or 0.593 [meter].
   loketPraha(
@@ -1095,7 +1287,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **Praha sah** ([sah])
+  /// <b>Praha sah</b>
+  ///
+  /// Symbols: sah
   ///
   /// Old Czech unit in Prague. Equal to 3 [loketPraha] or 1.779 [meter].
   sahPraha(
@@ -1106,7 +1300,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **Praha latro** ([latro])
+  /// <b>Praha latro</b>
+  ///
+  /// Symbols: latro
   ///
   /// Old Czech unit in Prague. Equal to 129⁄120 Praha sah or 1.912425 [meter].
   latroPraha(
@@ -1117,7 +1313,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **Praha mile** ([mi])
+  /// <b>Praha mile</b>
+  ///
+  /// Symbols: mi
   ///
   /// Old Czech unit in Prague. Equal to 3660 [latroPraha] or 6.9994755 [kilometer].
   milePraha(
@@ -1128,7 +1326,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **Praha stopa** ([stopa])
+  /// <b>Praha stopa</b>
+  ///
+  /// Symbols: stopa
   ///
   /// Old Czech unit in Moravia. Equal to 0.284 [meter].
   stopaMoravian(
@@ -1139,7 +1339,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **Moravian loket** ([loket])
+  /// <b>Moravian loket</b>
+  ///
+  /// Symbols: loket
   ///
   /// Old Czech unit in Moravia. Equal to 2 [stopaMoravian] or 0.568 [meter].
   loketMoravian(
@@ -1150,7 +1352,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **Moravian sah** ([sah])
+  /// <b>Moravian sah</b>
+  ///
+  /// Symbols: sah
   ///
   /// Old Czech unit in Moravia. Equal to 3 [loketMoravian] or 1.704 [meter].
   sahMoravian(
@@ -1161,7 +1365,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **Moravian latro** ([latro])
+  /// <b>Moravian latro</b>
+  ///
+  /// Symbols: latro
   ///
   /// Old Czech unit in Moravia. Equal to 129⁄120 [sahMoravian] or 1.8318 [meter].
   latroMoravian(
@@ -1172,7 +1378,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **Morovian mile** ([mi])
+  /// <b>Morovian mile</b>
+  ///
+  /// Symbols: mi
   ///
   /// Old Czech unit in Moravia. Equal to 3660 [latroMoravian] or 6.704388 [kilometer].
   mileMoravian(
@@ -1183,7 +1391,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **stopa** ([stopa])
+  /// <b>stopa</b>
+  ///
+  /// Symbols: stopa
   ///
   /// Old Czech unit in Silesia. Equal to 0.2895 [meter].
   stopaSilesian(
@@ -1194,7 +1404,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **Silesian loket** ([loket])
+  /// <b>Silesian loket</b>
+  ///
+  /// Symbols: loket
   ///
   /// Old Czech unit in Silesia. Equal to 2 [stopaSilesian] or 0.579 [meter].
   loketSilesian(
@@ -1205,7 +1417,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **Silesian sah** ([sah])
+  /// <b>Silesian sah</b>
+  ///
+  /// Symbols: sah
   ///
   /// Old Czech unit in Silesia. Equal to 3 [loketSilesian] or 1.737 [meter].
   sahSilesian(
@@ -1216,7 +1430,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **Silesian latro** ([latro])
+  /// <b>Silesian latro</b>
+  ///
+  /// Symbols: latro
   ///
   /// Old Czech unit in Silesia. Equal to 129⁄120 [sahSilesian] or 1.867275 [meter].
   latroSilesian(
@@ -1227,7 +1443,9 @@ enum UnitLength with Unit {
     category: UnitCategory.czech,
   ),
 
-  /// **Silesian mile** ([mi])
+  /// <b>Silesian mile</b>
+  ///
+  /// Symbols: mi
   ///
   /// Old Czech unit in Silesia. Equal to 3660 [latroSilesian] or 6.8342265 [kilometer].
   mileSilesian(
@@ -1242,7 +1460,9 @@ enum UnitLength with Unit {
   // DANISH
   // --------------------------------------------
 
-  /// **miil** ([miil])
+  /// <b>miil</b>
+  ///
+  /// Symbols: miil
   ///
   /// Old Danish unit. Equal to 2000 [ruthe] or 7.532568 [kilometer].
   miil(
@@ -1253,7 +1473,9 @@ enum UnitLength with Unit {
     category: UnitCategory.danish,
   ),
 
-  /// **ruthe** ([ruthe])
+  /// <b>ruthe</b>
+  ///
+  /// Symbols: ruthe
   ///
   /// Old Danish unit. Equal to 2 [favn] or 3.766284 [meter].
   ruthe(
@@ -1264,7 +1486,9 @@ enum UnitLength with Unit {
     category: UnitCategory.danish,
   ),
 
-  /// **favn** ([favn])
+  /// <b>favn</b>
+  ///
+  /// Symbols: favn
   ///
   /// Old Danish unit. Equal to 3 [aln] or 1.883142 [meter].
   favn(
@@ -1275,7 +1499,9 @@ enum UnitLength with Unit {
     category: UnitCategory.danish,
   ),
 
-  /// **aln** ([aln])
+  /// <b>aln</b>
+  ///
+  /// Symbols: aln
   ///
   /// Old Danish unit. Equal to 2 [fod] or 0.627714 [meter].
   aln(
@@ -1286,7 +1512,9 @@ enum UnitLength with Unit {
     category: UnitCategory.danish,
   ),
 
-  /// **fod** ([fod])
+  /// <b>fod</b>
+  ///
+  /// Symbols: fod
   ///
   /// Old Danish unit. Equal to 12 [tomme] or 0.313857 [meter].
   fod(
@@ -1297,7 +1525,9 @@ enum UnitLength with Unit {
     category: UnitCategory.danish,
   ),
 
-  /// **tomme** ([tomme])
+  /// <b>tomme</b>
+  ///
+  /// Symbols: tomme
   ///
   /// Old Danish unit. Equal to 12 [linie] or 2.615475 [centimeter].
   tomme(
@@ -1308,7 +1538,9 @@ enum UnitLength with Unit {
     category: UnitCategory.danish,
   ),
 
-  /// **linie** ([linie])
+  /// <b>linie</b>
+  ///
+  /// Symbols: linie
   ///
   /// Old Danish unit. Equal to 2.1795625 [millimeter].
   linie(
@@ -1323,7 +1555,9 @@ enum UnitLength with Unit {
   // DUTCH
   // --------------------------------------------
 
-  /// **uren** ([uren])
+  /// <b>uren</b>
+  ///
+  /// Symbols: uren
   ///
   /// Old Dutch unit. Equal to 5 [myl] or 5.000244301 [kilometer].
   uren(
@@ -1334,7 +1568,9 @@ enum UnitLength with Unit {
     category: UnitCategory.dutch,
   ),
 
-  /// **myl** ([myl])
+  /// <b>myl</b>
+  ///
+  /// Symbols: myl
   ///
   /// Old Dutch unit. Equal to 3533⁄13 [roeden] or 1.0000488602 [kilometer].
   myl(
@@ -1345,7 +1581,9 @@ enum UnitLength with Unit {
     category: UnitCategory.dutch,
   ),
 
-  /// **roeden** ([roeden])
+  /// <b>roeden</b>
+  ///
+  /// Symbols: roeden
   ///
   /// Old Dutch unit. Equal to 26⁄5 elle or 3.6797722 [meter].
   roeden(
@@ -1356,7 +1594,9 @@ enum UnitLength with Unit {
     category: UnitCategory.dutch,
   ),
 
-  /// **elle** ([elle])
+  /// <b>elle</b>
+  ///
+  /// Symbols: elle
   ///
   /// Old Dutch unit. Equal to 5⁄2 [voeten] or 0.7076485 [meter].
   elle(
@@ -1367,7 +1607,9 @@ enum UnitLength with Unit {
     category: UnitCategory.dutch,
   ),
 
-  /// **voeten** ([voeten])
+  /// <b>voeten</b>
+  ///
+  /// Symbols: voeten
   ///
   /// Old Dutch unit. Equal to 12 [duime] or 0.2830594 [meter].
   voeten(
@@ -1378,7 +1620,9 @@ enum UnitLength with Unit {
     category: UnitCategory.dutch,
   ),
 
-  /// **duime** ([duime])
+  /// <b>duime</b>
+  ///
+  /// Symbols: duime
   ///
   /// Old Dutch unit. Equal to 12 [lyne] or 2.3588283̅ [centimeter].
   duime(
@@ -1389,7 +1633,9 @@ enum UnitLength with Unit {
     category: UnitCategory.dutch,
   ),
 
-  /// **lyne** ([lyne])
+  /// <b>lyne</b>
+  ///
+  /// Symbols: lyne
   ///
   /// Old Dutch unit. Equal to 1.96569027̅ [millimeter].
   lyne(
@@ -1418,6 +1664,8 @@ enum UnitLength with Unit {
   final String yinterceptDenominator;
   @override
   final UnitCategory category;
+  @override
+  get _stringMap => strings.UnitLength[name]!;
   @override
   String get descLocalized => super._getDescLocalized(values);
 

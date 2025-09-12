@@ -4,6 +4,7 @@
 
 // ignore_for_file: file_names
 
+/// The main library of this package.
 library lukodconvert;
 
 import 'package:decimal/decimal.dart';
@@ -164,14 +165,15 @@ mixin Unit on Enum {
   }
 
   /// The localized name of the unit. First is preferred.
-  List<String> get nameLocalized =>
-      strings['${toString()}.name'].split(",,,|,,,");
+  List<String> getName({num number = 1}) =>
+      _getListStringWithPluralizationFunction(
+          list: _stringMap["name"], number: number);
 
   // Implementation of descLocalized
   String _getDescLocalized<T extends Enum>(List<T> values) =>
       (strings['${toString()}.desc'] as String)
-          .replaceAllMapped(RegExp(r" \[(.+?)\]( |\.|\,)"), (match) {
-        return " ${(values.byName(match[1]!) as Unit).nameLocalized[0]}${match[2]!}";
+          .replaceAllMapped(RegExp(r" [(.+?)]( |.|,)"), (match) {
+        return " ${(values.byName(match[1]!) as Unit).getName()[0]}${match[2]!}";
       });
 
   /// The localized description of the unit.
@@ -184,12 +186,17 @@ mixin Unit on Enum {
   String get descLocalized;
 
   /// The localized raw description of the unit.
-  String get desc => strings['${toString()}.desc'];
+  String get desc => _stringMap['desc'];
 
   /// The localized symbol of the unit. First is preferred.
-  List<String> get symbol => strings['${toString()}.symbol'].split(",,,|,,,");
+  List<String> getSymbol({num number = 0}) =>
+      _getListStringWithPluralizationFunction(
+          list: _stringMap["symbol"], number: number);
 
   bool isSameType(Unit other) => runtimeType == other.runtimeType;
+
+  /// Internal getter to get the auto-generated map from slang
+  Map<String, dynamic> get _stringMap;
 
   static void checkIfSameType(Unit a, Unit b) {
     if (a.isSameType(b)) return;
@@ -201,6 +208,7 @@ mixin Unit on Enum {
     throw TypeError();
   }
 
+  /// Get the information of a certain quantity basing on its ID
   static QuantityInfo getQuantityInfoFromId(String id) => switch (id) {
         "acceleration" => UnitAcceleration.info,
         "force" => UnitForce.info,
@@ -214,11 +222,31 @@ mixin Unit on Enum {
       };
 }
 
+/// The contents of [list] could be a String or a String Function({required num n}) cuz of pluralization.
+/// So this function forcefully changes all to fit a certain [number].
+List<String> _getListStringWithPluralizationFunction({
+  required List list,
+  required num number,
+}) {
+  return list.map((e) {
+    if (e is String) {
+      return e;
+    } else if (e is Function) {
+      return e(n: number) as String;
+    } else {
+      throw TypeError();
+    }
+  }).toList();
+}
+
+/// Container for the information of a quantity.
+///
+/// Get from [Unit.getQuantityInfoFromId]
 class QuantityInfo {
   /// ID of this quantity
   final String id;
 
-  /// Quantities that make up this quantity
+  /// Quantities that make up this quantity. Useful for dimensional analysis.
   final List<DerivedQuantity> derivedQuantities;
 
   /// The base unit for this quantity
@@ -235,8 +263,13 @@ class QuantityInfo {
   });
 }
 
+/// Container for what quantities make up a certain quantity.
+///
+/// For example, `speed` contains `length` (exponent 1) and `time` (exonent -1).
 class DerivedQuantity {
   final String id;
+
+  /// Exponent is a string because it can be negative (preceeded with "-") and/or fractional (denoted with "/").
   final String exponent;
 
   const DerivedQuantity({
